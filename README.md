@@ -1,6 +1,6 @@
 # Federated Prompt Optimization with Human Feedback
 
-This is the official implementation of the paper [Prompt Optimization with Human Feedback](https://arxiv.org/abs/2405.17346).
+This is the implementation of the paper [Prompt Optimization with Human Feedback](https://arxiv.org/abs/2405.17346).
 
 **Oral Presentation at ICML 2024 Workshop on Models of Human Feedback for AI Alignment**
 
