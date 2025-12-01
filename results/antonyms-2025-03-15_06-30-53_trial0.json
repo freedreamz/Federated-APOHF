@@ -1,0 +1,2508 @@
+{
+    "task": "antonyms",
+    "n_prompt_tokens": 5,
+    "nu": 0.2,
+    "lamdba": 0.1,
+    "n_init": 40,
+    "n_domain": 500,
+    "total_iter": 165,
+    "local_training_iter": 30,
+    "random_proj": "uniform",
+    "intrinsic_dim": 100,
+    "n_eval": 1000,
+    "name": "",
+    "gpt": "gpt-3.5-turbo",
+    "init_scale": 1,
+    "pooling": "last",
+    "func": "neural",
+    "trial": 0,
+    "magnitude": 10,
+    "norm_method": "standard",
+    "candidate_method": "induction",
+    "test_score": 0.0,
+    "valid_score": 0.0,
+    "best_prompt": [
+        " identify the first letter in each word that is in decreasing order."
+    ],
+    "prompts_set": {
+        "\"Output the vowel in each word.\"": 0.0,
+        " identify the third last letter in each word.": 0.0,
+        "\"Output the letter at the 3rd position in the word.\"": 0.0,
+        "\"Output the first letter of each word.\"": 0.0,
+        "\"Output the letter that appears in the input word at the third position.\"": 0.0,
+        "\"Provide the position of the letter 'n' in the given word.\"": 0.0,
+        "\"Output the first letter of the input word.\"": 0.0,
+        " identify the position of the letter \"v\" in the word \"constructive\".": 0.0,
+        "\"Provide the position of the letter 'm' in each word.\"": 0.0,
+        "find and output the second letter of each word in the input.": 0.0,
+        " find the last letter of each word in the input.": 0.0,
+        " find the third letter of each word.": 0.0,
+        "\"Identify the letter that is repeated the most in each word.\"": 0.0,
+        "find the third vowel in each word.": 0.0,
+        " find the position of the letter \"i\" in each word.": 0.0,
+        "\"Find the second occurrence of the letter 'n' in each word.\"": 0.0,
+        " provide the next vowel in each word.": 0.0,
+        "\"Provide the first vowel in each word.\"": 0.0,
+        " identify the vowel that comes before the double consonant in each word.": 0.0,
+        " identify the position of the letter \"u\" in each word.": 0.0,
+        "\"Output the second letter of the given word.\"": 0.0,
+        "output the letter \"i\" from each of the given words.": 0.0,
+        "Output the middle letter of the input word.": 0.0,
+        "\"Output the third letter of the word.\"": 0.0,
+        "output the letter at the specified position in each word.": 0.0,
+        " find the last occurrence of the letter \"l\" in each word.": 0.0,
+        " find the first vowel in each word.": 0.0,
+        " find the second last letter of each word.": 0.0,
+        "\"Find the second last letter of the word.\"": 0.0,
+        " \"Identify the last letter of each word.\"": 0.0,
+        " provide the letter that appears in the middle of the word.": 0.0,
+        "Output the letter at the 4th index of the input word.": 0.0,
+        "\"Find the second occurrence of the letter 'e' in the word.\"": 0.0,
+        "\"Output the letter at the 4th position in each word.\"": 0.0,
+        "output the third letter of each word.": 0.0,
+        "\"Find the vowel that is three letters after the first consonant in the word.\"": 0.0,
+        "Output the first letter of each word.": 0.0,
+        " find the first letter that appears in the word \"visibly\", \"buttoned\", \"constructive\", \"unimpressive\", and \"unmoving\".": 0.0,
+        " find the vowel in each word.": 0.0,
+        "output the second letter of each input word.": 0.0,
+        " identify the third letter in each word.": 0.0,
+        "\"Write the vowel that comes before the last consonant in each word.\"": 0.0,
+        "\"Find the last letter of the word.\"": 0.0,
+        " output the letter \"l\" from each word.": 0.0,
+        "output the letter at the specified position in each input word.": 0.0,
+        "\"Find the middle letter of each word.\"": 0.0,
+        " identify the first letter of each input word.": 0.0,
+        " find the second letter in each word.": 0.0,
+        "\"Identify the second vowel in each word.\"": 0.0,
+        "output the first occurrence of the letter \"s\" in the input word.": 0.0,
+        " provide the letter that appears in the seventh position of the input word.": 0.0,
+        "Output the first letter of the input word.": 0.0,
+        "\"Output the last letter of the given word.\"": 0.0,
+        " output the second letter of each input word.": 0.0,
+        " provide the middle letter of each word.": 0.0,
+        "identify the position of the letter \"e\" in each word.": 0.0,
+        "output the last letter of the given word.": 0.0,
+        " output the first letter of each word.": 0.0,
+        "\"Output the first vowel in the input word.\"": 0.0,
+        " \"Output the letter at the 4th position in the input word.\"": 0.0,
+        " \"Identify the first letter of the given word.\"": 0.0,
+        " identify the first occurrence of the letter \"o\" in each word.": 0.0,
+        " provide the position of the letter \"m\" in the given words.": 0.0,
+        "output the vowel that comes after the first consonant in the word.": 0.0,
+        " provide the vowel that comes before the last consonant in the word.": 0.0,
+        " output the first vowel in each word.": 0.0,
+        "\"Find the second letter in each word.\"": 0.0,
+        " identify the letter that is in the 7th position in each word.": 0.0,
+        " identify the first letter of each word.": 0.0,
+        "\"Output the letter at the middle of the input word.\"": 0.0,
+        "\"Find the second-to-last letter of the given word.\"": 0.0,
+        " provide the last vowel in each word.": 0.0,
+        "\"Output the letter that is the third character in the input word.\"": 0.0,
+        " identify the vowel that comes before the consonant \"e\" in each word.": 0.0,
+        "\"Output the letter 'i' from the word 'repute'.\"": 0.0,
+        "\"Write the first letter of the given word.\"": 0.0,
+        " replace the letter \"e\" with the letter \"f\".": 0.0,
+        "\"Identify the first vowel in each word.\"": 0.0,
+        " find the letter \"o\" in each word.": 0.0,
+        "\"Provide the letter that is the third character in the input word.\"": 0.0,
+        " identify the first letter in each word that is in decreasing order.": 0.0,
+        " identify the second occurrence of the letter \"n\" in each word.": 0.0,
+        " identify the part of speech of the given word.": 0.0,
+        "identify the part of speech of the given word.": 0.0,
+        "\"Write the first letter of each word.\"": 0.0,
+        "output the last vowel in each input word.": 0.0,
+        "\"Provide the position of the letter 'l' in the given word.\"": 0.0,
+        " identify the vowel that comes before the consonant \"n\" in the word.": 0.0,
+        " provide the first letter of the word given as input.": 0.0,
+        "\"Provide the middle letter of each word.\"": 0.0,
+        " identify the vowel that appears in the word \"nonexistent.\" The vowel in \"nonexistent\" is \"e.\"": 0.0,
+        " provide the last letter of each word.": 0.0,
+        " \"return the second letter of the input word.\"": 0.0,
+        " provide the first letter that appears after the letter \"s\" in each word.": 0.0,
+        "\"Provide the index of the first occurrence of the letter 'n' in each word.\"": 0.0,
+        " find the first occurrence of the letter \"n\" in each word.": 0.0,
+        " find the letter in each word that is in the same position as the number of vowels in the word.": 0.0,
+        "\"Find the vowel that comes before the consonant 'n' in each word.\"": 0.0,
+        " find the vowel that is closest to the end of the word.": 0.0,
+        "output the letter at the index position of the letter \"n\" in each word.": 0.0,
+        " find and output the last vowel in each word.": 0.0,
+        "find the second occurrence of the letter \"n\" in each word.": 0.0,
+        " find the second occurrence of the letter \"n\" in each word.": 0.0,
+        "output the last letter of the word.": 0.0
+    },
+    "best_values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+    ],
+    "best_instruction_over_iter": [
+        [
+            0,
+            "\"Output the letter at the 4th position in each word.\"",
+            0.0
+        ],
+        [
+            1,
+            "\"Output the letter at the 4th position in each word.\"",
+            0.0
+        ],
+        [
+            2,
+            "\"Output the letter at the 4th position in each word.\"",
+            0.0
+        ],
+        [
+            3,
+            "output the first occurrence of the letter \"s\" in the input word.",
+            0.0
+        ],
+        [
+            4,
+            "output the first occurrence of the letter \"s\" in the input word.",
+            0.0
+        ],
+        [
+            5,
+            "output the first occurrence of the letter \"s\" in the input word.",
+            0.0
+        ],
+        [
+            6,
+            "output the first occurrence of the letter \"s\" in the input word.",
+            0.0
+        ],
+        [
+            7,
+            "output the last vowel in each input word.",
+            0.0
+        ],
+        [
+            8,
+            "output the last vowel in each input word.",
+            0.0
+        ],
+        [
+            9,
+            "output the last vowel in each input word.",
+            0.0
+        ],
+        [
+            10,
+            "output the last vowel in each input word.",
+            0.0
+        ],
+        [
+            11,
+            "output the last vowel in each input word.",
+            0.0
+        ],
+        [
+            12,
+            "output the last vowel in each input word.",
+            0.0
+        ],
+        [
+            13,
+            "output the last vowel in each input word.",
+            0.0
+        ],
+        [
+            14,
+            "output the first occurrence of the letter \"s\" in the input word.",
+            0.0
+        ],
+        [
+            15,
+            "output the first occurrence of the letter \"s\" in the input word.",
+            0.0
+        ],
+        [
+            16,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            17,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            18,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            19,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            20,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            21,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            22,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            23,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            24,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            25,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            26,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            27,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            28,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            29,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            30,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            31,
+            "\"Find the vowel that comes before the consonant 'n' in each word.\"",
+            0.0
+        ],
+        [
+            32,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            33,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            34,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            35,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            36,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            37,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            38,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            39,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            40,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            41,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            42,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            43,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            44,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            45,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            46,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            47,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            48,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            49,
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            50,
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            51,
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            52,
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            53,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            54,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            55,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            56,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            57,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            58,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            59,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            60,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            61,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            62,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            63,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            64,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            65,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            66,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            67,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            68,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            69,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            70,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            71,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            72,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            73,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            74,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            75,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            76,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            77,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            78,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            79,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            80,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            81,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            82,
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            83,
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            84,
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            85,
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            86,
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            87,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            88,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            89,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            90,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            91,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            92,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            93,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            94,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            95,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            96,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            97,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            98,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            99,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            100,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            101,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            102,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            103,
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            104,
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            105,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            106,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            107,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            108,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            109,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            110,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            111,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            112,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            113,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            114,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            115,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            116,
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            117,
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            118,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            119,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            120,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            121,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            122,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            123,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            124,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ]
+    ],
+    "init_instructions": [
+        " output the last letter of each input word.",
+        " find the last letter of each word.",
+        "\"Output the last letter of each word.\"",
+        " provide the last letter of each word.",
+        "output the third letter of each input word.",
+        "find the middle letter of each word.",
+        "output the last letter of each word.",
+        "\"Write the first letter of the given word.\"",
+        " identify the second to last letter in each word.",
+        "find the last letter of each word.",
+        "\"Output the last letter of the input word.\"",
+        "\"Output the first letter of the word.\"",
+        " find the third letter in each word.",
+        "\"Provide the middle letter of each word.\"",
+        " find the letter that is in the 3rd position in the word.",
+        " find the last vowel in each word.",
+        "output the third letter of each word.",
+        " output the first letter of each input word.",
+        "\"Output the first letter of the input word.\"",
+        "\"Provide the last letter of each word.\"",
+        " identify the second last letter of each word.",
+        " identify the second letter in each word.",
+        " \"Output the first letter of the given word.\"",
+        "\"Output the letter that appears in the middle of the given word.\"",
+        "\"Find the last letter in each word.\"",
+        "output the first letter of each word.",
+        " identify the vowel that appears first in each word.",
+        " provide the first letter of the word.",
+        "\"Provide the first letter of each input word.\"",
+        "output the first letter of each input word.",
+        " identify the position of the letter \"e\" in each word.",
+        " identify the last letter of each word.",
+        "\"Output the second letter of the input word.\"",
+        "\"Find the third letter in each word.\"",
+        "\"Provide the letter that is the third character in the input word.\"",
+        "Output the first letter of each word.",
+        " provide the first letter of each word.",
+        "\"Find the second letter in each word.\"",
+        "output the vowel that comes before the last consonant in the word.",
+        "\"Find the second occurrence of the letter 'e' in the given word.\"",
+        "\"Provide the second letter of each word.\"",
+        "output the second letter of each input word.",
+        " provide the first letter of the input word.",
+        " find the letter \"o\" in each word.",
+        " \"Output the first vowel in the given word.\"",
+        " identify the vowel in each word.",
+        " find the first vowel in each word.",
+        "\"Identify the second last letter of each word.\"",
+        "output the first letter of each word in the input.",
+        "\"Output the last letter of the word.\"",
+        "\"Output the first vowel in the word.\"",
+        "\"Output the third letter of the input word.\"",
+        " find the second to last letter of each word.",
+        "Output the third letter of the input word.",
+        " find the letter that is in the middle of the word.",
+        "Output the last letter of each input word.",
+        "Output the third letter of each word.",
+        "\"Output the last vowel in the word.\"",
+        " \"Output the first letter of the input word.\"",
+        "output the last letter of each input word.",
+        " find the first letter of each word.",
+        " provide the first vowel in each word.",
+        "\"Output the last letter of the given word.\"",
+        " identify the last letter in each word.",
+        "Output the second vowel in the word.",
+        "\"Provide the first letter of each word.\"",
+        "Output the last letter of each word.",
+        " provide the letter that is in the third position of the word.",
+        " identify the last vowel in each word.",
+        "\"Find the middle letter of each word.\"",
+        " find the middle letter of each word.",
+        "output the last vowel in each word.",
+        "output the first letter of the input word.",
+        "\"Find the second letter of each word.\"",
+        "\"Write the third letter of the given word.\"",
+        "\"Output the first letter of the given word.\"",
+        "Output the first vowel in each word.",
+        "\"Output the third letter of each word.\"",
+        "\"Write the letter that appears second in the word.\"",
+        " find the third letter of each word.",
+        "find the second letter in each word.",
+        "\"Output the middle letter of the given word.\"",
+        " identify the second occurrence of the letter \"n\" in each word.",
+        " \"Identify the second letter in each word.\"",
+        " identify the first letter of each word.",
+        "\"Output the second letter of each word.\"",
+        "\"Write the first vowel in the given word.\"",
+        "\"Write the last letter of each word.\"",
+        "\"Find the last letter of each word.\"",
+        " provide the letter at the 5th position of the input word.",
+        "Find the middle letter of each word.",
+        "output the first vowel in each word.",
+        " output the second letter of each input word.",
+        "output the letter at the 3rd position in each word.",
+        "\"Output the letter that is third from the end in the given word.\"",
+        "find and output the last letter of each input word.",
+        " find and output the first occurrence of the letter \"i\" in each word.",
+        " identify the third letter in each word.",
+        "output the vowel that appears first in each word.",
+        " identify the middle letter of each word.",
+        " identify the position of the letter \"n\" in each word.",
+        "find the third letter of the input word.",
+        " identify the first vowel in each word.",
+        " identify the vowel that is not repeated in the given word.",
+        " identify the position of the letter \"i\" in each word.",
+        " \"Output the last letter of the given word.\"",
+        "\"Find the last vowel in the given word.\"",
+        " find the second letter of each word.",
+        "Output the vowel that comes before the last consonant in the word.",
+        "Output the last vowel in each word.",
+        "find the letter at the 7th position in each word.",
+        " \"Output the letter at the 4th position in the input word.\"",
+        " output the letter \"l\" from each word.",
+        " \"Output the letter at the 4th position in each word.\"",
+        " identify the second occurrence of the letter \"e\" in each word.",
+        "\"Output the second letter in each word.\"",
+        " provide the position of the letter \"n\" in the given words.",
+        "\"Provide the index of the first occurrence of the letter 'n' in each word.\"",
+        " identify the position of the letter \"u\" in each word.",
+        "\"Output the third letter of the given word.\"",
+        "\"Find the second occurrence of the letter 'o' in the word.\"",
+        " provide the position of the letter \"n\" in each word.",
+        " provide the position of the letter \"e\" in each word.",
+        "\"Provide the first letter of the input word.\"",
+        "output the letter at the 4th position in each word.",
+        " identify the vowel that comes before the last consonant in each word.",
+        " \"Identify the third letter in the given word.\"",
+        "\"Output the second letter of the word.\"",
+        " provide the last vowel in each word.",
+        " identify the vowel that is the second letter in each word.",
+        "find the last letter in each word.",
+        "output the middle letter of each input word.",
+        "\"Find the letter at the 3rd position in the word.\"",
+        " \"Identify the first letter of the given word.\"",
+        "\"Identify the second vowel in each word.\"",
+        "\"Provide the first letter of the given word.\"",
+        "find and output the letter at the fifth position in each word.",
+        " identify the last letter of each input word.",
+        "\"Output the first vowel in the given word.\"",
+        "Output the first letter of each input word.",
+        " provide the first letter of each word, but it seems like there was a mistake in the input. Let me know if you would like me to try again.",
+        "\"Find the third letter in the word.\"",
+        " identify the vowel that appears only once in each word.",
+        " find and return the middle character of the input string. If the length of the string is even, return the second middle character.",
+        "Output the first letter of the input word.",
+        " provide the position of the letter \"a\" in each word.",
+        " provide the letter at the specified position in each word.",
+        " find the letter at the 5th position in each word.",
+        "output the letter at the third position in each word.",
+        "find the second last letter of each word.",
+        "\"Provide the vowel that comes after the first consonant in the word.\"",
+        "\"Find the second last letter of each word.\"",
+        " find the vowel that appears first in the given word.",
+        "\"Find the last vowel in each word.\"",
+        "\"Find the third letter of the input word.\"",
+        "\"Find the third letter of the given word.\"",
+        "\"Provide the last letter of each input word.\"",
+        " replace the letter \"e\" with the letter \"f\".",
+        "\"Provide the second last letter of each word.\"",
+        " identify the position of the letter \"n\" in the given words.",
+        "find the second occurrence of the letter \"n\" in each word.",
+        " find the first occurrence of the letter \"m\" in the given word.",
+        " output the first vowel in each word.",
+        "\"Write the last letter of the given word.\"",
+        " provide the letter that is in the middle of the word.",
+        "\"Output the letter that is in the middle of the word.\"",
+        " output the middle letter of each input word.",
+        "\"Output the vowel that comes first in the word.\"",
+        "\"Output the letter at the 3rd position in the word.\"",
+        " \"Identify the vowel in the given word.\"",
+        " \"Find the vowel that comes after the first consonant in the word.\"",
+        "output the letter that is in the middle of the input word.",
+        "Output the middle letter of each word.",
+        " identify the first letter of the word.",
+        " \"find the second letter of each word.\"",
+        "output the first letter of the word.",
+        " \"Identify the last letter of the given word.\"",
+        "find the vowel that comes after the letter \"l\" in each word.",
+        "Output the first letter of the given word.",
+        " find and output the last letter of each input word.",
+        "find the first letter in each word.",
+        " identify the position of the letter \"s\" in each word.",
+        " find the letter in each word that is in the same position as the number of vowels in the word.",
+        "output the letter at the specified position in each input word.",
+        " identify the position of the letter \"n\" in the word \"honesty\".",
+        " identify the vowel that appears in the second position of each word.",
+        "\"Identify the vowel that appears in the second position in each word.\"",
+        "\"Identify the vowel that is in the second position in each word.\"",
+        "identify the position of the letter \"n\" in each word.",
+        "\"Output the second letter of each input word.\"",
+        "output the third to last letter of each input word.",
+        " \"Output the last letter of each word.\"",
+        "\"Find the last letter of the word.\"",
+        "find the first letter of each input word.",
+        " provide the first letter of the given word.",
+        "find the first letter of each word.",
+        "identify the position of the letter \"e\" in each word.",
+        " provide the next vowel in each word.",
+        "find the second vowel in each word.",
+        " provide the first letter of the word given as input.",
+        " find the letter that appears in the input word only once.",
+        "\"Identify the second letter in each word.\"",
+        "\"Find the vowel that comes second in the word.\"",
+        " find the last vowel in each word and output that vowel.",
+        " find the third letter of each input word.",
+        "\"Output the letter that is in the 3rd position of the word.\"",
+        "output the third letter of the input word.",
+        "find and output the second letter of each input word.",
+        " find the third vowel in each word.",
+        " \"return the first letter of the input string.\"",
+        " find and output the first occurrence of the letter \"n\" in each word.",
+        " identify the vowel that is in the third position in each word.",
+        " find the first occurrence of the letter \"e\" in each word.",
+        " find the last letter of each input word.",
+        "Output the middle letter of the input word.",
+        "output the middle letter of each word.",
+        " find the first non-repeating character in each word.",
+        "\"Output the letter 'o' from each word.\"",
+        " find the first occurrence of the letter \"c\" in each word.",
+        " identify the first letter in each word that is in decreasing order.",
+        " output the second last letter of each input word.",
+        "output the letter at the 6th position of the input word.",
+        " find the position of the letter \"i\" in each word.",
+        "\"Output the first letter of each word.\"",
+        "output the third last letter of each input word.",
+        "\"Output the vowel in each word.\"",
+        "\"Find the second vowel in the word.\"",
+        " \"Identify the last vowel in the word.\"",
+        " output the last letter of each word.",
+        "\"Provide the first vowel in the given word.\"",
+        "output the letter \"y\" if it is present in the input word, and \"n\" if it is not.",
+        "\"Identify the position of the letter 'n' in each word.\"",
+        " find the position of the letter \"n\" in each word.",
+        "\"Provide the vowel that appears first in the word.\"",
+        "find the second occurrence of the letter \"i\" in each word.",
+        " find the vowel that appears first in the word.",
+        " provide the position of the letter \"i\" in each word.",
+        "find the vowel that appears first in the word.",
+        "Output the vowel that comes before the second consonant in the word.",
+        "\"Output the vowel that comes before the letter 'l' in each word.\"",
+        "output the first occurrence of the letter \"s\" in the input word.",
+        "\"Find the first letter of the word.\"",
+        "Output the letter at the 4th position of the word.",
+        " identify the position of the letter \"o\" in each word.",
+        " identify the vowel that is in the middle of the word.",
+        " find the letter that is two positions after the last letter in the word.",
+        " find the letter at the nth position in each word.",
+        "\"Output the last letter of each input word.\"",
+        "\"Write the vowel that comes before the last consonant in each word.\"",
+        "find and output the last letter of each word.",
+        "Output the vowel that comes first in the word.",
+        "output the letter 'u' if it is present in the input word.",
+        " find the letter at the 7th position in the word.",
+        " find and output the middle letter of each word.",
+        " identify if the last letter of the input word is a vowel (a, e, i, o, u) or a consonant.",
+        "\"Output the letter that comes second in the word.\"",
+        " find and output the third letter of each word.",
+        " find the vowel that is the third letter in the word.",
+        " \"Output the last vowel in the word.\"",
+        " find the third last letter of each word.",
+        "Output the first vowel in the word.",
+        "\"Provide the vowel that is the second letter in the word.\"",
+        " \"Identify the third letter of the given word.\"",
+        " find the letter that appears in the middle of the word.",
+        "\"Find the third letter of each word.\"",
+        " identify the third letter of each input word.",
+        "\"find the last letter of each word.\"",
+        " output the letter at the index position of 3 in each word.",
+        "Output the third letter of each input word.",
+        "Output the first vowel in the given word.",
+        " find the second occurrence of the letter \"n\" in each word.",
+        "output the last letter of the input word.",
+        "\"Output the letter at the 4th position in each word.\"",
+        " find the vowel that is closest to the end of the word.",
+        "\"Find the third letter of the word.\"",
+        " find the second letter in each word.",
+        " identify the vowel that comes before the consonant \"n\" in the word.",
+        " find the first occurrence of the letter \"i\" in each word.",
+        " find the vowel that is not repeated in the given word.",
+        " \"Output the letter that appears second in the word.\"",
+        "output the letter that comes after the letter \"e\" in each word.",
+        " \"Identify the vowel that comes after the first consonant in each word.\"",
+        " output the letter at the specified position in the word.",
+        " identify the position of the letter \"v\" in the word \"constructive\".",
+        " provide the letter that appears in the input word at the specified position.",
+        "output the vowel that appears in the word \"uncoil\".",
+        "\"Provide the vowel that comes first in the word.\"",
+        " find the first occurrence of the letter \"n\" in each word.",
+        " find the position of the letter \"e\" in each word.",
+        "\"Find the second occurrence of the letter 'e' in the word.\"",
+        "\"Find the second-to-last letter of the given word.\"",
+        " \"Identify the third letter in the following words.\"",
+        "output the vowel that comes last in the word.",
+        " identify the third last letter in each word.",
+        "\"Write the first letter of each word.\"",
+        " find the vowel that is the second letter in the word.",
+        "\"Provide the first vowel in the word.\"",
+        "\"Provide the position of the first 'e' in the input word.\"",
+        " identify the vowel that is the second letter in the word.",
+        " provide the next letter in the alphabet for each input word.",
+        "\"Output the first letter of each input word.\"",
+        " find the first letter of each input word.",
+        " \"return the first vowel in the input word.\"",
+        " output the letter that is three positions to the right of the letter 'e' in each given word.",
+        " identify the position of the letter \"m\" in each word.",
+        " provide the third letter of each input word.",
+        " \"Identify the last letter of the word.\"",
+        "\"Find the vowel that comes before the last consonant in the word.\"",
+        "\"Find the second vowel in each word.\"",
+        "output the vowel that comes after the first consonant in the word.",
+        " find the letter that appears in the word only once.",
+        " provide the vowel that comes before the last consonant in the word.",
+        "\"Output the first vowel in the input word.\"",
+        " identify the letter at the specified position in the given word.",
+        " identify the letter that comes before the last letter in each word.",
+        "output the last letter of the given word.",
+        " find and output the third letter of the given word.",
+        "find the second letter of each word.",
+        "\"Output the middle letter of the input word.\"",
+        "\"Output the vowel that appears first in the word.\"",
+        "\"Output the letter at the 4th position in the input word.\"",
+        "\"Find the vowel that comes before the consonant 'n' in each word.\"",
+        " \"Output the second letter of the given word.\"",
+        "find the letter at the specified position in the word.",
+        "Output the letter at the 5th position of each word.",
+        "\"Find the first vowel in the given word.\"",
+        " identify the consonant that is in the middle of the word.",
+        "\"Find the vowel that is three letters after the first consonant in the word.\"",
+        " identify the vowel that comes before the double consonant in each word.",
+        " find the second vowel in each word.",
+        " output the letter \"i\" in each word.",
+        " find the first letter that appears in the word \"visibly\", \"buttoned\", \"constructive\", \"unimpressive\", and \"unmoving\".",
+        " \"Output the letter that occurs first in the word.\"",
+        "\"Provide the first letter of the word.\"",
+        " identify the first letter of each input word.",
+        " \"Identify the last vowel in the given word.\"",
+        " find and output the last vowel in each word.",
+        "output the letter at the index position of the word that corresponds to the number of vowels in the word.",
+        " identify the position of the letter \"t\" in each word.",
+        " provide the middle letter of each word.",
+        " provide the letter that appears in the middle of the word.",
+        "\"Find the first vowel in the word.\"",
+        "\"Provide the second last letter of the input word.\"",
+        " find the second last letter of each word.",
+        " find the third character in each word.",
+        " find the letter \"l\" in the word \"appointive\".",
+        " find and output the first letter of the given word.",
+        " \"Identify the first vowel in the given word.\"",
+        "\"Output the third letter of the word.\"",
+        "\"Find the first letter in each word.\"",
+        "Output the second letter of each word.",
+        " identify the position of the letter \"i\" in the given words.",
+        "\"Provide the first vowel in each word.\"",
+        "Output the last vowel in the given word.",
+        "\"Output the letter 'i' from the word 'repute'.\"",
+        "identify the vowel that comes after the first consonant in the word.",
+        " identify the vowel that appears in the word.",
+        "find the third vowel in each word.",
+        "\"Output the middle letter of the word.\"",
+        "\"Output the middle letter of each word.\"",
+        " identify the second vowel in each word.",
+        "\"Output the last vowel in each word.\"",
+        "output the middle character of each word.",
+        " identify the third character in each word.",
+        "\"Find the vowel that comes after the first consonant in each word.\"",
+        " find the last letter of each given word.",
+        "\"Output the vowel that comes before the first occurrence of the letter 'n' in the input word.\"",
+        " identify the vowel that comes first in the word.",
+        "find the letter at the 4th position in each word.",
+        "find the first vowel in each word.",
+        "\"Output the letter that is the third letter in the word.\"",
+        "\"Provide the second letter of the input word.\"",
+        " identify the first occurrence of the letter \"o\" in each word.",
+        "\"Write the vowel that comes after the first consonant in each word.\"",
+        " find and output the first vowel in each given word.",
+        "\"Output the letter that is in the second position of the word.\"",
+        "output the letter that is in the middle of the word.",
+        " find the letter \"i\" in the word \"repute\".",
+        "return the last letter of each input word.",
+        " identify if the letter \"y\" is present in the word.",
+        "output the last letter of the word.",
+        " identify the vowel that comes before the last consonant in the word.",
+        "\"Provide the third letter of the word.\"",
+        " provide the vowel in the given word.",
+        " provide the letter at the 5th position of each word.",
+        "\"Identify the vowel that is the second letter in each word.\"",
+        " find the vowel that comes after the first consonant in each word.",
+        "\"Write the vowel that comes second in the word.\"",
+        " identify the vowel that appears only once in the given word.",
+        " output the first occurrence of the letter \"i\" in each word.",
+        " provide the part of speech for each word.",
+        "output the vowel that comes first in the word.",
+        "\"Output the vowel that comes before the first consonant in the word.\"",
+        " provide the first letter that is repeated in each word.",
+        "find the last vowel in each word.",
+        "\"Find the second occurrence of the letter 'n' in each word.\"",
+        " \"Identify the third letter in each word.\"",
+        "\"Provide the position of the letter 'l' in the given word.\"",
+        "Output the second letter of each input word.",
+        "\"Output the letter at the 3rd index of the input word.\"",
+        "\"Find the vowel that has the highest prominence in the given word.\"",
+        " \"Identify the last letter of each word.\"",
+        " find the first letter of the input word.",
+        "\"Write the letter that comes second in the word.\"",
+        "\"Find the letter that comes before the last letter in each word.\"",
+        " find the last occurrence of the letter \"m\" in each word.",
+        "output the middle letter of the input word.",
+        " identify the letter that is in the 7th position in each word.",
+        " identify the second letter of each word.",
+        "output the letter at the 4th position of each input word.",
+        "\"Identify the first vowel in each word.\"",
+        "output the letter that is located in the middle of the input word.",
+        "find and output the second letter of each word in the input.",
+        "\"Output the letter at the middle of the input word.\"",
+        "identify the part of speech of the given word.",
+        "\"Output the vowel that comes before the last consonant in the word.\"",
+        " identify the position of the letter \"v\" in each word.",
+        " \"return the second letter of the input word.\"",
+        " identify the fifth letter in each word.",
+        "output the letter at the index position of the letter \"n\" in each word.",
+        " find the vowel that occurs most frequently in each word.",
+        "\"Provide the position of the letter 'm' in each word.\"",
+        " \"Output the third letter of the input word.\"",
+        " provide the next letter in the alphabet for each letter in the given word.",
+        " identify the vowel that appears twice in each word.",
+        " provide the position of the letter \"m\" in the given words.",
+        "\"Provide the vowel that is the third letter in the word.\"",
+        "\"Find the second letter of the given word.\"",
+        "\"Output the letter that comes after the first occurrence of the letter 'e' in the input word.\"",
+        " \"Identify the first vowel in the word.\"",
+        " provide the position of the letter \"n\" in the word \"competence\".",
+        "find and output the first letter of the given word.",
+        " \"Output the last letter of each input word.\"",
+        " provide the corresponding letter in the alphabet for each letter in the given word.",
+        " identify the vowel that comes before the consonant \"e\" in each word.",
+        " provide the letter that appears in the seventh position of the input word.",
+        " identify the vowel that appears first in the word.",
+        "\"Write the letter that is the third letter from the end of the word.\"",
+        " provide the position of the letter \"m\" in each word.",
+        "find the letter that appears in the middle of the word.",
+        "\"Provide the position of the letter 'y' in each word.\"",
+        " output the first letter of each word.",
+        "output the last vowel in each input word.",
+        "find the third letter in each word.",
+        " provide the letter at the 4th position in each word.",
+        " provide the vowel that appears first in each word.",
+        "find the third letter of each word.",
+        " find the vowel in each word.",
+        " identify the vowel that comes before the double consonants in each word.",
+        "\"Write the letter that comes after the first 'n' in the word.\"",
+        " identify the vowel in the given word.",
+        "identify the last letter of each word.",
+        " identify the third letter of each word.",
+        "\"Identify the last letter of each word.\"",
+        " find the last occurrence of the letter \"l\" in each word.",
+        "\"Write the letter that comes before the last letter of the word.\"",
+        "\"Find the last vowel in the word.\"",
+        "Output the letter at the 4th index of the input word.",
+        "\"Identify the letter that is repeated the most in each word.\"",
+        " provide the index of the first vowel in each word.",
+        "output the vowel that appears first in the word.",
+        " identify the vowel that appears in the word \"nonexistent.\" The vowel in \"nonexistent\" is \"e.\"",
+        " identify the first letter that is not repeated in the given word.",
+        " identify the part of speech of the given word.",
+        " \"Output the last letter of the input word.\"",
+        "output the letter at the specified index in each word.",
+        "Output the letter at the 4th position in each word.",
+        " find the last letter of each word in the input.",
+        "\"Write the vowel that comes after the first consonant in the word.\"",
+        " provide the position of the letter \"i\" in the given word.",
+        " find the vowel that is second from the end in each word.",
+        "\"Write the letter that comes after the third letter in the word.\"",
+        "\"Write the first letter of the word.\"",
+        " find the first occurrence of the letter \"n\" in the given word.",
+        "\"Output the letter that appears in the input word at the third position.\"",
+        "\"Find the third vowel in the word.\"",
+        "Output the letter that appears in the middle of the word.",
+        "output the letter \"i\" if it is the third character in the input word, otherwise output the letter \"e\".",
+        " provide the position of the letter \"y\" in each word.",
+        "\"Output the letter that is the third character in the input word.\"",
+        "output the letter \"i\" from each of the given words.",
+        " identify the sound made by the letter \"g\" in each word.",
+        "\"Provide the vowel that comes before the last consonant in the word.\"",
+        "\"Output the second letter of the given word.\"",
+        " identify the first occurrence of the letter \"m\" in the given word.",
+        "output the letter at the specified position in each word.",
+        "\"Provide the position of the letter 'n' in the given word.\"",
+        " identify the letter \"u\" in each word.",
+        "\"Find the second last letter of the word.\"",
+        " identify the letter at the 7th position in each word.",
+        " output the vowel that is second from the end in each word.",
+        "\"Find the first vowel in each word.\"",
+        "\"Write the middle letter of each word.\"",
+        "\"Find the middle letter of the given word.\"",
+        " provide the first letter that appears after the letter \"s\" in each word.",
+        " output the letter at the specified index position in each word.",
+        " identify the vowel that appears in the middle of the word.",
+        " provide the letter at the 5th position in each word.",
+        "\"Write the first letter of the input word.\"",
+        "output the letter at the specified position in the word."
+    ],
+    "instruction_select_history": [
+        [
+            "\"Output the vowel in each word.\"",
+            0.0,
+            " identify the third last letter in each word.",
+            0.0
+        ],
+        [
+            "\"Output the letter at the 3rd position in the word.\"",
+            0.0,
+            "\"Output the first letter of each word.\"",
+            0.0
+        ],
+        [
+            "\"Output the letter that appears in the input word at the third position.\"",
+            0.0,
+            "\"Provide the position of the letter 'n' in the given word.\"",
+            0.0
+        ],
+        [
+            "\"Output the first letter of the input word.\"",
+            0.0,
+            " identify the position of the letter \"v\" in the word \"constructive\".",
+            0.0
+        ],
+        [
+            "\"Provide the position of the letter 'm' in each word.\"",
+            0.0,
+            "find and output the second letter of each word in the input.",
+            0.0
+        ],
+        [
+            " find the last letter of each word in the input.",
+            0.0,
+            " find the third letter of each word.",
+            0.0
+        ],
+        [
+            "\"Identify the letter that is repeated the most in each word.\"",
+            0.0,
+            "find the third vowel in each word.",
+            0.0
+        ],
+        [
+            " find the position of the letter \"i\" in each word.",
+            0.0,
+            "\"Find the second occurrence of the letter 'n' in each word.\"",
+            0.0
+        ],
+        [
+            " provide the next vowel in each word.",
+            0.0,
+            "\"Provide the first vowel in each word.\"",
+            0.0
+        ],
+        [
+            " identify the vowel that comes before the double consonant in each word.",
+            0.0,
+            " identify the position of the letter \"u\" in each word.",
+            0.0
+        ],
+        [
+            "\"Output the second letter of the given word.\"",
+            0.0,
+            "output the letter \"i\" from each of the given words.",
+            0.0
+        ],
+        [
+            "Output the middle letter of the input word.",
+            0.0,
+            "\"Output the third letter of the word.\"",
+            0.0
+        ],
+        [
+            "output the letter at the specified position in each word.",
+            0.0,
+            " find the last occurrence of the letter \"l\" in each word.",
+            0.0
+        ],
+        [
+            " find the first vowel in each word.",
+            0.0,
+            " find the second last letter of each word.",
+            0.0
+        ],
+        [
+            "\"Find the second last letter of the word.\"",
+            0.0,
+            " \"Identify the last letter of each word.\"",
+            0.0
+        ],
+        [
+            " identify the third last letter in each word.",
+            0.0,
+            " provide the letter that appears in the middle of the word.",
+            0.0
+        ],
+        [
+            "Output the letter at the 4th index of the input word.",
+            0.0,
+            "\"Find the second occurrence of the letter 'e' in the word.\"",
+            0.0
+        ],
+        [
+            "\"Output the letter at the 4th position in each word.\"",
+            0.0,
+            "output the third letter of each word.",
+            0.0
+        ],
+        [
+            "\"Find the vowel that is three letters after the first consonant in the word.\"",
+            0.0,
+            "Output the first letter of each word.",
+            0.0
+        ],
+        [
+            " find the first letter that appears in the word \"visibly\", \"buttoned\", \"constructive\", \"unimpressive\", and \"unmoving\".",
+            0.0,
+            " find the vowel in each word.",
+            0.0
+        ],
+        [
+            "output the second letter of each input word.",
+            0.0,
+            " identify the third letter in each word.",
+            0.0
+        ],
+        [
+            "\"Write the vowel that comes before the last consonant in each word.\"",
+            0.0,
+            "\"Find the last letter of the word.\"",
+            0.0
+        ],
+        [
+            "\"Identify the letter that is repeated the most in each word.\"",
+            0.0,
+            " output the letter \"l\" from each word.",
+            0.0
+        ],
+        [
+            "output the letter at the specified position in each input word.",
+            0.0,
+            "\"Find the middle letter of each word.\"",
+            0.0
+        ],
+        [
+            " identify the first letter of each input word.",
+            0.0,
+            " find the second letter in each word.",
+            0.0
+        ],
+        [
+            "\"Identify the second vowel in each word.\"",
+            0.0,
+            "output the first occurrence of the letter \"s\" in the input word.",
+            0.0
+        ],
+        [
+            " provide the letter that appears in the seventh position of the input word.",
+            0.0,
+            "Output the first letter of the input word.",
+            0.0
+        ],
+        [
+            "\"Output the last letter of the given word.\"",
+            0.0,
+            " output the letter \"l\" from each word.",
+            0.0
+        ],
+        [
+            " output the second letter of each input word.",
+            0.0,
+            " provide the letter that appears in the middle of the word.",
+            0.0
+        ],
+        [
+            " provide the middle letter of each word.",
+            0.0,
+            "identify the position of the letter \"e\" in each word.",
+            0.0
+        ],
+        [
+            "output the last letter of the given word.",
+            0.0,
+            " output the first letter of each word.",
+            0.0
+        ],
+        [
+            "\"Output the first vowel in the input word.\"",
+            0.0,
+            " \"Output the letter at the 4th position in the input word.\"",
+            0.0
+        ],
+        [
+            " \"Identify the first letter of the given word.\"",
+            0.0,
+            " identify the first occurrence of the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " provide the position of the letter \"m\" in the given words.",
+            0.0,
+            "output the vowel that comes after the first consonant in the word.",
+            0.0
+        ],
+        [
+            " provide the vowel that comes before the last consonant in the word.",
+            0.0,
+            " output the first vowel in each word.",
+            0.0
+        ],
+        [
+            "\"Provide the first vowel in each word.\"",
+            0.0,
+            "\"Find the second letter in each word.\"",
+            0.0
+        ],
+        [
+            " identify the letter that is in the 7th position in each word.",
+            0.0,
+            " output the first vowel in each word.",
+            0.0
+        ],
+        [
+            " identify the first letter of each word.",
+            0.0,
+            "\"Output the letter at the middle of the input word.\"",
+            0.0
+        ],
+        [
+            "\"Find the second-to-last letter of the given word.\"",
+            0.0,
+            " find the position of the letter \"i\" in each word.",
+            0.0
+        ],
+        [
+            " provide the last vowel in each word.",
+            0.0,
+            "\"Output the letter that is the third character in the input word.\"",
+            0.0
+        ],
+        [
+            " identify the vowel that comes before the consonant \"e\" in each word.",
+            0.0,
+            " provide the next vowel in each word.",
+            0.0
+        ],
+        [
+            "\"Output the letter 'i' from the word 'repute'.\"",
+            0.0,
+            "\"Write the first letter of the given word.\"",
+            0.0
+        ],
+        [
+            " replace the letter \"e\" with the letter \"f\".",
+            0.0,
+            "\"Identify the first vowel in each word.\"",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            "\"Provide the letter that is the third character in the input word.\"",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " identify the second occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            " identify the part of speech of the given word.",
+            0.0,
+            "identify the part of speech of the given word.",
+            0.0
+        ],
+        [
+            "\"Write the first letter of each word.\"",
+            0.0,
+            "\"Output the letter 'i' from the word 'repute'.\"",
+            0.0
+        ],
+        [
+            " provide the last vowel in each word.",
+            0.0,
+            "output the last vowel in each input word.",
+            0.0
+        ],
+        [
+            "\"Provide the position of the letter 'l' in the given word.\"",
+            0.0,
+            " identify the vowel that comes before the consonant \"n\" in the word.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            "\"Output the first vowel in the input word.\"",
+            0.0
+        ],
+        [
+            " provide the first letter of the word given as input.",
+            0.0,
+            " replace the letter \"e\" with the letter \"f\".",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            "output the last vowel in each input word.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            "\"Provide the middle letter of each word.\"",
+            0.0
+        ],
+        [
+            " identify the vowel that comes before the consonant \"n\" in the word.",
+            0.0,
+            " identify the vowel that appears in the word \"nonexistent.\" The vowel in \"nonexistent\" is \"e.\"",
+            0.0
+        ],
+        [
+            "\"Identify the first vowel in each word.\"",
+            0.0,
+            "output the last vowel in each input word.",
+            0.0
+        ],
+        [
+            "\"Identify the first vowel in each word.\"",
+            0.0,
+            "\"Write the first letter of each word.\"",
+            0.0
+        ],
+        [
+            " provide the last vowel in each word.",
+            0.0,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            "\"Identify the first vowel in each word.\"",
+            0.0,
+            " provide the last vowel in each word.",
+            0.0
+        ],
+        [
+            " identify the vowel that comes before the consonant \"n\" in the word.",
+            0.0,
+            " \"return the second letter of the input word.\"",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " provide the last vowel in each word.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            " provide the first letter that appears after the letter \"s\" in each word.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " \"return the second letter of the input word.\"",
+            0.0,
+            "\"Provide the index of the first occurrence of the letter 'n' in each word.\"",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            "\"Identify the first vowel in each word.\"",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " provide the first letter of the word given as input.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            "output the last vowel in each input word.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " find the letter in each word that is in the same position as the number of vowels in the word.",
+            0.0
+        ],
+        [
+            " find the letter in each word that is in the same position as the number of vowels in the word.",
+            0.0,
+            "\"Find the vowel that comes before the consonant 'n' in each word.\"",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            "\"Find the vowel that comes before the consonant 'n' in each word.\"",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " provide the last vowel in each word.",
+            0.0
+        ],
+        [
+            " provide the last vowel in each word.",
+            0.0,
+            " find the vowel that is closest to the end of the word.",
+            0.0
+        ],
+        [
+            " provide the last vowel in each word.",
+            0.0,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            " provide the last vowel in each word.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " provide the last vowel in each word.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            "\"Identify the first vowel in each word.\"",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " find the letter in each word that is in the same position as the number of vowels in the word.",
+            0.0
+        ],
+        [
+            " provide the last vowel in each word.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " provide the last vowel in each word.",
+            0.0
+        ],
+        [
+            " provide the last vowel in each word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " provide the last vowel in each word.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            "output the letter at the index position of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            "\"Find the vowel that comes before the consonant 'n' in each word.\"",
+            0.0,
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            "output the letter at the index position of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            "output the letter at the index position of the letter \"n\" in each word.",
+            0.0,
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            " provide the last vowel in each word.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " provide the last vowel in each word.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " provide the last vowel in each word.",
+            0.0
+        ],
+        [
+            " provide the last vowel in each word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            " provide the last vowel in each word.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " provide the last vowel in each word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " find and output the last vowel in each word.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " provide the last vowel in each word.",
+            0.0
+        ],
+        [
+            " provide the last vowel in each word.",
+            0.0,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " provide the last vowel in each word.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " provide the last vowel in each word.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            "\"Find the vowel that comes before the consonant 'n' in each word.\"",
+            0.0
+        ],
+        [
+            "\"Find the vowel that comes before the consonant 'n' in each word.\"",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            "output the last vowel in each input word.",
+            0.0,
+            " provide the last vowel in each word.",
+            0.0
+        ],
+        [
+            "output the last vowel in each input word.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            "output the last vowel in each input word.",
+            0.0,
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            "output the last vowel in each input word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0,
+            "find the second occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            " find the second occurrence of the letter \"n\" in each word.",
+            0.0,
+            "find the second occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            " find the second occurrence of the letter \"n\" in each word.",
+            0.0,
+            "find the second occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            " find the second occurrence of the letter \"n\" in each word.",
+            0.0,
+            "find the second occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            "\"Find the vowel that comes before the consonant 'n' in each word.\"",
+            0.0,
+            "find the second occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            "\"Find the vowel that comes before the consonant 'n' in each word.\"",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            "\"Find the vowel that comes before the consonant 'n' in each word.\"",
+            0.0,
+            "output the last vowel in each input word.",
+            0.0
+        ],
+        [
+            "output the last vowel in each input word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            "output the last vowel in each input word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            "output the last vowel in each input word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            "output the last vowel in each input word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            "output the last vowel in each input word.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            "output the last vowel in each input word.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            "output the last vowel in each input word.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            "output the last vowel in each input word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            "output the last vowel in each input word.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            "output the last vowel in each input word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            "output the last vowel in each input word.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            "output the last vowel in each input word.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            "output the last vowel in each input word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            "output the last vowel in each input word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            "output the last letter of the word.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            "output the last vowel in each input word.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            "output the last vowel in each input word.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " provide the first letter that appears after the letter \"s\" in each word.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " find the first occurrence of the letter \"n\" in each word.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            "output the last vowel in each input word.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            "output the last vowel in each input word.",
+            0.0
+        ],
+        [
+            " find the letter \"o\" in each word.",
+            0.0,
+            " identify the first letter in each word that is in decreasing order.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " provide the last letter of each word.",
+            0.0
+        ],
+        [
+            " identify the first letter in each word that is in decreasing order.",
+            0.0,
+            " find the letter \"o\" in each word.",
+            0.0
+        ]
+    ],
+    "now_values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+    ]
+}

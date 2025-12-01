@@ -1,0 +1,4295 @@
+{
+    "task": "antonyms",
+    "n_prompt_tokens": 5,
+    "nu": 0.3,
+    "lamdba": 1,
+    "n_init": 50,
+    "n_domain": 500,
+    "total_iter": 165,
+    "local_training_iter": 30,
+    "random_proj": "uniform",
+    "intrinsic_dim": 100,
+    "n_eval": 1000,
+    "name": "",
+    "gpt": "gpt-3.5-turbo",
+    "init_scale": 1,
+    "pooling": "last",
+    "func": "neural",
+    "trial": 0,
+    "magnitude": 10,
+    "norm_method": "standard",
+    "candidate_method": "induction",
+    "agent_N_list": [
+        1,
+        2,
+        3,
+        4,
+        5
+    ],
+    "test_score": 1.0,
+    "valid_score": 0.8,
+    "best_prompt": [
+        " change the given word to its opposite in meaning."
+    ],
+    "prompts_set": {},
+    "best_values": [
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8
+    ],
+    "best_instruction_over_iter": [
+        [
+            0,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            0,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            0,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            0,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            0,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            1,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            1,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            1,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            1,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            1,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            2,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            2,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            2,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            2,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            2,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            3,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            3,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            3,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            3,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            3,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            4,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            4,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            4,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            4,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            4,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            5,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            5,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            5,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            5,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            5,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            6,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            6,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            6,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            6,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            6,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            7,
+            " change the prefix of the word to its opposite, creating an antonym.",
+            0.8
+        ],
+        [
+            7,
+            " change the prefix of the word to its opposite, creating an antonym.",
+            0.8
+        ],
+        [
+            7,
+            " change the prefix of the word to its opposite, creating an antonym.",
+            0.8
+        ],
+        [
+            7,
+            " change the prefix of the word to its opposite, creating an antonym.",
+            0.8
+        ],
+        [
+            7,
+            " change the prefix of the word to its opposite, creating an antonym.",
+            0.8
+        ],
+        [
+            8,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            8,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            8,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            8,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            8,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            9,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            9,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            9,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            9,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            9,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            10,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            10,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            10,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            10,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            10,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            11,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            11,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            11,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            11,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            11,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            12,
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            12,
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            12,
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            12,
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            12,
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            13,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            13,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            13,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            13,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            13,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            14,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            14,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            14,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            14,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            14,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            15,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            15,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            15,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            15,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            15,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            16,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            16,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            16,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            16,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            16,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            17,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            17,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            17,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            17,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            17,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            18,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            18,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            18,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            18,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            18,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            19,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            19,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            19,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            19,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            19,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            20,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            20,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            20,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            20,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            20,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            21,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            21,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            21,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            21,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            21,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            22,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            22,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            22,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            22,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            22,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            23,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            23,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            23,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            23,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            23,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            24,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            24,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            24,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            24,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            24,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            25,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            25,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            25,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            25,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            25,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            26,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            26,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            26,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            26,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            26,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            27,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            27,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            27,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            27,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            27,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            28,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            28,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            28,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            28,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            28,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            29,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            29,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            29,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            29,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            29,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            30,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            30,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            30,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            30,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            30,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            31,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            31,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            31,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            31,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            31,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            32,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            32,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            32,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            32,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            32,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            33,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            33,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            33,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            33,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            33,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            34,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            34,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            34,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            34,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            34,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            35,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            35,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            35,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            35,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            35,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            36,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            36,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            36,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            36,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            36,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            37,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            37,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            37,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            37,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            37,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            38,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            38,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            38,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            38,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            38,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            39,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            39,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            39,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            39,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            39,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            40,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            40,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            40,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            40,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            40,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            41,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            41,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            41,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            41,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            41,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            42,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            42,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            42,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            42,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            42,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            43,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            43,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            43,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            43,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            43,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            44,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            44,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            44,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            44,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            44,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            45,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            45,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            45,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            45,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            45,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            46,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            46,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            46,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            46,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            46,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            47,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            47,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            47,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            47,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            47,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            48,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            48,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            48,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            48,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            48,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            49,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            49,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            49,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            49,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            49,
+            " change the given word to its opposite in meaning.",
+            0.74
+        ]
+    ],
+    "init_instructions": [
+        " find the opposite word for each given word.",
+        " change the given word to its opposite or antonym.",
+        " provide the opposite word for each given word.",
+        " find the opposite or antonym of the given word.",
+        " provide an antonym for each given word.",
+        " remove the prefix \"un-\" from each word to find the new word.",
+        " provide antonyms for the given words.",
+        " provide the opposite word for each input.",
+        " change the prefix of the word to make it have the opposite meaning.",
+        " find the opposite of the given word.",
+        " provide the opposite word for each given input.",
+        " find the opposite of the given words.",
+        " change the prefix of the word to create a new word with the opposite meaning.",
+        " change the prefix of the word to its opposite in meaning.",
+        " find the antonym of the given word.",
+        " provide an antonym for the given word.",
+        " find the opposite of each given word.",
+        " provide an antonym for each word given.",
+        " find an antonym for each word given.",
+        " change the word from its opposite to its correct form.",
+        " find antonyms for the given words.",
+        " change the word to its opposite or antonym.",
+        " provide the opposite or antonym of the given word.",
+        " find the opposite of each word given.",
+        " provide the opposite or contrasting word for each input.",
+        " change the word to its antonym.",
+        " change the prefix of the word to create a new word.",
+        " change the prefix of the word to its opposite.",
+        " provide the opposite word for each input. Let me know if you need anything else.",
+        " change the prefix of the given word to create a new word with the opposite meaning.",
+        " remove the prefix from each word.",
+        " provide the opposite word for each input word given.",
+        " change the word to its opposite by adding the prefix \"in-\" or \"un-\" or changing the suffix.",
+        " change the direction or opposite meaning of the given word.",
+        " change the prefix of the word to create the opposite meaning.",
+        " add the prefix \"un-\" to the given word.",
+        " change the prefix or suffix of the word to create the opposite meaning.",
+        " change the prefix of each word to make it the opposite meaning.",
+        " change the word by adding a prefix or suffix to create the opposite meaning.",
+        " find an antonym for the given word.",
+        " provide an opposite word for each input.",
+        " change the word to its opposite by adding the prefix \"im-\", \"in-\", \"un-\", or \"dis-\".",
+        " remove the prefix \"un-\" from each word.",
+        " add the prefix \"in-\" to each word.",
+        " change the word to its opposite by adding the prefix \"im-\" or \"un-\" to indicate the opposite meaning.",
+        " change the prefix of the word to its opposite prefix.",
+        " provide the opposite of the given word.",
+        " remove the prefix or suffix from the given word to find the opposite meaning.",
+        "add the prefix \"un-\" to the given words.",
+        " add the prefix \"in-\" or \"non-\" to the given word.",
+        " change the word to its opposite or a word with a different meaning.",
+        " change the word to its opposite by adding the prefix \"in-\" or \"un-\".",
+        " find the antonym of each given word.",
+        " provide an opposite word for each input word given.",
+        " change the word by adding the prefix \"in-\" or \"dis-\" to create the opposite meaning.",
+        " change the word to its opposite by adding the prefix \"un-\".",
+        " change the word to its opposite or a word with the opposite meaning.",
+        " find the opposite word.",
+        " change the word by adding the prefix \"un-\" to make it have the opposite meaning.",
+        " provide the antonym of the given word.",
+        " change the word to its opposite by adding the prefix \"un-\" or removing it if it is already present.",
+        " change the prefix of the word to its opposite meaning.",
+        " add the prefix \"un-\" to each word, which changes the meaning to its opposite.",
+        " change the prefix of the given word to its opposite prefix.",
+        " change the word by adding the prefix \"un-\" to make the opposite meaning.",
+        " remove the prefix \"in-\" from each word.",
+        " identify the opposite word for each given word.",
+        " find the opposite or reverse of the given word.",
+        " change the word by removing the prefix.",
+        " add the prefix \"in-\" to change the meaning of the word.",
+        " find the antonym for each given word.",
+        " add the prefix \"un-\" to the beginning of the word.",
+        " provide the opposite of the given words.",
+        " remove the prefix \"un-\" or \"non-\" from the given words.",
+        " change the word by adding the prefix \"in-\" or \"un-\" to make it have the opposite meaning.",
+        " add the prefix \"un-\" to the given words.",
+        " change the word to its opposite meaning by adding the prefix \"in-\" or \"un-\" to the word.",
+        " change the words from their original form to their opposite form.",
+        " change the word to its opposite or a word with opposite meaning.",
+        " add the prefix \"un-\" to form the opposite of the given word.",
+        " provide the antonyms of the given words.",
+        " change the word to its opposite by adding the prefix \"un-\" or \"in-\" to the beginning of the word.",
+        " change the prefix of the word to its opposite, if possible.",
+        " change the word by adding the prefix \"dis-\" or \"in-\" to create the opposite meaning.",
+        " remove the prefix from the given word.",
+        " add the prefix \"un-\" to each word to create the opposite meaning.",
+        " add the prefix \"in-\" to the given words.",
+        " remove the prefix \"un-\" or \"non-\" from the word.",
+        " remove the prefix or suffix from the given word to find the root word.",
+        " change the word to its opposite by adding the prefix \"in-\" or \"dis-\" depending on the word.",
+        " change the prefix or suffix of the word to create a new word with the opposite meaning.",
+        " change the prefix or suffix to create the opposite meaning of the word given.",
+        " change the prefix of each word to its opposite, resulting in the new word.",
+        " remove the prefix \"un\" or \"non\" from the given words.",
+        " find the opposite of each word.",
+        " change the prefix of the word to create its opposite meaning.",
+        " provide the antonym for each given word.",
+        " change the prefix of the word to its opposite or complementary prefix.",
+        " change the word to its opposite form by adding the prefix \"in-\" or \"un-\" to the word.",
+        " change the word by adding the prefix \"un-\" or \"in-\" to make the opposite meaning.",
+        " change the word to its opposite by adding the prefix \"un-\" or \"non-\".",
+        " change the word to its opposite or negation.",
+        " add the prefix \"un-\" to each word.",
+        " add the prefix \"un-\" to the given words to create the opposite meaning.",
+        " add the prefix \"un-\" to the beginning of each word.",
+        " provide an antonym for each input word.",
+        " remove the prefix \"dis-\" from each word.",
+        " change the prefix \"in-\" to \"un-\" to find the opposite meaning of the word.",
+        " change the prefix or suffix of the word to its opposite.",
+        " provide the opposite or a related word to the given input.",
+        " remove the prefix \"un\" from each word.",
+        " change the word to its opposite by adding the prefix \"un-\" or \"dis-\".",
+        " change the word to its opposite meaning.",
+        " remove the prefix \"un-\" or \"dis-\" from the given words.",
+        " change the word from its original form to its opposite or a related term.",
+        " provide the opposite of each word given.",
+        " remove the prefix or suffix from the given word.",
+        " provide an opposite word for the given input.",
+        " add the prefix \"in-\" to the given word.",
+        " change the word by adding a prefix to make it have the opposite meaning.",
+        " change the prefix or suffix of the word to create an antonym.",
+        " change the word by adding the prefix \"in-\" to make it have the opposite meaning.",
+        " change the prefix of each word to create the opposite meaning.",
+        " change the word by adding the prefix \"dis-\" to make it the opposite meaning.",
+        " change the word to its opposite by adding the prefix \"in-\" or \"dis-\" or changing the suffix.",
+        " change the prefix of the word to its opposite, creating a new word with the opposite meaning.",
+        " change the word to its opposite by adding the prefix \"un-\" or removing the prefix \"non-\".",
+        "find the antonym of the given word.",
+        " find the opposite or antonym of the given words.",
+        " change the prefix of the word to its opposite form.",
+        " change the word to its opposite meaning by adding the prefix \"un-\" or changing the suffix.",
+        " change the prefix to its opposite.",
+        " provide the opposite word for each input word.",
+        " change the word by adding the prefix \"un-\" or \"de-\" to make the opposite meaning.",
+        " change the word to its opposite form.",
+        " add the prefix \"in-\" to change the meaning of the word to its opposite.",
+        " find an antonym for each given word.",
+        " change the word to its opposite by adding the prefix \"in-\" or \"dis-\" to the word.",
+        " change the prefix or suffix of the word to create a new word.",
+        " find the opposite or a word with a different meaning for each given word.",
+        " change the word by removing the prefix or suffix that makes it negative or opposite in meaning.",
+        " change the word by adding the prefix \"un-\" or \"im-\" to form the opposite meaning.",
+        " add the prefix \"un-\" or \"non-\" to the given words to create the opposite meaning.",
+        " change the word to its opposite by adding the prefix \"un\" or \"non\".",
+        " change the word to its opposite in meaning.",
+        " find the opposite word by changing the prefix.",
+        " change the prefix of the word to its opposite, resulting in a word with the opposite meaning.",
+        " change the prefix of the word to its opposite, if applicable.",
+        " change the prefix or suffix to create the opposite meaning.",
+        " change the word to its opposite by adding the prefix \"un-\" or \"in-\".",
+        " provide an opposite word for each given word.",
+        " change the prefix to its opposite form.",
+        " change the word by adding the prefix \"un-\" or \"in-\" to make it the opposite meaning.",
+        " find the opposite word for each given input.",
+        " change the prefix \"un-\" to its opposite meaning.",
+        " add the prefix \"dis-\" to the word \"lodge\" to form the word \"dislodge\".",
+        "find the opposite of the given word.",
+        " provide an antonym for each input word given.",
+        " provide the opposite of each given word.",
+        " provide the opposite or a word with a different meaning.",
+        " change the word by adding the prefix \"in-\" to make the word have the opposite meaning.",
+        " change \"non-\" to \"ex-\" or \"in-\" to make the opposite meaning of the word.",
+        " change the word to its opposite by adding the prefix \"im-\", \"un-\", \"in-\", \"dis-\", or \"un-\" to the word.",
+        " \"remove the prefix or suffix from the word.\"",
+        " \"remove the prefix or suffix to change the meaning of the word\".",
+        " add the prefix \"un-\" to the word to create the opposite meaning.",
+        " change the word by adding the prefix \"un-\" to make the word have the opposite meaning.",
+        " change the given word to its opposite or a word with a different prefix.",
+        " change the word from its negative form to its positive form.",
+        " find the opposite word for each input word given.",
+        " change the word to its opposite in meaning by adding the prefix \"un-\" or \"in-\" to the beginning of the word.",
+        " find the opposite (antonym) of the given words.",
+        " change the word to its opposite or reverse meaning.",
+        " change the word to its opposite by adding the prefix \"dis-\" or \"in-\" or by changing the word itself.",
+        " change the prefix or suffix to create the opposite meaning of the word.",
+        "\"reverse the word\"",
+        " change the prefix of the given word to create the opposite meaning.",
+        " reverse the word if it is valid, and if it is invalid, return the word itself.",
+        " add the prefix \"un-\" to the word.",
+        " change the word to its opposite by adding the prefix \"un\" or \"de\".",
+        " change the given words to their antonyms.",
+        " change the word to its opposite.",
+        " add the prefix \"in-\" to the beginning of each word.",
+        " add the prefix \"in-\" or \"un-\" to the given words.",
+        " change the words to their antonyms.",
+        " find the opposite of each input word.",
+        " change the word to its opposite by adding the prefix \"im-\", \"in-\", or \"non-\".",
+        " change the word to its opposite by adding the prefix \"in-\", \"un-\", or \"over-\".",
+        " change the word by adding the prefix \"in-\", \"non-\", \"up-\", or \"im-\" to create the opposite meaning.",
+        " change the word by adding the prefix \"in-\" or \"un-\" to make the opposite meaning.",
+        " add the prefix \"in-\" to form the opposite of the given word.",
+        " find the opposite word by removing the prefix \"un-\" or \"non-\" and finding the base word.",
+        " change the prefix to its opposite in each word.",
+        " change the word by adding the prefix \"un-\" or \"in-\" to create the opposite meaning.",
+        " change the prefix \"un-\" to its opposite in each word.",
+        " find the opposite or a word with a different meaning by adding a prefix to the given word.",
+        " provide an opposite word for each input word.",
+        " change the word by adding the prefix \"im-\", \"in-\", \"un-\", or \"non-\" to make it the opposite meaning.",
+        " change the word from its original form to its opposite or antonym.",
+        " change the word by adding the prefix \"un-\" or \"dis-\" to create the opposite meaning.",
+        " remove the prefix \"un-\" from the input word.",
+        " change the word by adding the prefix \"dis-\" to make it have the opposite meaning.",
+        " change the word by adding the prefix \"in-\" or \"im-\" to make the opposite meaning.",
+        " add a prefix to change the meaning of the word.",
+        " identify the opposite of the given word.",
+        " find the opposite or a word with a different meaning.",
+        " change the word by adding the prefix \"in-\" or \"un-\" to make it the opposite meaning.",
+        " change the word by adding the prefix \"un-\" or \"in-\" to indicate the opposite meaning.",
+        " change the word in the input to its opposite form.",
+        " change the word by adding the prefix \"non-\" to make it have the opposite meaning.",
+        " provide an antonym for each word given as input.",
+        " change the prefix to its opposite meaning.",
+        " identify the opposite or antonym of each given word.",
+        " find the opposite word for each input.",
+        " change the word to its opposite by adding the prefix \"in-\" or \"im-\".",
+        " change the word by adding a prefix or suffix to make it have the opposite meaning.",
+        " change the prefix of the word to its opposite, so the output words are the opposite of the input words.",
+        " add the prefix \"un-\" or \"in-\" to the given words to create the opposite meaning.",
+        " add the prefix \"in-\" to each word to create the opposite meaning.",
+        " change the word by adding the prefix \"in-\" or \"un-\" to create the opposite meaning.",
+        " change the prefix of each word to create a new word with the opposite meaning.",
+        " add the prefix \"in-\" or \"un-\" to the given word to create the opposite meaning.",
+        " change the word to its opposite or reverse form.",
+        " change the word from unlabeled to labeled, invisibility to visibility, afraid to unafraid, honesty to dishonesty, and sensible to insensible.",
+        " provide the opposite (antonym) of the given word.",
+        " remove the prefix \"un-\" from the given words.",
+        " change the word by adding the prefix \"in-\" or \"un-\" to indicate the opposite meaning.",
+        " change the prefix to its opposite to create a new word.",
+        " find the opposite or a word with a contrasting meaning.",
+        " change the prefix of the word to create an antonym.",
+        " change the word to its opposite form by adding the prefix \"un-\" or \"im-\".",
+        " add the prefix \"in-\" or \"im-\" to change the meaning of the word.",
+        " change the word to its opposite by adding the prefix \"un-\" or \"in-\" to indicate the opposite meaning.",
+        " \"change the word to its opposite.\"",
+        " change the prefix of the given word to its opposite.",
+        " change the word to its opposite or a related term.",
+        " change the word to its opposite meaning by adding the prefix \"un-\" or \"in-\" to the word.",
+        " find the opposite or a word with a similar meaning to the given word.",
+        " add the prefix \"non-\" to each word.",
+        " add the prefix \"in-\" or \"im-\" to the given words to create the opposite or negative meaning.",
+        " change the word to its opposite by adding the prefix \"un-\" or \"il-\" or changing the word to its antonym.",
+        " remove the prefix \"un-\" or \"in-\" to find the opposite or original word.",
+        " provide the opposite or antonym of the given words.",
+        " change the word to its opposite by adding the prefix \"im-\", \"un-\", \"in-\", or \"de-\".",
+        " change the word to its opposite by adding the prefix \"un-\" or \"dis-\" depending on the word.",
+        " change the word to its opposite by adding the prefix \"un-\" or \"de-\".",
+        " change the word to its opposite by adding the prefix \"un-\" or changing the suffix.",
+        " change the word to its opposite by adding the prefix \"un-\" or \"in-\" to the word.",
+        " change the prefix or suffix to create a new word.",
+        " remove the prefix or suffix from the word.",
+        " change the word to its opposite or a word with a contrasting meaning.",
+        " provide an opposite word for the given input word.",
+        " change the word by adding the prefix \"im-\" to make the opposite meaning word.",
+        " change the prefix of the word to make it the opposite meaning.",
+        " add the prefix \"un-\" to the given words to create the opposite or negative form of the word.",
+        " remove the prefix \"un\" from each word to find the opposite meaning.",
+        " change the word by adding the prefix \"im-\" for opposite meaning, or by adding the prefix \"un-\" for opposite meaning.",
+        " add the prefix \"in-\" to the given words to create the opposite meaning.",
+        " provide an antonym for each word.",
+        " change the word to its opposite by adding the prefix \"un-\" or \"non-\" or changing the suffix.",
+        " add the prefix \"un-\" or \"non-\" to the given word.",
+        " add the prefix \"un-\" or \"dis-\" to the given words to create their opposites.",
+        " provide the opposite or a related word to the given word.",
+        " change the words to their opposite meaning.",
+        " remove the prefix \"un-\" from each word in the input.",
+        " provide the antonym for the given word.",
+        " change the word to its opposite by adding the prefix \"un-\" or changing the word itself.",
+        " add the prefix \"in-\" or \"un-\" to change the meaning of the word.",
+        " change the word to its opposite by adding the prefix \"un-\" or removing a prefix/suffix.",
+        " change the prefix or suffix to form the opposite meaning of the word.",
+        "add the prefix \"un-\" to the given word.",
+        " change the word to its opposite meaning by adding the prefix \"un-\" or \"in-\".",
+        " change the word to its opposite meaning by adding the prefix \"un-\" or removing it if it is already present.",
+        " find the opposite or a related word for each given word.",
+        " change the word by adding the prefix \"de-\" to make it have the opposite meaning.",
+        " change the word in each input to its opposite or antonym.",
+        " add the prefix \"dis-\" to the given words.",
+        " add the prefix \"un-\" or \"im-\" to change the meaning of the word.",
+        " \"Remove the prefix or suffix to find the root word.\"",
+        " provide the opposite word for the given input word.",
+        " \"remove the prefix 'un' from the word\".",
+        "add the prefix \"in-\" to the word \"operative\" to make it mean the opposite, which is \"inoperative\".",
+        " change the word to its opposite or to a word with the opposite meaning.",
+        " change the prefix of each word to its opposite to create a new word.",
+        " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+        " remove the prefix \"in-\" or \"un-\" from the word to find its opposite meaning.",
+        " change the word to its opposite by adding the prefix \"un-\" or \"im-\".",
+        "reverse the word \"invisibility\" and the correct output should be \"visibility\".",
+        " change the word by adding the prefix \"un-\" or \"im-\" to make the opposite meaning.",
+        " change the word by adding the prefix \"im-\" or \"un-\" to indicate the opposite meaning.",
+        " change the word by adding the prefix \"in-\" to make the opposite meaning.",
+        " change the word to its opposite by adding the prefix \"im-\" or \"un-\" or changing the suffix.",
+        " change the word to its opposite by adding the prefix \"in-\" or \"un-\" or by changing the suffix.",
+        " add the prefix \"in-\" to the given words, which changes their meaning to the opposite.",
+        " change the word by adding the prefix \"un-\" or \"de-\" to create an opposite meaning.",
+        " change the prefix of the word to make the opposite meaning.",
+        " change the word to its opposite by adding the prefix \"dis-\" or \"un-\" to the word.",
+        " change the word to its opposite or a word with a different meaning by adding a prefix or suffix.",
+        " change the word to its opposite by adding the prefix \"im-\", \"un-\", \"in-\", or \"up-\".",
+        " change the word by adding the prefix \"im-\", \"max-\", \"con-\", \"un-\" or \"unc-\" to create the opposite meaning.",
+        " change the word to its opposite by adding the prefix \"un-\" or \"im-\" depending on the word.",
+        " add the prefix \"un-\" to the given word, unless the word already had a negative prefix in which case the negative prefix should be removed.",
+        " add the prefix \"un-\" to the given words, unless the word already begins with a negative prefix.",
+        " add the prefix \"un-\" to form the opposite meaning of the given word.",
+        " change the prefix or suffix to make the word have the opposite meaning.",
+        " add the prefix \"in-\" or \"im-\" to the given words to create their antonyms.",
+        " change the word to its opposite or a related word.",
+        " add the prefix \"in-\" to the word to change its meaning to the opposite.",
+        " add the prefix \"in-\" to the beginning of the word.",
+        " change the words to their opposite or antonym.",
+        " add the prefix \"un-\" to the beginning of each word, which typically changes the meaning to the opposite.",
+        " change the prefix to its opposite to make the word consistent.",
+        " change the given words from their original form to the opposite form.",
+        " find the opposite word for each input word.",
+        " change the word to its opposite meaning by adding the prefix \"in-\", \"de-\", or \"un-\".",
+        " change the word to its opposite by adding the prefix \"un-\" or \"non-\" or changing the suffix from \"-ive\" to \"-ative\".",
+        " change the word to its opposite by adding the prefix \"un-\", \"dis-\", or \"de-\" depending on the word.",
+        " change the prefix or suffix to create a word with the opposite meaning.",
+        " change the word to its opposite by adding the prefix \"in-\", \"un-\", or \"non-\".",
+        " add the prefix \"un-\" to the given words to create their opposites.",
+        " add the prefix \"dis-\" to the word \"lodge\" to create the word \"dislodge\".",
+        " change the word by adding the prefix \"in-\" or \"non-\" to make it have the opposite meaning.",
+        " change the word to its opposite by adding the prefix \"un-\" or \"in-\" depending on the word.",
+        " provide an opposite word for each given input.",
+        " change the word to its opposite by adding or removing a prefix.",
+        " remove the prefix \"un-\" or \"in-\" from the word.",
+        " remove the prefix \"in\" from each word.",
+        " add the prefix \"non-\" to the given words.",
+        " change the prefix \"un-\" to its opposite or reverse meaning, resulting in a new word.",
+        " change the word to its opposite by adding the prefix \"un-\" or \"in-\" depending on the context.",
+        " change the word to its opposite meaning by adding the prefix \"in-\" or \"un-\".",
+        " change the word to its opposite by adding the prefix \"im-\" or \"un-\".",
+        " add the prefix \"im-\" to the given word.",
+        " remove the prefix \"non-\" from each word.",
+        " change the word to its opposite by adding the prefix \"un-\" in front of it.",
+        " add the prefix \"in-\" or \"un-\" to the beginning of the word to create the opposite meaning.",
+        " add the prefix \"dis-\" to the given word.",
+        " remove the prefix \"un-\" or \"in-\" from the given words to form new words.",
+        " change the opposite of the given word.",
+        " change the word to its opposite by adding the prefix \"in-\" or \"un-\" to the word.",
+        " change the word to its opposite meaning by adding the prefix \"un-\" or \"in-\" depending on the word.",
+        " change the prefix of the word to form the opposite meaning.",
+        " add the prefix \"in-\" or \"un-\" to make the word have the opposite meaning.",
+        " change the word to its opposite or negative form.",
+        " change one letter in the word to make it have the opposite meaning.",
+        " change the word by adding the prefix \"un-\" to indicate the opposite meaning.",
+        " remove the prefix \"un-\" or \"dis-\" from the word.",
+        " change the word by adding the prefix \"non-\" to make it the opposite meaning.",
+        " change the word by adding the prefix \"in-\" or \"im-\" to indicate the opposite meaning.",
+        " change the word by adding the prefix \"un-\" or \"non-\" to form the opposite meaning.",
+        " change the word to its opposite meaning by adding the prefix \"in-\".",
+        " add the prefix \"in-\" or \"un-\" to the given word.",
+        " provide the opposite or a related term for each input word.",
+        " change the word from its original form to its opposite or a related word.",
+        " add the prefix \"in-\" or \"dis-\" to the given word to create the opposite meaning.",
+        " identify the antonyms of the given words.",
+        " change the word to its opposite meaning by adding the prefix \"un-\" or \"im-\".",
+        " change the word to its opposite form by adding the prefix \"un-\" or \"un\" to the word.",
+        " add the prefix \"un-\" to make the word have the opposite meaning.",
+        " provide the opposite word for the given input.",
+        " change the prefix of the word to its opposite, so the word becomes its antonym.",
+        " \"find the opposite of the given word.\"",
+        " add the prefix \"un-\" to change the meaning of the word.",
+        " change the prefix of each word to its opposite.",
+        " change the word by adding the prefix \"in-\", \"un-\", \"el-\", \"over-\", or \"ad-\" to create the opposite meaning.",
+        " add the prefix \"in-\" or \"un-\" to the given words to create the opposite meaning.",
+        " \"remove the prefix 'un-' from the given words.\"",
+        " add the prefix \"un-\" to each word to change its meaning.",
+        " add the prefix \"im-\" to the beginning of each word.",
+        " change the word by adding the prefix \"in-\" to indicate the opposite meaning.",
+        " add the prefix \"un-\" to the beginning of the word to create the opposite meaning.",
+        " remove the prefix from the given words.",
+        " change the word by adding the opposite prefix.",
+        " change the prefix or suffix to form a new word.",
+        " find an antonym for each of the given words.",
+        " change the word to its opposite by adding the prefix \"non-\" or removing a prefix/suffix.",
+        " provide antonyms or words that can be formed by adding prefixes or suffixes to the given words.",
+        " change the word by adding the prefix \"un-\" or \"im-\" to indicate the opposite meaning.",
+        " change the prefix of each word to its opposite, resulting in a word with the opposite meaning.",
+        " change the word into its opposite or antonym.",
+        " find the opposite word of the given input.",
+        " provide the opposite or a related term to the given word.",
+        " change the word to its opposite by adding the prefix \"un-\" when possible.",
+        " change the word to its opposite by adding the prefix \"un-\" or removing the prefix \"dis-\".",
+        " add the prefix \"un-\" or \"de-\" to change the meaning of the word.",
+        "reverse the word by removing the prefix \"un-\" if present.",
+        " change the prefix or suffix of the given word to create the opposite meaning.",
+        " change the word to its opposite by adding the prefix \"in-\".",
+        " change the prefix \"un-\" to its opposite meaning or remove it completely.",
+        " change the word to its opposite by adding the prefix \"un-\" or \"de-\" to the beginning of the word.",
+        " change the word from its original form to its opposite form.",
+        " provide an opposite word for the given word.",
+        " add the prefix \"dis-\" to make the word negative or opposite in meaning.",
+        " change the word to its opposite by adding the prefix \"in-\" or \"non-\".",
+        " change the word to its opposite meaning by adding a prefix.",
+        " provide the antonyms for the given words.",
+        "reverse the word by removing the prefix \"un-\" or \"down-\" from the word.",
+        " change the word by adding the prefix \"in-\" to make it the opposite or reverse meaning.",
+        " change the word by adding the prefix \"un-\" or \"non-\" to indicate the opposite meaning.",
+        " change the word by adding the prefix \"im-\" or \"in-\" to indicate the opposite meaning.",
+        " change the word to its opposite by adding the prefix \"un-\" or changing the word to its opposite form.",
+        " change the word by adding the prefix \"dis-\" or \"in-\" to indicate the opposite meaning.",
+        " change the word by adding the prefix \"un-\" to make it the opposite or negate its meaning.",
+        " add the prefix \"un-\" to the beginning of each word to create the opposite meaning.",
+        " find the opposite or reverse of the given words.",
+        " change the prefix \"un-\" to \"re-\" to create the opposite or reverse meaning of the word.",
+        " change the word by adding the prefix \"in-\" to make it the opposite meaning.",
+        " change the word to its opposite by adding the prefix \"il-\" or \"un-\" or changing the suffix.",
+        " change the word to its opposite by adding the prefix \"dis-\", \"un-\", or removing a prefix.",
+        " change the prefix \"non-\" to \"in-\" or remove it completely.",
+        " change the word to its opposite form by adding the prefix \"un-\" or \"in-\".",
+        " change the word by adding the prefix \"im-\" to make it the opposite meaning.",
+        " change the word to its opposite meaning by adding the prefix \"un-\" or removing a prefix.",
+        " identify the opposite or antonym of the given word.",
+        " add the prefix \"un-\" to the given words to create their antonyms.",
+        " add the prefix \"in-\" or \"non-\" to change the meaning of the word.",
+        " change the word to its opposite or a word with a different prefix.",
+        " change the word to its opposite by adding the prefix \"un-\" or removing it.",
+        " change the word to its opposite form by adding the prefix \"un-\" or \"dis-\".",
+        " add the prefix \"in-\" to make the word negative or change the meaning to the opposite.",
+        " identify the opposite word for each given input.",
+        " add the prefix \"un-\" to the given words to create the opposite or negation of the original word.",
+        " change the prefix \"un-\" or \"dis-\" to the opposite prefix, resulting in the new word.",
+        " change the word to its opposite form by adding the prefix \"in-\" or \"un-\".",
+        " find the antonyms of the given words.",
+        " add the prefix \"in-\" or \"dis-\" to the given words.",
+        " remove the prefix \"dis-\" or \"in-\" from the word to find the output.",
+        " change the given word to its opposite or a word with the opposite meaning.",
+        " identify the antonym for each given word.",
+        " change the prefix of each word to its opposite prefix.",
+        " change the word to its opposite or a word with a different meaning by adding a prefix.",
+        " provide the opposite or a related word for each input word.",
+        " find the opposite or a word with a different meaning from the given word.",
+        "reverse the words by removing the prefix \"in\" or \"un\" and adding it to the opposite word.",
+        " add the prefix \"in-\" to make the word negative.",
+        " change the word to its opposite by adding the prefix \"un\" or \"im\".",
+        " remove the prefix \"un-\" or \"extra-\" from the word to form the output.",
+        " add the prefix \"un-\" to the word \"afraid\" to make it the opposite, and add the prefix \"im-\" to the words \"morality,\" \"confidence,\" and \"potency\" to make them the opposite. Also, add the prefix \"in-\" to the word \"visibly\" to make it the opposite.",
+        " change the prefix to its opposite to form the new word.",
+        " add the prefix \"in-\" to each word to change its meaning to the opposite.",
+        " add the prefix \"im-\" to each word.",
+        " provide antonyms for the given words. Let me know if you need any more help with antonyms or synonyms.",
+        " provide the opposite or contrasting term for each input.",
+        " \"remove the prefix from the word.\"",
+        " change the word to its opposite by adding the prefix \"un-\" or removing it if it was already present.",
+        " add the prefix \"un-\" to the given words, which changes their meaning to the opposite.",
+        " change the words from a minimally positive or neutral connotation to a maximally negative connotation.",
+        " remove the prefix \"un\" from the given words.",
+        "\"remove the prefix 'un-' or 'non-' from the word to find the root word.\"",
+        " change the word to its opposite form by adding the prefix \"un-\" or \"in-\" to indicate the opposite meaning.",
+        " change the prefix of each word to create a new word.",
+        " change the word to its opposite meaning by adding the prefix \"un-\".",
+        " add the prefix \"im-\" to the word \"potency\", \"in-\" to the word \"credibly\", \"ad-\" to the word \"subtractive\", \"syn-\" to the word \"analysis\", and \"re-\" to the word \"dislodge\".",
+        " change the word to its opposite by adding the prefix \"dis-\", \"un-\", or \"in-\" depending on the context.",
+        " change the word by adding the prefix \"non-\" or \"un-\" to make it have the opposite meaning.",
+        " change the word to its antonym by adding the prefix \"un-\" or \"non-\".",
+        " remove the prefix \"un-\" or \"dis-\" from the word to find the opposite meaning.",
+        " change the word by adding the prefix \"in-\" to make the opposite meaning word.",
+        " change the given word to its opposite in meaning.",
+        " change the prefix to its opposite to find the correct word.",
+        "provide an antonym for each given word.",
+        " change the words to their opposite meaning by adding the prefix \"in-\" or \"im-\" to the beginning of the word.",
+        " change the word to its opposite by adding the prefix \"un-\" or \"non-\" to the beginning of the word.",
+        " add the prefix \"dis-\" to the word \"repute\" to change its meaning.",
+        " add the prefix \"un-\" or \"im-\" to the given word.",
+        " change the word to its opposite or a word with a similar meaning.",
+        " change the prefix or suffix of the word to make it have the opposite meaning.",
+        " add the prefix \"in-\" to the given word to create the new word.",
+        " add the prefix \"un-\" or \"non-\" to the given word to create the opposite meaning.",
+        " change the word to its opposite or negate the meaning.",
+        " add the prefix \"in-\" or \"un-\" to the given words to create their opposites.",
+        " add the prefix \"un-\" to the given words to create the opposite or reverse meaning.",
+        " remove the prefix \"un-\" or \"in-\" from the words.",
+        " add the prefix \"in-\" to make the word have the opposite meaning.",
+        " add the prefix \"un-\" or \"in-\" to change the meaning of the word.",
+        " change the given words to their opposite or antonym.",
+        " change the prefix \"un-\" or \"non-\" to its opposite meaning.",
+        " add the prefix \"im-\" to make the word have the opposite meaning.",
+        " remove the prefix \"un-\" or \"ir-\" from the word.",
+        " add the prefix \"un-\" or \"in-\" to the given word.",
+        " change the prefix or suffix to create a new word with the opposite meaning.",
+        " change the word by adding the prefix \"im-\" to make it have the opposite meaning.",
+        " change the given word to its opposite meaning by adding a prefix or suffix.",
+        " add the prefix \"in-\" to the word \"operative\" to make it negative.",
+        " change the prefix or suffix of the word to its opposite to create a new word.",
+        " remove the prefix \"un\" or \"dis\" from the given words.",
+        " provide the opposite or a word that is the opposite in meaning.",
+        " remove the prefix \"un-\" or \"de-\" from each word, resulting in the opposite meaning.",
+        " reverse the word if it was in decreasing order.",
+        " provide the opposite or reverse of the given word.",
+        " change the prefix \"un-\" to \"com-\" to make the word have the opposite meaning.",
+        " change the prefix of the word to its opposite, so the opposite of \"un-\" is \"form-\" for unformed, \"tight-\" for looseness, \"act-\" for inactivity, \"visib-\" for invisibility, and \"un-\" for usual.",
+        " change the prefix of the word to its opposite, creating an antonym.",
+        " change the word by adding the prefix \"un-\" or \"dis-\" to indicate the opposite meaning.",
+        " remove the prefix \"in-\" from the given words.",
+        " change the direction of the word by changing the prefix \"down\" to \"up\".",
+        " find the opposite word for each given input word.",
+        " \"remove the prefix from the given word.\"",
+        " change the word to its opposite by adding the prefix \"dis-\" or \"in-\" depending on the word.",
+        " change the word to its opposite form by adding a prefix or suffix."
+    ],
+    "instruction_select_history": [
+        [
+            " change the prefix of the word to its opposite, so the opposite of \"un-\" is \"form-\" for unformed, \"tight-\" for looseness, \"act-\" for inactivity, \"visib-\" for invisibility, and \"un-\" for usual.",
+            0.74
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"non-\" or removing a prefix/suffix.",
+            0.42
+        ],
+        [
+            " change the word by adding the prefix \"in-\" or \"un-\" to indicate the opposite meaning.",
+            0.48
+        ],
+        [
+            " change the prefix of the word to its opposite meaning.",
+            0.64
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"un-\" when possible.",
+            0.48
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"un\" or \"im\".",
+            0.52
+        ],
+        [
+            " provide the opposite or a related term to the given word.",
+            0.72
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"un-\" or \"in-\" to indicate the opposite meaning.",
+            0.64
+        ],
+        [
+            " change the word by adding the prefix \"in-\", \"non-\", \"up-\", or \"im-\" to create the opposite meaning.",
+            0.58
+        ],
+        [
+            " reverse the word if it is valid, and if it is invalid, return the word itself.",
+            0.02
+        ],
+        [
+            " provide an opposite word for the given input.",
+            0.74
+        ],
+        [
+            " change the word to its opposite meaning by adding the prefix \"un-\".",
+            0.28
+        ],
+        [
+            " change the word to its opposite form by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"in-\" or \"un-\" or changing the suffix.",
+            0.78
+        ],
+        [
+            " add the prefix \"in-\" to make the word negative or change the meaning to the opposite.",
+            0.18
+        ],
+        [
+            " provide the opposite of each word given.",
+            0.68
+        ],
+        [
+            " add the prefix \"un-\" or \"in-\" to change the meaning of the word.",
+            0.26
+        ],
+        [
+            " provide an opposite word for the given input.",
+            0.74
+        ],
+        [
+            " add the prefix \"un-\" or \"in-\" to the given words to create the opposite meaning.",
+            0.5
+        ],
+        [
+            " change the prefix of the word to its opposite in meaning.",
+            0.72
+        ],
+        [
+            " provide an opposite word for the given input.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite form.",
+            0.62
+        ],
+        [
+            " find antonyms for the given words.",
+            0.28
+        ],
+        [
+            " find the opposite or antonym of the given words.",
+            0.86
+        ],
+        [
+            " \"remove the prefix from the given word.\"",
+            0.28
+        ],
+        [
+            " change the prefix or suffix of the word to create a new word.",
+            0.36
+        ],
+        [
+            " change the prefix to its opposite to form the new word.",
+            0.82
+        ],
+        [
+            " find the opposite word of the given input.",
+            0.8
+        ],
+        [
+            " change the prefix \"un-\" or \"non-\" to its opposite meaning.",
+            0.62
+        ],
+        [
+            " remove the prefix \"un-\" or \"non-\" from the given words.",
+            0.34
+        ],
+        [
+            " change the given words from their original form to the opposite form.",
+            0.78
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"non-\" or removing a prefix/suffix.",
+            0.42
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"un-\" or \"de-\".",
+            0.66
+        ],
+        [
+            " provide an opposite word for each input.",
+            0.7
+        ],
+        [
+            " change the word by adding the prefix \"im-\" or \"un-\" to indicate the opposite meaning.",
+            0.6
+        ],
+        [
+            " find the opposite of each input word.",
+            0.84
+        ],
+        [
+            " add the prefix \"dis-\" to the word \"lodge\" to form the word \"dislodge\".",
+            0.06
+        ],
+        [
+            " change the word to its opposite meaning by adding the prefix \"un-\" or \"in-\".",
+            0.58
+        ],
+        [
+            " remove the prefix or suffix from the given word to find the root word.",
+            0.26
+        ],
+        [
+            " change the word by adding the prefix \"un-\" or \"im-\" to indicate the opposite meaning.",
+            0.62
+        ],
+        [
+            " change the word from its negative form to its positive form.",
+            0.7
+        ],
+        [
+            " add a prefix to change the meaning of the word.",
+            0.52
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"dis-\" or \"in-\" or by changing the word itself.",
+            0.8
+        ],
+        [
+            " change the word to its opposite form by adding the prefix \"un-\" or \"un\" to the word.",
+            0.4
+        ],
+        [
+            " add the prefix \"in-\" to change the meaning of the word.",
+            0.12
+        ],
+        [
+            " add the prefix \"un-\" to the given words to create the opposite or negation of the original word.",
+            0.4
+        ],
+        [
+            " remove the prefix \"un\" from each word.",
+            0.38
+        ],
+        [
+            " change the word to its opposite or a word with a contrasting meaning.",
+            0.72
+        ],
+        [
+            " remove the prefix \"un-\" from each word.",
+            0.18
+        ],
+        [
+            " add the prefix \"un-\" or \"in-\" to change the meaning of the word.",
+            0.26
+        ],
+        [
+            " add the prefix \"in-\" to change the meaning of the word.",
+            0.12
+        ],
+        [
+            " remove the prefix from each word.",
+            0.22
+        ],
+        [
+            " find the opposite or a word with a different meaning for each given word.",
+            0.54
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"un-\" or \"non-\" or changing the suffix.",
+            0.76
+        ],
+        [
+            " add the prefix \"in-\" to the given words.",
+            0.04
+        ],
+        [
+            " find the opposite of each word given.",
+            0.76
+        ],
+        [
+            " change the word by adding the prefix \"im-\" or \"un-\" to indicate the opposite meaning.",
+            0.6
+        ],
+        [
+            " add the prefix \"in-\" to each word to change its meaning to the opposite.",
+            0.38
+        ],
+        [
+            " change the word by adding the prefix \"un-\" or \"in-\" to make it the opposite meaning.",
+            0.58
+        ],
+        [
+            " change the given word to its opposite or a word with a different prefix.",
+            0.78
+        ],
+        [
+            " change the word by adding the prefix \"in-\", \"un-\", \"el-\", \"over-\", or \"ad-\" to create the opposite meaning.",
+            0.72
+        ],
+        [
+            " provide the opposite or a related term to the given word.",
+            0.72
+        ],
+        [
+            " provide the opposite word for each given input.",
+            0.66
+        ],
+        [
+            " \"remove the prefix from the given word.\"",
+            0.28
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"im-\", \"un-\", \"in-\", or \"up-\".",
+            0.7
+        ],
+        [
+            " provide the opposite word for each given word.",
+            0.7
+        ],
+        [
+            " add the prefix \"in-\" or \"un-\" to the given word.",
+            0.24
+        ],
+        [
+            " find the opposite word for each given input.",
+            0.84
+        ],
+        [
+            " change the prefix of the word to its opposite, creating an antonym.",
+            0.8
+        ],
+        [
+            " change the word by adding the prefix \"im-\" to make it the opposite meaning.",
+            0.36
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"in-\", \"un-\", or \"non-\".",
+            0.68
+        ],
+        [
+            " change the prefix of the given word to create a new word with the opposite meaning.",
+            0.86
+        ],
+        [
+            " provide the opposite or contrasting term for each input.",
+            0.58
+        ],
+        [
+            " provide the antonym of the given word.",
+            0.84
+        ],
+        [
+            " change the prefix or suffix of the word to make it have the opposite meaning.",
+            0.74
+        ],
+        [
+            " change the prefix or suffix of the word to make it have the opposite meaning.",
+            0.74
+        ],
+        [
+            " change the word by adding the prefix \"in-\" or \"im-\" to make the opposite meaning.",
+            0.72
+        ],
+        [
+            " change the given word to its opposite or a word with a different prefix.",
+            0.78
+        ],
+        [
+            " provide an opposite word for the given input word.",
+            0.74
+        ],
+        [
+            " find an antonym for each of the given words.",
+            0.64
+        ],
+        [
+            " add the prefix \"in-\" to each word to create the opposite meaning.",
+            0.48
+        ],
+        [
+            " change the word by adding the prefix \"un-\" or \"non-\" to indicate the opposite meaning.",
+            0.42
+        ],
+        [
+            " provide the opposite or a related word to the given input.",
+            0.66
+        ],
+        [
+            " add the prefix \"un-\" to the beginning of each word to create the opposite meaning.",
+            0.42
+        ],
+        [
+            " change the prefix to its opposite to create a new word.",
+            0.7
+        ],
+        [
+            " change the word to its opposite or negative form.",
+            0.78
+        ],
+        [
+            " find the opposite of each word given.",
+            0.76
+        ],
+        [
+            " change the word by adding the prefix \"im-\", \"in-\", \"un-\", or \"non-\" to make it the opposite meaning.",
+            0.78
+        ],
+        [
+            " add the prefix \"in-\" to the given word.",
+            0.12
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"in-\".",
+            0.36
+        ],
+        [
+            " add the prefix \"un-\" to the given words to create their opposites.",
+            0.52
+        ],
+        [
+            " identify the antonym for each given word.",
+            0.74
+        ],
+        [
+            " change the word to its opposite or a related word.",
+            0.7
+        ],
+        [
+            " find the opposite or antonym of the given word.",
+            0.72
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"in-\" or \"non-\".",
+            0.36
+        ],
+        [
+            " change the prefix of the word to its opposite, creating a new word with the opposite meaning.",
+            0.68
+        ],
+        [
+            " change the word by adding the prefix \"im-\" to make it have the opposite meaning.",
+            0.28
+        ],
+        [
+            " change the word to its opposite form by adding the prefix \"un-\" or \"un\" to the word.",
+            0.4
+        ],
+        [
+            " change the prefix \"un-\" to its opposite meaning or remove it completely.",
+            0.64
+        ],
+        [
+            " find the opposite or reverse of the given word.",
+            0.72
+        ],
+        [
+            " find an antonym for each word given.",
+            0.58
+        ],
+        [
+            " add the prefix \"un-\" to the beginning of each word, which typically changes the meaning to the opposite.",
+            0.26
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"im-\", \"in-\", \"un-\", or \"dis-\".",
+            0.72
+        ],
+        [
+            " add the prefix \"in-\" or \"un-\" to the given words.",
+            0.26
+        ],
+        [
+            " change the prefix of the word to make it the opposite meaning.",
+            0.78
+        ],
+        [
+            " find the opposite or antonym of the given word.",
+            0.72
+        ],
+        [
+            " identify the antonyms of the given words.",
+            0.52
+        ],
+        [
+            " change the word in each input to its opposite or antonym.",
+            0.72
+        ],
+        [
+            " change the word by adding the prefix \"in-\", \"un-\", \"el-\", \"over-\", or \"ad-\" to create the opposite meaning.",
+            0.72
+        ],
+        [
+            " change the word by adding the prefix \"un-\" to make it the opposite or negate its meaning.",
+            0.46
+        ],
+        [
+            " change the word by adding the prefix \"in-\" to make the opposite meaning word.",
+            0.5
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"un-\" or removing a prefix/suffix.",
+            0.68
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"un-\" or \"non-\".",
+            0.58
+        ],
+        [
+            " change the word to its opposite meaning by adding the prefix \"in-\" or \"un-\" to the word.",
+            0.72
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"in-\", \"un-\", or \"non-\".",
+            0.68
+        ],
+        [
+            " find the opposite word for each input.",
+            0.74
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"un-\" or \"dis-\" depending on the word.",
+            0.64
+        ],
+        [
+            " change the opposite of the given word.",
+            0.66
+        ],
+        [
+            " reverse the word if it was in decreasing order.",
+            0.0
+        ],
+        [
+            " provide an antonym for each word.",
+            0.72
+        ],
+        [
+            " change the prefix of each word to its opposite to create a new word.",
+            0.54
+        ],
+        [
+            " change the word by adding a prefix or suffix to make it have the opposite meaning.",
+            0.68
+        ],
+        [
+            " change the word to its antonym.",
+            0.8
+        ],
+        [
+            " find the opposite of each given word.",
+            0.66
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"un-\".",
+            0.42
+        ],
+        [
+            " change the prefix of each word to its opposite.",
+            0.72
+        ],
+        [
+            " add the prefix \"un-\" to the word.",
+            0.04
+        ],
+        [
+            " change the prefix of the given word to its opposite prefix.",
+            0.68
+        ],
+        [
+            " change the word by adding the prefix \"in-\" to make the opposite meaning word.",
+            0.5
+        ],
+        [
+            " change the word by adding the prefix \"un-\" or \"de-\" to create an opposite meaning.",
+            0.58
+        ],
+        [
+            " add the prefix \"in-\" or \"un-\" to the given word.",
+            0.24
+        ],
+        [
+            " change the word by adding the prefix \"in-\" to indicate the opposite meaning.",
+            0.52
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"un-\" or \"in-\" to indicate the opposite meaning.",
+            0.64
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"un-\" or removing the prefix \"dis-\".",
+            0.58
+        ],
+        [
+            " find the opposite word by removing the prefix \"un-\" or \"non-\" and finding the base word.",
+            0.82
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"im-\", \"in-\", \"un-\", or \"dis-\".",
+            0.72
+        ],
+        [
+            " change the word by adding the prefix \"un-\" or \"dis-\" to indicate the opposite meaning.",
+            0.56
+        ],
+        [
+            " change the word in each input to its opposite or antonym.",
+            0.72
+        ],
+        [
+            " add the prefix \"in-\" to each word to change its meaning to the opposite.",
+            0.38
+        ],
+        [
+            " provide an antonym for each word.",
+            0.72
+        ],
+        [
+            " change the prefix of the word to its opposite or complementary prefix.",
+            0.82
+        ],
+        [
+            " change the prefix of the word to create its opposite meaning.",
+            0.66
+        ],
+        [
+            " change the word by adding the prefix \"un-\" to indicate the opposite meaning.",
+            0.52
+        ],
+        [
+            " remove the prefix \"un-\" or \"dis-\" from the given words.",
+            0.28
+        ],
+        [
+            " remove the prefix \"dis-\" from each word.",
+            0.12
+        ],
+        [
+            " change the prefix to its opposite to create a new word.",
+            0.7
+        ],
+        [
+            " change the prefix of the word to its opposite prefix.",
+            0.7
+        ],
+        [
+            " change the word by adding the prefix \"non-\" to make it the opposite meaning.",
+            0.12
+        ],
+        [
+            " add the prefix \"in-\" or \"dis-\" to the given words.",
+            0.14
+        ],
+        [
+            " find the opposite or reverse of the given words.",
+            0.62
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"un\" or \"non\".",
+            0.62
+        ],
+        [
+            " change the prefix or suffix to create a new word.",
+            0.5
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"in-\" or \"dis-\" depending on the word.",
+            0.66
+        ],
+        [
+            " change the word by adding the prefix \"in-\" or \"dis-\" to create the opposite meaning.",
+            0.62
+        ],
+        [
+            " add the prefix \"un-\" to the beginning of the word to create the opposite meaning.",
+            0.38
+        ],
+        [
+            " change one letter in the word to make it have the opposite meaning.",
+            0.62
+        ],
+        [
+            " change the words to their opposite or antonym.",
+            0.6
+        ],
+        [
+            " change the prefix of the given word to its opposite.",
+            0.62
+        ],
+        [
+            " change the word to its opposite or reverse form.",
+            0.72
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " find the opposite (antonym) of the given words.",
+            0.74
+        ],
+        [
+            " add the prefix \"un-\" or \"im-\" to the given word.",
+            0.24
+        ],
+        [
+            " change the word by adding the prefix \"un-\" or \"de-\" to make the opposite meaning.",
+            0.54
+        ],
+        [
+            " change the prefix of each word to create a new word.",
+            0.5
+        ],
+        [
+            " find the opposite (antonym) of the given words.",
+            0.74
+        ],
+        [
+            " change the word to its opposite meaning by adding the prefix \"un-\" or \"in-\" to the word.",
+            0.62
+        ],
+        [
+            " remove the prefix \"in-\" from each word.",
+            0.26
+        ],
+        [
+            " change the prefix of the word to form the opposite meaning.",
+            0.72
+        ],
+        [
+            " change the word by adding the prefix \"dis-\" or \"in-\" to create the opposite meaning.",
+            0.5
+        ],
+        [
+            " remove the prefix \"un-\" from the given words.",
+            0.2
+        ],
+        [
+            " change the prefix to its opposite to make the word consistent.",
+            0.7
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"un-\" or \"im-\" depending on the word.",
+            0.74
+        ],
+        [
+            " add the prefix \"im-\" to the word \"potency\", \"in-\" to the word \"credibly\", \"ad-\" to the word \"subtractive\", \"syn-\" to the word \"analysis\", and \"re-\" to the word \"dislodge\".",
+            0.0
+        ],
+        [
+            " change the prefix of the word to create the opposite meaning.",
+            0.7
+        ],
+        [
+            " remove the prefix \"un-\" or \"dis-\" from the word to find the opposite meaning.",
+            0.74
+        ],
+        [
+            " add the prefix \"im-\" to make the word have the opposite meaning.",
+            0.18
+        ],
+        [
+            " change the word by adding the prefix \"in-\" to make it have the opposite meaning.",
+            0.46
+        ],
+        [
+            " provide the antonyms of the given words.",
+            0.5
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " provide the opposite of the given words.",
+            0.66
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"in-\" or \"dis-\" to the word.",
+            0.62
+        ],
+        [
+            " change the word by adding the prefix \"im-\" to make it the opposite meaning.",
+            0.36
+        ],
+        [
+            " change the prefix to its opposite meaning.",
+            0.82
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"un-\" or \"in-\" depending on the word.",
+            0.6
+        ],
+        [
+            " add the prefix \"in-\" to the beginning of each word.",
+            0.08
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"dis-\", \"un-\", or \"in-\" depending on the context.",
+            0.64
+        ],
+        [
+            " \"find the opposite of the given word.\"",
+            0.72
+        ],
+        [
+            " add the prefix \"un-\" or \"im-\" to change the meaning of the word.",
+            0.36
+        ],
+        [
+            " change the word to its opposite or reverse meaning.",
+            0.64
+        ],
+        [
+            " change the word to its opposite form by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the prefix of the word to create its opposite meaning.",
+            0.66
+        ],
+        [
+            " change the word by adding the prefix \"un-\" or \"de-\" to create an opposite meaning.",
+            0.58
+        ],
+        [
+            " change the word to its opposite form by adding the prefix \"un-\" or \"in-\".",
+            0.62
+        ],
+        [
+            " change the word from its opposite to its correct form.",
+            0.76
+        ],
+        [
+            " provide an opposite word for each given word.",
+            0.6
+        ],
+        [
+            " provide an antonym for each input word.",
+            0.8
+        ],
+        [
+            " provide the antonym for the given word.",
+            0.66
+        ],
+        [
+            " change the prefix to its opposite in each word.",
+            0.74
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"un-\" or \"in-\".",
+            0.62
+        ],
+        [
+            " provide an opposite word for the given word.",
+            0.72
+        ],
+        [
+            " change the prefix of each word to make it the opposite meaning.",
+            0.76
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"im-\", \"in-\", or \"non-\".",
+            0.54
+        ],
+        [
+            " add the prefix \"in-\" or \"dis-\" to the given word to create the opposite meaning.",
+            0.36
+        ],
+        [
+            " change the word by adding the prefix \"un-\" or \"im-\" to make the opposite meaning.",
+            0.58
+        ],
+        [
+            " change the word by adding the prefix \"in-\", \"non-\", \"up-\", or \"im-\" to create the opposite meaning.",
+            0.58
+        ],
+        [
+            " change the words to their opposite meaning by adding the prefix \"in-\" or \"im-\" to the beginning of the word.",
+            0.56
+        ],
+        [
+            " identify the opposite word for each given word.",
+            0.74
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"im-\", \"in-\", \"un-\", or \"dis-\".",
+            0.72
+        ],
+        [
+            " \"change the word to its opposite.\"",
+            0.76
+        ],
+        [
+            " provide the opposite or antonym of the given word.",
+            0.7
+        ],
+        [
+            " provide the opposite or a related word to the given word.",
+            0.54
+        ],
+        [
+            " change the word by adding the prefix \"non-\" to make it have the opposite meaning.",
+            0.1
+        ],
+        [
+            " add the prefix \"un-\" to the given words, unless the word already begins with a negative prefix.",
+            0.28
+        ],
+        [
+            " change the word to its opposite meaning by adding the prefix \"un-\" or \"in-\".",
+            0.58
+        ],
+        [
+            " change the prefix of the word to its opposite, if possible.",
+            0.72
+        ],
+        [
+            " change the word by adding the prefix \"dis-\" or \"in-\" to indicate the opposite meaning.",
+            0.42
+        ],
+        [
+            " find the opposite or a word with a different meaning.",
+            0.68
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"un-\" or removing it if it was already present.",
+            0.58
+        ],
+        [
+            " remove the prefix \"in\" from each word.",
+            0.24
+        ],
+        [
+            "\"reverse the word\"",
+            0.0
+        ],
+        [
+            " change the opposite of the given word.",
+            0.66
+        ],
+        [
+            " add the prefix \"un-\" or \"dis-\" to the given words to create their opposites.",
+            0.42
+        ],
+        [
+            " remove the prefix \"un\" from each word to find the opposite meaning.",
+            0.58
+        ],
+        [
+            " \"Remove the prefix or suffix to find the root word.\"",
+            0.2
+        ],
+        [
+            " add the prefix \"in-\" or \"un-\" to make the word have the opposite meaning.",
+            0.44
+        ],
+        [
+            " add the prefix \"un-\" to make the word have the opposite meaning.",
+            0.38
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"un-\" or removing it if it is already present.",
+            0.6
+        ],
+        [
+            " add the prefix \"in-\" to form the opposite of the given word.",
+            0.42
+        ],
+        [
+            " reverse the word if it is valid, and if it is invalid, return the word itself.",
+            0.02
+        ],
+        [
+            " remove the prefix \"un-\" from each word in the input.",
+            0.2
+        ],
+        [
+            " change the word to its opposite meaning by adding the prefix \"un-\" or removing it if it is already present.",
+            0.64
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"in-\" or \"un-\" or by changing the suffix.",
+            0.8
+        ],
+        [
+            " identify the opposite or antonym of each given word.",
+            0.66
+        ],
+        [
+            " provide the antonym of the given word.",
+            0.84
+        ],
+        [
+            " change the word by adding the prefix \"dis-\" or \"in-\" to create the opposite meaning.",
+            0.5
+        ],
+        [
+            " identify the opposite of the given word.",
+            0.72
+        ],
+        [
+            " find the opposite or antonym of the given word.",
+            0.72
+        ],
+        [
+            " change the word to its opposite by adding the prefix \"im-\" or \"un-\".",
+            0.62
+        ],
+        [
+            " change the word to its opposite or a related term.",
+            0.62
+        ],
+        [
+            " change the prefix or suffix to make the word have the opposite meaning.",
+            0.78
+        ],
+        [
+            " provide an antonym for each word.",
+            0.72
+        ],
+        [
+            " change the prefix or suffix to form the opposite meaning of the word.",
+            0.62
+        ],
+        [
+            " change the word by adding the prefix \"in-\" or \"un-\" to create the opposite meaning.",
+            0.52
+        ],
+        [
+            " change the prefix \"un-\" to its opposite meaning.",
+            0.66
+        ],
+        [
+            " add the prefix \"dis-\" to the word \"lodge\" to form the word \"dislodge\".",
+            0.06
+        ],
+        [
+            " change the word by adding the prefix \"in-\" or \"im-\" to make the opposite meaning.",
+            0.72
+        ],
+        [
+            " change the word from its original form to its opposite or a related word.",
+            0.74
+        ],
+        [
+            " change the prefix \"in-\" to \"un-\" to find the opposite meaning of the word.",
+            0.5
+        ],
+        [
+            " add the prefix \"un-\" or \"in-\" to the given word.",
+            0.22
+        ],
+        [
+            " provide the opposite or antonym of the given words.",
+            0.56
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the word by adding the prefix \"un-\" or \"non-\" to indicate the opposite meaning.",
+            0.42
+        ],
+        [
+            " change the prefix to its opposite form.",
+            0.76
+        ],
+        [
+            " change the word to its opposite form by adding the prefix \"un-\" or \"in-\" to indicate the opposite meaning.",
+            0.7
+        ],
+        [
+            " change the word by adding the prefix \"in-\" or \"un-\" to make it have the opposite meaning.",
+            0.54
+        ],
+        [
+            " add the prefix \"in-\" to each word.",
+            0.12
+        ],
+        [
+            " identify the opposite or antonym of each given word.",
+            0.66
+        ],
+        [
+            " identify the opposite or antonym of each given word.",
+            0.66
+        ],
+        [
+            "reverse the word \"invisibility\" and the correct output should be \"visibility\".",
+            0.0
+        ],
+        [
+            " provide the opposite or contrasting term for each input.",
+            0.58
+        ],
+        [
+            " provide the opposite or contrasting term for each input.",
+            0.58
+        ],
+        [
+            "reverse the word \"invisibility\" and the correct output should be \"visibility\".",
+            0.0
+        ],
+        [
+            " reverse the word if it was in decreasing order.",
+            0.0
+        ],
+        [
+            " identify the antonyms of the given words.",
+            0.52
+        ],
+        [
+            " add the prefix \"dis-\" to the word \"lodge\" to create the word \"dislodge\".",
+            0.04
+        ],
+        [
+            " reverse the word if it was in decreasing order.",
+            0.0
+        ],
+        [
+            " remove the prefix or suffix from the given word to find the root word.",
+            0.26
+        ],
+        [
+            " add the prefix \"dis-\" to the word \"lodge\" to create the word \"dislodge\".",
+            0.04
+        ],
+        [
+            " remove the prefix or suffix from the given word to find the root word.",
+            0.26
+        ],
+        [
+            " change the words from a minimally positive or neutral connotation to a maximally negative connotation.",
+            0.04
+        ],
+        [
+            " provide the opposite or a related word to the given word.",
+            0.54
+        ],
+        [
+            " provide the antonym of the given word.",
+            0.84
+        ],
+        [
+            " provide an antonym for the given word.",
+            0.72
+        ],
+        [
+            " \"remove the prefix or suffix to change the meaning of the word\".",
+            0.4
+        ],
+        [
+            " provide an antonym for the given word.",
+            0.72
+        ],
+        [
+            " change the prefix of each word to create a new word.",
+            0.5
+        ],
+        [
+            " find the opposite word for each given input word.",
+            0.7
+        ],
+        [
+            " change the word in each input to its opposite or antonym.",
+            0.72
+        ],
+        [
+            " provide an antonym for the given word.",
+            0.72
+        ],
+        [
+            "add the prefix \"in-\" to the word \"operative\" to make it mean the opposite, which is \"inoperative\".",
+            0.04
+        ],
+        [
+            " find the opposite word of the given input.",
+            0.8
+        ],
+        [
+            " remove the prefix \"un\" or \"non\" from the given words.",
+            0.3
+        ],
+        [
+            " change the word by adding the prefix \"im-\" to make it have the opposite meaning.",
+            0.28
+        ],
+        [
+            " add the prefix \"dis-\" to the word \"repute\" to change its meaning.",
+            0.0
+        ],
+        [
+            " find the opposite word for each given input word.",
+            0.7
+        ],
+        [
+            " change the word by adding the prefix \"im-\" to make it the opposite meaning.",
+            0.36
+        ],
+        [
+            " find the opposite or a word with a different meaning by adding a prefix to the given word.",
+            0.72
+        ],
+        [
+            " \"remove the prefix 'un' from the word\".",
+            0.26
+        ],
+        [
+            " remove the prefix \"un\" from the given words.",
+            0.32
+        ],
+        [
+            " \"remove the prefix 'un' from the word\".",
+            0.26
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the word from its opposite to its correct form.",
+            0.76
+        ],
+        [
+            " change the direction or opposite meaning of the given word.",
+            0.7
+        ],
+        [
+            " change the word from its opposite to its correct form.",
+            0.76
+        ],
+        [
+            " change the direction or opposite meaning of the given word.",
+            0.7
+        ],
+        [
+            " change the word into its opposite or antonym.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, creating an antonym.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change one letter in the word to make it have the opposite meaning.",
+            0.62
+        ],
+        [
+            " change the word from its original form to its opposite form.",
+            0.7
+        ],
+        [
+            " provide the opposite or a word that is the opposite in meaning.",
+            0.68
+        ],
+        [
+            " provide the opposite or a word that is the opposite in meaning.",
+            0.68
+        ],
+        [
+            " provide the opposite of the given words.",
+            0.66
+        ],
+        [
+            " change the given words from their original form to the opposite form.",
+            0.78
+        ],
+        [
+            " find the opposite or a word with a contrasting meaning.",
+            0.76
+        ],
+        [
+            " provide the opposite word for the given input.",
+            0.62
+        ],
+        [
+            " find the opposite of the given word.",
+            0.8
+        ],
+        [
+            "find the opposite of the given word.",
+            0.8
+        ],
+        [
+            "find the opposite of the given word.",
+            0.8
+        ],
+        [
+            " provide the opposite or a related term for each input word.",
+            0.8
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the prefix of each word to its opposite, resulting in a word with the opposite meaning.",
+            0.84
+        ],
+        [
+            " change the prefix of each word to its opposite, resulting in a word with the opposite meaning.",
+            0.84
+        ],
+        [
+            " change the prefix of each word to its opposite, resulting in a word with the opposite meaning.",
+            0.84
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the prefix or suffix of the word to create an antonym.",
+            0.78
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the given word to its opposite or a word with the opposite meaning.",
+            0.74
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " find the opposite word.",
+            0.74
+        ],
+        [
+            " find the opposite word by changing the prefix.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to create its opposite meaning.",
+            0.66
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite or antonym.",
+            0.72
+        ],
+        [
+            " provide an opposite word for the given word.",
+            0.72
+        ],
+        [
+            " remove the prefix or suffix from the given word to find the opposite meaning.",
+            0.74
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, creating an antonym.",
+            0.8
+        ],
+        [
+            " provide an opposite word for the given input.",
+            0.74
+        ],
+        [
+            "find the opposite of the given word.",
+            0.8
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " find the opposite of the given word.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the word to its opposite form.",
+            0.84
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, creating an antonym.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            "find the opposite of the given word.",
+            0.8
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, creating an antonym.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            "find the opposite of the given word.",
+            0.8
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, creating an antonym.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            "find the opposite of the given word.",
+            0.8
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, creating an antonym.",
+            0.8
+        ],
+        [
+            "find the opposite of the given word.",
+            0.8
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            "find the opposite of the given word.",
+            0.8
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, creating an antonym.",
+            0.8
+        ],
+        [
+            "find the opposite of the given word.",
+            0.8
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            "find the opposite of the given word.",
+            0.8
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite in meaning.",
+            0.74
+        ],
+        [
+            " change the prefix of the word to its opposite, resulting in a new word with the opposite meaning.",
+            0.8
+        ],
+        [
+            " change the prefix of the word to its opposite, so the word becomes its antonym.",
+            0.76
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ],
+        [
+            " change the given word to its opposite meaning by adding a prefix or suffix.",
+            0.68
+        ]
+    ],
+    "now_values": [
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.68,
+        0.68,
+        0.68,
+        0.68,
+        0.68,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74,
+        0.74
+    ]
+}

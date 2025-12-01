@@ -1,0 +1,2210 @@
+{
+    "task": "larger_animal",
+    "n_prompt_tokens": 5,
+    "nu": 100,
+    "lamdba": 0.1,
+    "n_init": 40,
+    "n_domain": 500,
+    "total_iter": 165,
+    "local_training_iter": 30,
+    "random_proj": "uniform",
+    "intrinsic_dim": 100,
+    "n_eval": 1000,
+    "name": "",
+    "gpt": "gpt-3.5-turbo",
+    "init_scale": 1,
+    "pooling": "last",
+    "func": "neural",
+    "trial": 0,
+    "magnitude": 10,
+    "norm_method": "standard",
+    "candidate_method": "induction",
+    "agent_N": 10,
+    "test_score": 1.0,
+    "valid_score": 1.0,
+    "best_prompt": [
+        " choose the animal that is larger in size or typically considered stronger or more dominant."
+    ],
+    "prompts_set": {
+        "\"Choose the animal that is a domestic pet.\"": 0.35,
+        " determine which of the two animals is larger or more dominant.": 0.85,
+        "identify the larger animal from the given pair.": 1.0,
+        "choose the first animal in each input pair.": 0.5,
+        " \"Choose the second animal.\"": 0.45,
+        " \"Choose the animal that you would prefer to see at a zoo.\"": 0.8,
+        " choose the animal that comes later in the alphabet.": 0.6,
+        " choose the larger or more dominant animal between the two options.": 0.95,
+        "determine which of the two animals mentioned is a mammal.": 0.5,
+        "determine which animal comes first alphabetically.": 0.35,
+        " choose the animal that is not a domesticated pet, so the correct output would be:\n\nOutput: sea lion": 0.7,
+        " choose the animal that is not a predator.": 0.25,
+        " choose the animal that is not a pet, so the correct output for each input would be the first animal listed.": 0.85,
+        "choose the animal with the larger size, so in each case, the output is the second animal listed.": 0.65,
+        " identify the type of animal that is a breed or species, so in each case, the output correctly identifies the breed or species of the animal mentioned in the input.": 0.0,
+        " choose the animal that is more closely related to a reptile. In this case, the crocodile is a reptile, while the chamois is a mammal. Therefore, the output would be \"crocodile\" for the first and fourth inputs. For the second and fifth inputs, the cockapoo and killer whale are both mammals, but the cockapoo is more closely related to a reptile (through its dog ancestry) than the killer whale. Therefore, the output would be \"cockapoo\" for the second and fifth inputs. For the third input, the puppy is a mammal, so the output would be \"puppy.\"": 0.4,
+        "choose the animal that is not a domesticated pet, so the correct output in each case is the second animal mentioned.": 0.6,
+        " choose the second animal in each pair that is larger in size.": 1.0,
+        " choose the animal that is a domesticated pet, so the correct output would be the first animal listed in each pair.": 0.1,
+        "choose the larger or more dominant animal between the two options.": 0.9,
+        " choose the animal that is faster between the two given animals.": 0.7,
+        " choose the animal that is not a type of dog, so the correct outputs are chamois, elk, mule, sea lion, and bat.": 0.6,
+        " choose the animal that is not a dog breed, so the output for each input is the first animal mentioned.": 0.6,
+        " choose the animal that is a type of fish.": 0.1,
+        " choose the animal that is not a pet, so the output would be raccoon for the first input, turtle for the third input, and sea lion for the fourth input.": 0.65,
+        " choose the animal that is larger in size or more dominant in the pair.": 0.95,
+        " choose the animal that is not a dog.": 0.4,
+        "choose the animal with the larger size, so in each case the larger animal was selected as the output.": 0.95,
+        "choose the animal that is a domesticated pet, so the correct output for each pair is:\n\nOutput: cockapoo\nOutput: manatee\nOutput: puppy\nOutput: chihuahua": 0.45,
+        "choose the animal that is larger in size, so the correct output for each pair of animals is as follows:\n\nInput: octopus, pug\nOutput: octopus\n\nInput: alpaca, racoon\nOutput: alpaca\n\nInput: wolf, chihuahua\nOutput: wolf\n\nInput: gorilla, goldfish\nOutput: gorilla\n\nInput: beagle, hippopotamus\nOutput: hippopotamus": 0.95,
+        "determine which animal is larger.": 1.0,
+        " choose the animal that is a predator, so for each pair, the predator was selected as the output.": 0.65,
+        "choose the animal that is larger in size, so the correct output for each pair of animals is as follows:\n\nInput: liger, bald eagle\nOutput: liger\n\nInput: beagle, hippopotamus\nOutput: hippopotamus\n\nInput: largemouth bass, snail\nOutput: largemouth bass\n\nInput: chihuahua, jaguar\nOutput: jaguar\n\nInput: hummingbird, turtle\nOutput: turtle": 0.95,
+        "identify the type of animal from the given pair, so the output should be the first animal in each pair.": 0.6,
+        " choose the larger animal out of the two given options.": 0.95,
+        " choose the second word.": 0.5,
+        "choose the larger animal.": 0.9,
+        " choose the larger or more dominant animal in each pair, so the output is the second animal in each pair.": 0.65,
+        " choose the animal that is larger or more commonly known as a pet.": 0.6,
+        " choose the animal that is a mammal.": 0.65,
+        " choose the first word in each pair.": 0.15,
+        " choose the animal that is more commonly associated with being aggressive or dangerous.": 0.85,
+        " choose the second word in each input pair.": 0.25,
+        " choose the animal with more letters in its name.": 0.6,
+        "choose the first animal in the input list.": 0.45,
+        "choose the animal that is not a bird.": 0.7,
+        "choose the animal that is not a type of insect.": 0.9,
+        "choose the animal that is larger in size, so the correct output for each pair is:\n\nOutput: cougar\nOutput: wildebeest\nOutput: largemouth bass\nOutput: chamois\nOutput: tuna": 1.0,
+        "choose the animal that comes later in the alphabet.": 0.55,
+        " choose the larger or more powerful animal in each pair, so the correct outputs are: bull shark, golden retriever, pit bull, tiger, manatee.": 0.85,
+        " choose the larger or more significant animal in each pair, so the output would be the second animal in each pair.": 0.35,
+        "choose the animal that is not a pet, so in each case, the non-pet animal was selected.": 0.7,
+        " choose the animal that is larger or more powerful in each pair.": 1.0,
+        " \"Choose the animal that is larger in size.\"": 0.95,
+        "choose the animal that is larger or more intimidating in each pair.": 0.9,
+        "choose the animal that is larger in size or more commonly known as a pet.": 0.8,
+        "determine which of the two animals is larger or higher in the food chain.": 0.6,
+        " choose the animal that is a type of shark.": 0.5,
+        " choose the larger or more dominant animal in each pair, so the correct outputs are:\n\nOutput: wildebeest\n\nOutput: elk\n\nOutput: raccoon\n\nOutput: tiger\n\nOutput: pit bull": 1.0,
+        "choose the animal that comes first in alphabetical order.": 0.6,
+        " choose the animal with the larger size.": 0.95,
+        " choose the animal that is not a domesticated pet, so the output would be the first animal listed in each pair.": 0.8,
+        " choose the second animal in each pair, so the correct outputs are:\n\nOutput: whale shark\nOutput: rat terrier\nOutput: hippopotamus\nOutput: wombat\nOutput: snail": 0.7,
+        " choose the animal that is not a domesticated pet, so the output in each case is the second animal listed.": 0.6,
+        "\"Choose the word that comes first in alphabetical order.\"": 0.45,
+        " choose the second animal from the input.": 0.4,
+        " choose the animal that is larger or stronger.": 1.0,
+        " choose the animal that is a reptile or bird, so in each pair, the correct output is the first animal listed.": 0.4,
+        " choose the larger or more dominant animal out of the two given options.": 0.95,
+        " choose the second word if it is longer than the first word, otherwise choose the first word.": 0.6,
+        " choose the second input.": 0.55,
+        " choose the animal that is larger or more significant in size.": 0.95,
+        "choose the animal that is more commonly kept as a pet.": 0.3,
+        " choose the first animal in each pair.": 0.55,
+        " choose the second animal in each pair.": 0.6,
+        "choose the animal that is not a domesticated pet, so the correct output is the first animal in each pair.": 0.6,
+        " choose the animal that is larger in size or higher on the food chain.": 0.85,
+        " choose the animal that comes last in alphabetical order.": 0.45,
+        " \"Choose the larger animal.\"": 0.95,
+        " choose the second animal in each pair, so the correct outputs are:\n\nOutput: pit bull\nOutput: chipmunk\nOutput: pug\nOutput: rat\nOutput: pelican": 0.45,
+        "choose the animal that is larger in size or more powerful.": 0.95,
+        "determine which animal is larger in size.": 1.0,
+        "choose the animal that is larger or more dangerous in each pair.": 1.0,
+        " choose the animal that is larger or more intimidating in each pair.": 1.0,
+        " choose the first animal listed as the output.": 0.5,
+        " choose the larger of the two animals mentioned.": 0.85,
+        " choose the animal that is not an insect or a type of bird.": 0.9,
+        " choose the second animal from each pair.": 0.55,
+        "choose the animal that is more closely related to the first animal listed.": 0.55,
+        " choose the animal that is not a domesticated pet, so the correct output in each case is the first animal listed.": 0.65,
+        " choose the animal that is larger in size or higher in the food chain.": 0.9,
+        "choose the animal that is not an insect or rodent.": 0.85,
+        " choose the larger or more powerful animal out of the two given options.": 1.0,
+        " choose the larger animal in each pair, so the output in each case is the first animal listed.": 0.95,
+        "choose the animal that is a predator or higher in the food chain.": 0.6,
+        "choose the animal that is larger or more powerful in each pair.": 0.9,
+        " choose the animal that is a predator in each pair.": 0.8,
+        " choose the animal that is larger or more imposing in each pair.": 0.95,
+        "choose the larger of the two animals.": 1.0,
+        " choose the predator in each pair, so the output in each case is the predator: largemouth bass, raccoon, crocodile, cougar, killer whale.": 0.4,
+        " choose the animal that is a mammal, so in each case the mammal was chosen over the non-mammal.": 0.55,
+        " choose the larger animal in each pair.": 1.0,
+        " choose the larger or more powerful animal between the two options given.": 1.0,
+        " choose the larger or more powerful animal from the pair.": 0.85,
+        " choose the larger or stronger animal.": 0.95,
+        " choose the animal with the larger size or more dominant presence.": 1.0,
+        "\"Choose the larger animal or breed.\"": 1.0,
+        " choose the animal that is not an insect or a fish.": 0.8,
+        " choose the animal that is larger in size or typically considered more powerful.": 0.95,
+        "choose the animal that is larger or more powerful.": 0.95,
+        " choose the larger animal from each pair.": 0.9,
+        "choose the larger animal from each pair.": 0.95,
+        " choose the larger or more powerful animal.": 1.0,
+        " choose the larger of the two animals in each pair.": 0.9,
+        " \"Choose the larger animal or organism.\"": 0.95,
+        "\"Choose the animal that is larger in size.\"": 1.0,
+        " choose the larger of the two animals.": 0.95,
+        " choose the animal that is larger or more powerful.": 0.85,
+        " choose the animal that is more likely to win in a fight.": 0.95,
+        " choose the animal that is larger or higher in the food chain.": 0.95,
+        " choose the animal that is larger in size or typically considered stronger or more dominant.": 1.0,
+        "choose the animal with the larger size or more dominant presence.": 1.0,
+        " choose the larger or more dangerous animal.": 0.85,
+        "choose the animal that is larger or more dangerous.": 0.9,
+        " choose the animal that is larger or bigger in size.": 0.9,
+        " choose the larger animal or organism from the given pair.": 0.95,
+        " choose the animal that is stronger or more powerful.": 0.9,
+        "choose the animal that is bigger in size or higher in the food chain.": 0.95,
+        "choose the animal that is larger in size or more dominant.": 0.95,
+        " choose the animal that is larger or more dominant.": 1.0
+    },
+    "best_values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "best_instruction_over_iter": [
+        [
+            0,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            0,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            0,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            0,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            0,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            0,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            0,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            0,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            0,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            0,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            1,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            1,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            1,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            1,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            1,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            1,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            1,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            1,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            1,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            1,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            2,
+            "\"Choose the larger animal or breed.\"",
+            1.0
+        ],
+        [
+            2,
+            "\"Choose the larger animal or breed.\"",
+            1.0
+        ],
+        [
+            2,
+            "\"Choose the larger animal or breed.\"",
+            1.0
+        ],
+        [
+            2,
+            "\"Choose the larger animal or breed.\"",
+            1.0
+        ],
+        [
+            2,
+            "\"Choose the larger animal or breed.\"",
+            1.0
+        ],
+        [
+            2,
+            "\"Choose the larger animal or breed.\"",
+            1.0
+        ],
+        [
+            2,
+            "\"Choose the larger animal or breed.\"",
+            1.0
+        ],
+        [
+            2,
+            "\"Choose the larger animal or breed.\"",
+            1.0
+        ],
+        [
+            2,
+            "\"Choose the larger animal or breed.\"",
+            1.0
+        ],
+        [
+            2,
+            "\"Choose the larger animal or breed.\"",
+            1.0
+        ],
+        [
+            3,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            3,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            3,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            3,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            3,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            3,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            3,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            3,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            3,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            3,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            4,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            4,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            4,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            4,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            4,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            4,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            4,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            4,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            4,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            4,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            5,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            5,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            5,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            5,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            5,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            5,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            5,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            5,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            5,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            5,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            6,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            6,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            6,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            6,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            6,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            6,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            6,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            6,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            6,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            6,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            7,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            7,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            7,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            7,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            7,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            7,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            7,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            7,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            7,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            7,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            8,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            8,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            8,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            8,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            8,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            8,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            8,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            8,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            8,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            8,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            9,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            9,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            9,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            9,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            9,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            9,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            9,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            9,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            9,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            9,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ]
+    ],
+    "init_instructions": [
+        " choose the second animal in each pair.",
+        "choose the second animal in each pair.",
+        " choose the first animal in each pair.",
+        " choose the animal that is larger in size.",
+        "choose the animal that is larger or stronger in each pair.",
+        " choose the animal that comes first alphabetically.",
+        "choose the animal that is larger in size.",
+        " choose the animal that is larger in size or higher in the food chain.",
+        " choose the first animal listed.",
+        "choose the animal that is not an insect or rodent.",
+        " choose the larger or more dominant animal in each pair.",
+        "choose the first animal in each pair.",
+        " choose the animal that is larger or stronger in each pair.",
+        " choose the larger or more dominant animal from the pair.",
+        " choose the larger animal in each pair.",
+        " choose the larger or more dominant animal.",
+        " choose the larger animal out of the two given options.",
+        "choose the animal that is larger or more powerful.",
+        " choose the animal that comes later in the alphabet.",
+        "choose the animal that is larger in size or higher in the food chain.",
+        " choose the animal that is not a dog breed.",
+        "choose the animal that is larger in size, so the correct output in each case is the first animal mentioned.",
+        " choose the animal that is larger or more dominant in each pair.",
+        " choose the first animal listed in each input.",
+        " choose the larger of the two animals.",
+        "choose the animal that is not a fish.",
+        "choose the larger animal in each pair.",
+        " choose the animal that is larger in size or more dominant in nature.",
+        " choose the animal that comes second in the input.",
+        " choose the animal that is larger in size or more commonly known.",
+        " choose the larger animal in each pair, so the output in each case is the second animal listed.",
+        " choose the animal that is larger or more dangerous in each pair.",
+        "choose the animal that is larger in size or higher on the food chain.",
+        " choose the animal that is a type of dog.",
+        " choose the second animal from the input pair.",
+        "choose the larger animal.",
+        " choose the larger animal.",
+        " choose the animal that is larger or stronger.",
+        "choose the animal that is larger in size or more dominant in nature.",
+        "choose the second word in each pair.",
+        "choose the animal that is not a dog breed.",
+        " choose the animal that is a mammal.",
+        " choose the animal that is not a domesticated pet, so the correct output in each case is the first animal mentioned.",
+        "choose the animal that is larger or more dominant in each pair.",
+        "choose the animal that is larger in size or more commonly known.",
+        "choose the animal that is not an insect.",
+        " choose the animal that is not a dog.",
+        " identify the larger animal in each pair, so the output for each input is the second animal listed.",
+        " choose the animal that is not a rodent, so the output for each pair is the second animal listed.",
+        " choose the animal from each pair.",
+        "choose the animal that is not a domesticated pet, so the correct output is the first animal in each pair.",
+        " choose the animal that is larger in size or higher on the food chain.",
+        " choose the second word in each pair.",
+        "choose the animal that comes first alphabetically.",
+        " \"Choose the animal that you would prefer to interact with.\"",
+        " choose the word that comes first in alphabetical order.",
+        "choose the larger animal out of the two given options.",
+        " choose the larger or more powerful animal out of the two given options.",
+        " choose the animal that comes first in alphabetical order.",
+        "choose the animal that is a type of dog.",
+        "choose the animal with more letters in its name.",
+        "choose the larger or more dominant animal in each pair.",
+        " choose the animal that is larger or more powerful in each pair.",
+        " choose the animal that is not a bird.",
+        " choose the first animal listed in each input pair.",
+        " choose the first animal in the input list.",
+        " choose the animal that is larger or more commonly known.",
+        " choose the animal that is not a fish.",
+        " determine the larger animal or organism in each pair.",
+        "choose the animal that is not a bird.",
+        " choose the larger or more powerful animal in each pair.",
+        "choose the animal that is not a type of bird.",
+        " choose the larger of the two animals given.",
+        " choose the animal that is a reptile or amphibian if one of the animals is a reptile or amphibian. If neither animal is a reptile or amphibian, choose the second animal.",
+        " choose the animal that is larger or more powerful.",
+        "choose the animal that is not a pet, so the output for each input is the first animal listed.",
+        " choose the animal that is not a type of dog.",
+        " choose the animal that is a type of dog, so the correct output would be \"sheltie\" in all cases.",
+        "choose the first animal mentioned in each pair.",
+        " choose the animal that is not a predator.",
+        " choose the first animal mentioned in each pair.",
+        "choose the animal that is more likely to win in a fight.",
+        " choose the animal that is not a human.",
+        "choose the animal that is a mammal.",
+        " choose the larger or more dominant animal out of the two given options.",
+        " choose the animal that is not an insect.",
+        " choose the animal that is not a toy poodle, goldfish, koi, koala, or pug.",
+        "choose the animal with the longer lifespan.",
+        "identify the larger animal in each pair.",
+        " choose the larger animal from the pair.",
+        " choose the second animal listed.",
+        " choose the first animal in the list.",
+        " \"Choose the animal that is larger in size.\"",
+        " choose the animal that is a domestic pet.",
+        "choose the animal that is not a dog.",
+        " choose the animal with the longer name.",
+        "choose the larger animal, so in each case, the larger animal was selected as the output.",
+        " choose the first word in each pair.",
+        " choose the larger or more powerful animal from the given pair.",
+        "choose the animal that is not a domestic pet.",
+        "choose the animal that is a mammal, so the output would be the first animal in each pair.",
+        " \"Choose the larger animal.\"",
+        " choose the animal that comes last in alphabetical order.",
+        " choose the animal that is a domesticated pet or commonly seen as a pet.",
+        " choose the animal that is not a dog breed, so the output for each input is the second animal listed.",
+        " choose the animal that is a domesticated pet or commonly kept as a pet.",
+        " choose the animal that is not a domesticated pet, so the correct outputs are: killer whale, camel, cattle, moose, cheetah.",
+        " \"Choose the animal that you would prefer to have as a pet.\"",
+        " choose the larger or more powerful animal between the two options given.",
+        " choose the larger animal in each pair, so the output in each case is the first animal listed.",
+        " choose the animal that is not a fish or a mollusk, so the correct output for each input is as follows:\n\nInput: koi, cheetah\nOutput: cheetah\n\nInput: koala, tiger\nOutput: tiger\n\nInput: largemouth bass, snail\nOutput: largemouth bass\n\nInput: elephant, toy poodle\nOutput: elephant\n\nInput: bulldog, cat\nOutput: bulldog",
+        "choose the animal that comes first in alphabetical order.",
+        " choose the animal with more letters in its name.",
+        " determine which animal is larger or more dominant in each pair.",
+        "choose the animal with the longer average lifespan.",
+        " \"Choose the marine animal.\"",
+        " choose the animal that is more likely to be found in a zoo or wildlife park.",
+        " choose the second animal in each pair, so the output is the second animal in each pair.",
+        "choose the larger or more dominant animal between the two options.",
+        " choose the larger animal from each pair.",
+        " choose the animal that is more likely to win in a fight.",
+        "choose the first animal in the list.",
+        " choose the animal that is not a domesticated pet, so the correct outputs are: \n\nOutput: sea lion\nOutput: chamois\nOutput: sea lion\nOutput: elephant\nOutput: wombat",
+        "choose the animal that is a predator or more aggressive in each pair.",
+        " choose the animal that is a dog breed.",
+        " determine which animal is not a domesticated pet, and the output correctly identifies the non-domesticated animal in each pair.",
+        "choose the animal that is not a type of fish.",
+        "choose the animal that is not a type of dog.",
+        " choose the animal that is larger or more significant in size.",
+        " choose the animal with the larger size or strength in each pair.",
+        " choose the animal that is larger or heavier.",
+        " choose the larger animal or breed in each pair.",
+        " choose the larger animal from the given pair.",
+        " choose the animal with the larger size.",
+        "choose the animal that comes later in the alphabet.",
+        "determine which animal is larger or higher in the food chain.",
+        " choose the larger animal out of the two given animals.",
+        "choose the animal with the longer name.",
+        "choose the larger or more powerful animal in each pair.",
+        " choose the animal that is smaller in size or weight.",
+        " choose the animal that is larger in size or more dominant in the given pair.",
+        " choose the larger or stronger animal between the two given options.",
+        " choose the animal that is not a domesticated pet, so the output for each input is the animal that is not typically kept as a pet.",
+        " \"Choose the animal that you think is larger in size.\"",
+        "choose the animal that is not a pet, so in each case, the non-pet animal was selected.",
+        " choose the animal that you would prefer to have as a pet.",
+        "choose the animal that lives in water.",
+        " \"Choose the larger or more dominant animal.\"",
+        " choose the animal that is a breed or species of dog.",
+        " choose the animal that is not a mammal.",
+        " choose the animal from each pair of words.",
+        "choose the animal that is larger in size or more powerful.",
+        " choose the second animal in each pair, so the correct outputs are:\n\nOutput: pit bull\nOutput: chipmunk\nOutput: pug\nOutput: rat\nOutput: pelican",
+        "\"Choose the first animal mentioned.\"",
+        " choose the animal that is not a domesticated pet, so the output should be the first animal listed in each input.",
+        "choose the animal that is a predator or higher in the food chain.",
+        " choose the larger or stronger animal between the two options.",
+        " choose the animal that is not a domesticated pet, so for each pair, the output is the second animal listed.",
+        "choose the animal that is larger or more powerful in each pair.",
+        " choose the first animal mentioned.",
+        " choose the larger or more powerful animal from the pair.",
+        "output the second word if it is alphabetically greater than the first word, otherwise output the first word.",
+        " choose the second animal from the input.",
+        "choose the second animal mentioned in each pair.",
+        " choose the second animal in each pair, so the correct outputs are:\n\nOutput: wildebeest\nOutput: elk\nOutput: alpaca\nOutput: tiger\nOutput: whale shark",
+        " identify the animal that is larger or higher in the food chain in each pair.",
+        "choose the animal that is larger or more well-known in each pair.",
+        " choose the first animal mentioned in each input.",
+        "identify the larger animal from the given pair.",
+        " choose the animal with the larger size or more intimidating presence.",
+        " \"choose the animal that is a mammal.\"",
+        " choose the animal that is not a type of fish.",
+        " choose the animal that is not a type of dog, so the output should be the first animal listed in each pair.",
+        "choose the animal that is larger in size or more dominant in the given pair.",
+        " choose the second option in each pair.",
+        " choose the larger or more powerful animal, so in each case, the larger or more powerful animal was chosen as the output.",
+        "choose the animal that is not a rodent.",
+        "choose the larger animal between the two given animals.",
+        "choose the animal with the larger size or more dominant presence.",
+        "choose the animal that is not a domesticated pet.",
+        " choose the animal that is larger or more dangerous.",
+        "choose the animal that is not a dog or cat.",
+        "choose the animal that is not a domesticated pet, so the correct output is the second animal listed in each pair.",
+        "choose the first animal in the input list.",
+        " choose the animal that is typically larger or more dominant in each pair.",
+        " choose the animal that is typically larger in size.",
+        "choose the animal that is a domesticated pet or commonly kept as a pet.",
+        " choose the animal that is larger or stronger between the two given animals.",
+        "choose the first animal listed in each input pair.",
+        " choose the animal that is larger in size or more powerful.",
+        " choose the larger animal between the two given options.",
+        " choose the larger or more powerful animal between the two given options.",
+        " choose the second word in each input pair.",
+        " choose the larger or more significant animal from the pair.",
+        " choose the animal that is a mammal, so the output for each input is as follows:\n\nInput: human, chinchilla\nOutput: human\n\nInput: bulldog, parrot\nOutput: bulldog\n\nInput: bull shark, chinook\nOutput: bull shark\n\nInput: cockapoo, donkey\nOutput: donkey\n\nInput: killer whale, cockapoo\nOutput: killer whale",
+        " choose the animal that is not a fish, and in each case, the correct output was selected.",
+        "choose the animal that is larger in size or more commonly known as a pet.",
+        "choose the animal that is not a domesticated pet, so the correct output in each case is the second animal mentioned.",
+        "choose the animal that is not a pet.",
+        " choose the larger or more dangerous animal in each pair.",
+        " choose the animal that comes second in alphabetical order.",
+        "choose the animal that is not a domesticated pet, so the output should be the second animal in each input.",
+        "choose the animal that is a type of dog, so the correct output is: \n\nOutput: collie",
+        "choose the animal that is larger or more dangerous in each pair.",
+        "determine which animal is larger in size.",
+        " choose the animal that is not an insect, so the correct output in each case is the second animal listed.",
+        " choose the animal that is a predator in each pair.",
+        "choose the animal that is not a dog as the output.",
+        " choose the animal that is not a bird or a fish.",
+        " choose the animal that is a mammal, so the correct outputs are: cockapoo, greyhound, moose, raccoon, and tiger.",
+        "determine which of the two animals is a mammal.",
+        " choose the second word in each pair that is not an animal.",
+        "choose the first word in each pair.",
+        "choose the animal that is larger in size or weight.",
+        " choose the animal that is not a dog breed, so the output for each input is the first animal mentioned.",
+        " choose the animal that is larger in size or weight.",
+        "identify the second animal in the input and output it.",
+        "choose the larger animal from each pair.",
+        " \"choose the animal that is larger in size.\"",
+        " choose the larger or more imposing animal between the two options.",
+        " choose the animal that is larger or more prominent in comparison.",
+        " choose the animal that is a fish.",
+        " identify the type of animal that is a breed or species, so in each case, the output correctly identifies the breed or species of the animal mentioned in the input.",
+        "choose the first animal in each input pair.",
+        "choose the animal that you prefer or like more out of the two options given.",
+        "\"Choose the animal that is a domestic pet.\"",
+        "choose the animal that is larger or more commonly associated with strength or size.",
+        " choose the larger or more dangerous animal.",
+        " choose the larger or stronger animal in each pair.",
+        " choose the animal that is not a reptile.",
+        " choose the animal that is larger or bigger in size.",
+        " choose the animal that is more familiar or commonly seen by humans.",
+        " choose the animal that you would prefer as a pet.",
+        " choose the animal that is not a rodent.",
+        " choose the second animal in the list.",
+        "choose the animal that is a mammal, so the output for each input is the mammal in the pair.",
+        " choose the animal that is typically larger in size between the two options.",
+        " \"Choose the animal that you think is more interesting or unique.\"",
+        "choose the animal that is larger in size, so the correct output for each pair is:\n\nOutput: crocodile\nOutput: wildebeest\nOutput: human\nOutput: collie\nOutput: sea lion",
+        "choose the animal that is a breed of dog.",
+        " choose the larger or more powerful animal in each pair, so the correct outputs are: bull shark, golden retriever, pit bull, tiger, manatee.",
+        "identify the type of animal that is being described.",
+        " choose the larger animal or object from the given pair.",
+        " choose the animal that is not a type of bird.",
+        "choose the animal that is a dog breed.",
+        "choose the animal that is larger in size or more commonly associated with strength and power.",
+        " choose the larger animal, so in each case, the larger animal was selected as the output.",
+        "choose the second animal listed.",
+        " choose the animal that is more commonly associated with being aggressive or dangerous.",
+        " choose the animal that is not a domestic pet.",
+        " choose the first animal listed as the output.",
+        " choose the animal that is larger or more intimidating in each pair.",
+        " choose the animal that is typically larger or more dominant in the given pair.",
+        "choose the animal that is larger in size, so the correct output for each pair is:\n\nOutput: gorilla\nOutput: collie\nOutput: chihuahua\nOutput: killer whale\nOutput: wildebeest",
+        " choose the larger animal between the two options.",
+        " choose the animal that is larger or more imposing in each pair.",
+        " choose the larger or more dominant animal between the two given options.",
+        " choose the animal that is larger or more significant in size, so in each case, the larger animal was chosen as the output.",
+        " choose the animal that is not a type of spider.",
+        " choose the second animal.",
+        " choose the larger animal between the two given animals.",
+        " \"Choose the animal that is a breed or species of dog.\"",
+        "choose the animal that is a predator or larger in size.",
+        " choose the larger or stronger animal.",
+        " choose the animal with the larger size or weight.",
+        "determine which of the two animals is larger or more dominant.",
+        " choose the animal that is more commonly associated with being a predator or more aggressive.",
+        " choose the larger animal from the given pair, so the correct output in each case is the second animal listed.",
+        "choose the animal that comes later in the alphabetically ordered list.",
+        " choose the animal that is not a domesticated pet, so in each pair, the first animal was chosen as the output.",
+        " choose the animal that is not a domesticated pet.",
+        " choose the animal that is faster.",
+        "identify the type of animal from the given pair, so the output should be the first animal in each pair.",
+        " determine which animal is not a dog breed.",
+        " choose the animal that is larger or more powerful, so in each case the larger or more powerful animal was selected as the output.",
+        "choose the animal that is larger in size, so the correct output for each pair is:\n\nOutput: cougar\nOutput: wildebeest\nOutput: largemouth bass\nOutput: chamois\nOutput: tuna",
+        " choose the first animal listed in each pair.",
+        "\"Choose the larger animal.\"",
+        " choose the animal that is not a domestic pet, so the output for each input is the second animal listed.",
+        " choose the first animal in the input.",
+        "identify the larger animal from each pair.",
+        " choose the animal that is not an insect, and in each case, the first animal listed is the correct choice.",
+        " choose the first animal from the input list.",
+        " choose the larger or more dominant animal between the two options.",
+        "choose the animal with the larger size or weight.",
+        " choose the animal that is a dog breed, so the correct outputs are:\n\nOutput: collie\nOutput: bulldog\nOutput: sheltie",
+        " choose the word that comes first alphabetically.",
+        "choose the animal that is a type of mammal.",
+        " choose the animal that is not a domesticated pet, so the output in each case is the first animal listed.",
+        "choose the animal that is larger in size, so the correct output for each pair of animals is as follows:\n\nInput: liger, bald eagle\nOutput: liger\n\nInput: beagle, hippopotamus\nOutput: hippopotamus\n\nInput: largemouth bass, snail\nOutput: largemouth bass\n\nInput: chihuahua, jaguar\nOutput: jaguar\n\nInput: hummingbird, turtle\nOutput: turtle",
+        " choose the second input.",
+        " choose the animal that is a breed of dog.",
+        "choose the second item in each pair.",
+        " determine which of the two animals is larger or more dominant.",
+        " \"Choose the animal that you would prefer as a pet.\"",
+        " choose the second animal in each pair, so the correct outputs are:\n\nOutput: pug\nOutput: alpaca\nOutput: rat terrier\nOutput: chipmunk\nOutput: human",
+        " choose the animal that lives in water.",
+        " choose the animal that is a mammal, if both animals are mammals, choose the larger animal.",
+        " choose the animal that is not a domesticated pet or farm animal.",
+        " choose the animal that is a breed or species, so in each pair, the first animal listed is the correct output.",
+        " choose the animal that is not an insect or a type of bird.",
+        " choose the larger of the two animals mentioned.",
+        "\"Choose the animal that is a mammal.\"",
+        "choose the animal that is a type of shark or dog breed.",
+        "choose the larger or more powerful animal out of the two given options.",
+        "choose the first animal listed.",
+        " identify the animal that is not a dog in each pair.",
+        " choose the animal with the larger size or more dominant presence.",
+        " choose the animal that is larger or heavier in each pair.",
+        " choose the animal that is not a domesticated pet, so the output in each case is the second animal listed.",
+        " choose the animal that is not an insect or a rodent, so the output should be the first animal in each pair.",
+        "\"Choose the word that comes first in alphabetical order.\"",
+        " choose the larger or more dominant animal in each pair, so the correct outputs are:\n\nOutput: wildebeest\n\nOutput: elk\n\nOutput: raccoon\n\nOutput: tiger\n\nOutput: pit bull",
+        "choose the animal that comes first in the alphabet.",
+        "\"Choose the first animal.\"",
+        "determine which of the two animals is larger or higher in the food chain.",
+        " choose the larger or more powerful animal.",
+        " choose the animal that is more likely to be considered a predator or higher in the food chain.",
+        "identify the larger or more powerful animal in each pair.",
+        " choose the second word in each pair that is an animal.",
+        "choose the animal that is not a pet, so the correct output for each input is as follows:\n\nInput: ferret, puppy\nOutput: puppy\n\nInput: elephant, toy poodle\nOutput: elephant\n\nInput: pug, bat\nOutput: bat\n\nInput: bulldog, cat\nOutput: cat\n\nInput: human, chinchilla\nOutput: human",
+        " choose the larger animal, so in cases where one animal is clearly larger than the other, that animal is selected.",
+        " choose the animal that is a type of shark if one of the options is a shark.",
+        " choose the first animal in each input pair.",
+        " choose the marine animal from the pair.",
+        " output the second animal in each input pair.",
+        "choose the animal that is larger in size or typically considered stronger or more dominant.",
+        " choose the second word.",
+        " choose the animal that is a domesticated pet, so the correct output would be the first animal listed in each pair.",
+        "determine the larger animal in each pair.",
+        "choose the animal that you would prefer as a pet.",
+        " choose the larger or more dominant animal in each pair, so the output is the second animal in each pair.",
+        "choose the animal with the larger size or more strength.",
+        " choose the second animal in each pair, so the correct outputs are:\n\nOutput: chamois\n\nOutput: toy poodle\n\nOutput: parrot\n\nOutput: cheetah\n\nOutput: lion",
+        "choose the animal that is not a type of insect.",
+        " choose the animal that is not a bird or insect.",
+        "identify the animal that is not a domestic pet.",
+        " choose the animal that is not a domesticated pet, so the correct output is the first animal listed in each pair.",
+        "choose the animal with the larger size.",
+        "choose the animal that is larger or more intimidating in each pair.",
+        "determine which animal is larger.",
+        "determine which animal is larger or more dominant in each pair.",
+        "determine the larger animal out of the two given options.",
+        "choose the animal with the larger size, so in each case the larger animal was selected as the output.",
+        "choose the animal that is larger in size or more dominant.",
+        "\"Choose the animal that is not a bird.\"",
+        " \"Choose the animal that is a breed of dog.\"",
+        "choose the animal that is not a dog from the pair given.",
+        " choose the animal that is a type of fish.",
+        " choose the second animal in each pair, so the correct outputs are:\n\nOutput: swallow\nOutput: tuna\nOutput: chipmunk\nOutput: guinea pig\nOutput: chipmunk",
+        " \"Choose the animal that is a type of dog.\"",
+        " choose the animal that is larger in size between the two options given.",
+        " choose the second animal in each pair that is larger in size.",
+        " \"Choose the larger animal/breed.\"",
+        " choose the second animal from each pair.",
+        "choose the animal that is larger in size, so in each case the larger animal was chosen as the output.",
+        "choose the larger of the two animals.",
+        "choose the animal with the larger size, so in each case, the output is the second animal listed.",
+        "choose the second option.",
+        " choose the larger or more dominant animal from the pair given.",
+        " choose the larger animal in each pair, so the correct outputs are:\n\nOutput: elephant\nOutput: gorilla\nOutput: rat terrier\nOutput: raccoon\nOutput: killer whale",
+        "choose the animal that is not a domesticated pet, so the correct output for each input would be the first animal listed.",
+        "choose the animal that is more commonly associated with strength or power.",
+        " choose the animal that is larger or more prominent in size.",
+        " choose the larger animal in each pair, so the output would be the larger animal in each pair.",
+        " choose the larger of the two animals in each pair.",
+        " choose the animal that is more likely to be at the top of the food chain or higher in the food chain hierarchy.",
+        " choose the animal that is a mammal, so the output for each input is the first animal listed.",
+        " \"Choose the first animal listed.\"",
+        "choose the larger animal from the given pair, so the correct output for each input is as follows:\n\nInput: chipmunk, elephant\nOutput: elephant\n\nInput: golden retriever, chipmunk\nOutput: golden retriever\n\nInput: sheltie, chinchilla\nOutput: sheltie\n\nInput: elephant, toy poodle\nOutput: elephant\n\nInput: koi, pit bull\nOutput: pit bull",
+        "choose the animal that is larger in size, so the correct output would be:\n\nOutput: pelican\n\nOutput: largemouth bass\n\nOutput: raccoon\n\nOutput: gorilla\n\nOutput: golden retriever",
+        " choose the animal that is not a dog, and in each case, the output correctly identifies the non-dog animal.",
+        " choose the animal that is not a domesticated pet, so the output would be the first animal listed in each pair.",
+        " choose the animal that is not a breed of dog, so the correct output for each input is the first animal listed.",
+        " choose the animal that is larger or higher in the food chain.",
+        " choose the second word from the input.",
+        " choose the larger or stronger animal out of the two given options.",
+        "choose the animal that is not a domesticated pet, and in each case, the second animal listed fits that criteria.",
+        " choose the animal that is not a common household pet.",
+        " choose the animal that is not a domesticated pet, so the correct outputs are:\n\nOutput: whale shark\nOutput: rat terrier\nOutput: tiger\nOutput: octopus\nOutput: elephant",
+        "choose the animal with the larger size or more intimidating presence.",
+        " choose the animal that is a dog if given a choice between two animals.",
+        " \"Choose the animal that is not a dog.\"",
+        " choose the second animal in each pair, so the correct outputs are:\n\nOutput: whale shark\nOutput: sperm whale\nOutput: raccoon\nOutput: jaguar\nOutput: chinook",
+        " choose the larger animal from the given pair, so the correct output for each pair is the second animal listed.",
+        " choose the animal that is stronger or more powerful.",
+        " choose the larger or more dominant animal in each pair, so the output is the larger or more dominant animal in each pair.",
+        " choose the second animal in each pair that is larger or more dominant.",
+        " choose the animal that is not a dog breed, so the correct outputs are elk, killer whale, largemouth bass, bald eagle, and moose.",
+        "determine which animal is listed first in each pair.",
+        " choose the larger or more powerful animal in each pair, so the correct output for each pair is as follows:\n\nInput: largemouth bass, snail\nOutput: largemouth bass\n\nInput: collie, crocodile\nOutput: crocodile\n\nInput: killer whale, cockapoo\nOutput: killer whale\n\nInput: wolf, chihuahua\nOutput: wolf\n\nInput: elephant, puppy\nOutput: elephant",
+        " \"Choose the animal that lives in water.\"",
+        "choose the larger animal from the pair.",
+        " choose the larger or more dominant animal from the given pair.",
+        " choose the animal that is not a domesticated pet, so the correct output for each input is as follows:\n\nInput: camel, puppy\nOutput: camel\n\nInput: toy poodle, jaguar\nOutput: jaguar\n\nInput: racoon, manatee\nOutput: manatee\n\nInput: raccoon, goldfish\nOutput: raccoon\n\nInput: octopus, beagle\nOutput: octopus",
+        " choose the animal that is more closely related to a reptile. In this case, the crocodile is a reptile, while the chamois is a mammal. Therefore, the output would be \"crocodile\" for the first and fourth inputs. For the second and fifth inputs, the cockapoo and killer whale are both mammals, but the cockapoo is more closely related to a reptile (through its dog ancestry) than the killer whale. Therefore, the output would be \"cockapoo\" for the second and fifth inputs. For the third input, the puppy is a mammal, so the output would be \"puppy.\"",
+        " choose the animal that is a mammal, so the correct output in each case is the first animal mentioned.",
+        " determine which animal is a dog breed and which is not.",
+        " choose the animal that is not a domesticated pet, so the output should be the second animal listed in each input.",
+        " choose the larger animal in each pair, so for the given inputs the outputs would be:\n\nOutput: human\nOutput: liger\nOutput: elephant\nOutput: cat\nOutput: lion",
+        " choose the animal that is not a toy poodle, chinchilla, raccoon, alpaca, or bald eagle.",
+        "choose the animal that is larger in size, so the correct output for each pair of animals is as follows:\n\nInput: octopus, pug\nOutput: octopus\n\nInput: alpaca, racoon\nOutput: alpaca\n\nInput: wolf, chihuahua\nOutput: wolf\n\nInput: gorilla, goldfish\nOutput: gorilla\n\nInput: beagle, hippopotamus\nOutput: hippopotamus",
+        "choose the animal that is more closely related to the first animal listed.",
+        " choose the animal that is not a domesticated pet, so the output should be:\n\nOutput: koi",
+        " \"Choose the animal that is a mammal.\"",
+        " choose the second word in each pair that is not an actual animal.",
+        "\"Choose the larger animal or breed.\"",
+        " choose the animal that is a reptile or bird, so in each pair, the correct output is the first animal listed.",
+        " choose the animal that is more commonly kept as a pet.",
+        " choose the predator in each pair, so the output in each case is the predator: largemouth bass, raccoon, crocodile, cougar, killer whale.",
+        " choose the animal that is not a domestic pet, so the output would be the first animal in each pair.",
+        "choose the larger or more dangerous animal in each pair, so the correct output for each pair is:\n- bull shark\n- alpaca\n- golden retriever\n- pony\n- killer whale",
+        "determine which animal comes first alphabetically.",
+        " choose the second word if it is longer than the first word, otherwise choose the first word.",
+        " choose the animal that comes first in the alphabet.",
+        "choose the second animal listed in each input pair.",
+        " choose the second word in each pair, so the correct outputs are:\n\nOutput: pelican\nOutput: shark\nOutput: golden retriever\nOutput: chihuahua\nOutput: donkey",
+        " \"Choose the larger animal or organism.\"",
+        "determine which of the two animals mentioned is the second one.",
+        " \"Choose the domestic animal.\"",
+        "choose the first animal in the input.",
+        "determine which of the two animals mentioned is a mammal.",
+        " choose the animal that is a common household pet.",
+        " choose the animal that is not a breed of dog.",
+        " choose the animal that is not a breed of dog, so the correct outputs are crocodile, liger, pelican, hippopotamus, and elephant.",
+        " choose the second animal in each pair, so the correct outputs are:\n\nOutput: whale shark\nOutput: rat terrier\nOutput: hippopotamus\nOutput: wombat\nOutput: snail",
+        "choose the larger animal from the given pair.",
+        "choose the animal that is a dog breed, so the output should be the dog breed in each pair.",
+        "choose the animal that is not a domestic pet, so the correct output for each input is as follows:\n\nOutput: horse\nOutput: cat\nOutput: elephant\nOutput: tuna\nOutput: human",
+        "choose the animal that is larger or more dangerous.",
+        " choose the animal that is not a fish, so the correct output is:\n\nOutput: horse",
+        " choose the animal that is not a type of fish, and if both are not fish, choose the one that is not a bird.",
+        " choose the larger animal or organism from the given pair.",
+        " choose the option that is a type of animal.",
+        "choose the animal that is a predator, so the correct output for each input would be:\n\nOutput: wolf\n\nOutput: pit bull\n\nOutput: crocodile\n\nOutput: horse\n\nOutput: shark",
+        " choose the larger or more significant animal in each pair, so the output would be the second animal in each pair.",
+        " choose the animal that is not a domesticated pet, so the correct outputs are: \n\nOutput: cheetah\nOutput: jaguar\nOutput: human\nOutput: octopus",
+        " choose the larger or more powerful animal in each pair, so the correct output is the animal that is larger or more powerful.",
+        "choose the animal that is bigger in size or higher in the food chain.",
+        " choose the animal that is not an insect or a bird.",
+        " choose the animal that is larger or more dominant.",
+        " choose the animal that is a type of shark.",
+        " choose the second animal from each input pair.",
+        "choose the animal that is larger or more commonly known.",
+        "choose the first animal listed in each pair.",
+        "choose the animal that is not a domesticated pet, so the correct output is:\n\nOutput: camel",
+        " determine which animal is larger or more dominant based on the given pair.",
+        " choose the animal that is larger or more commonly known as a pet.",
+        " choose the animal that is not a domesticated pet, so the correct output for each input is the second animal listed.",
+        "choose the animal that you prefer or find more interesting.",
+        "choose the animal that is not a domesticated pet, so the correct output is:\n\nOutput: shark",
+        " choose the animal that is a type of dog, so the correct output would be \"sheltie\" in both cases.",
+        " choose the animal that is a mammal, so in each case the mammal was chosen over the non-mammal.",
+        " choose the animal that is not a domesticated pet, so the correct output in each case is the first animal listed.",
+        " choose the animal that is larger in size or more dominant in the pair.",
+        " choose the animal that is cuter between the two options.",
+        "identify the animal that is not a bird.",
+        " choose the animal that is a predator, so for each pair, the predator was selected as the output.",
+        " choose the animal that is not a pet, so the correct output for each input would be the first animal listed.",
+        " choose the animal that is not a wild animal.",
+        " choose the animal with the larger size, so in each case, the output is the animal that is larger in size.",
+        " choose the animal that is not a fish or bird, so the correct output for each input is the first animal listed.",
+        " choose the animal that is not an insect or a fish.",
+        "choose the animal that is not a domesticated pet, so the output would be the first animal in each pair.",
+        " choose the animal that is larger in size or typically considered more powerful.",
+        " choose the first animal mentioned in each input pair.",
+        "\"Choose the animal that is larger in size.\"",
+        " choose the animal that is not a domesticated pet, so the correct output would be:\n\nOutput: sea lion",
+        "choose the animal that is larger in size between the two options given.",
+        "choose the animal that is not a domesticated pet, so the output should be the non-domesticated animal in each pair.",
+        " choose the animal that is larger in size or typically considered stronger or more dominant.",
+        "choose the animal that is not a domesticated pet, so the output in each case is the animal that is not typically kept as a pet.",
+        " choose the animal that is not a domesticated pet, so the correct outputs are:\n\nOutput: cheetah\nOutput: chamois\nOutput: wolf\nOutput: cougar\nOutput: octopus",
+        "choose the animal that is not a dog breed, so the correct output is the first animal in each pair.",
+        " \"Choose the second animal.\"",
+        "choose the animal that is more likely to be considered dangerous or powerful.",
+        " choose the larger or more powerful animal in each pair, so the correct outputs are: \n\n- great white shark\n- bull shark\n- elephant\n- mule\n- lion",
+        "choose the larger or more dangerous animal in each pair.",
+        " choose the larger or more significant animal in each pair.",
+        "choose the animal that is more commonly kept as a pet.",
+        " choose the animal that is not a type of dog, so the correct outputs are chamois, elk, mule, sea lion, and bat.",
+        "choose the animal that is not a bird, and in each case, the first animal listed is the correct choice.",
+        "choose the animal that is not a mix of two different species, so the output should be the first animal in each pair.",
+        " choose the animal that is faster between the two given animals.",
+        " \"Choose the animal that you prefer.\"",
+        " choose the animal that is not a pet, so the output would be raccoon for the first input, turtle for the third input, and sea lion for the fourth input.",
+        " \"Choose the animal that you would prefer to see at a zoo.\"",
+        " output the second animal if it is larger or more powerful than the first animal, otherwise output the first animal.",
+        "choose the animal that is a domesticated pet, so the correct output for each pair is:\n\nOutput: cockapoo\nOutput: manatee\nOutput: puppy\nOutput: chihuahua",
+        " choose the animal that is not a domesticated pet, so the output should be the second animal in each pair.",
+        "choose the larger or more powerful animal, so in each case, the second option was the correct output.",
+        " choose the animal that is more commonly associated with being wild or dangerous.",
+        "choose the marine animal.",
+        "choose the second option in each pair.",
+        "choose the animal that is not a breed of dog.",
+        " determine which animal is larger in size.",
+        " choose the animal that is a dog breed, so the correct output is the golden retriever, horse, goat, beagle, and sheltie.",
+        " choose the animal that is not a dog breed, so the correct output for each input would be:\n\nOutput: killer whale\nOutput: horse\nOutput: chipmunk\nOutput: moose\nOutput: tuna",
+        " choose the animal that is a mammal, so the correct output is the first animal listed in each pair.",
+        " choose the animal that is not a type of dog, so the output for each input is the first animal listed."
+    ],
+    "instruction_select_history": [
+        [
+            "\"Choose the animal that is a domestic pet.\"",
+            0.35,
+            " determine which of the two animals is larger or more dominant.",
+            0.85
+        ],
+        [
+            "identify the larger animal from the given pair.",
+            1.0,
+            "choose the first animal in each input pair.",
+            0.5
+        ],
+        [
+            " \"Choose the second animal.\"",
+            0.45,
+            " \"Choose the animal that you would prefer to see at a zoo.\"",
+            0.8
+        ],
+        [
+            " choose the animal that comes later in the alphabet.",
+            0.6,
+            " choose the larger or more dominant animal between the two options.",
+            0.95
+        ],
+        [
+            "determine which of the two animals mentioned is a mammal.",
+            0.5,
+            "determine which animal comes first alphabetically.",
+            0.35
+        ],
+        [
+            " choose the animal that is not a domesticated pet, so the correct output would be:\n\nOutput: sea lion",
+            0.7,
+            " choose the animal that is not a predator.",
+            0.25
+        ],
+        [
+            " choose the animal that is not a pet, so the correct output for each input would be the first animal listed.",
+            0.85,
+            "choose the animal with the larger size, so in each case, the output is the second animal listed.",
+            0.65
+        ],
+        [
+            " identify the type of animal that is a breed or species, so in each case, the output correctly identifies the breed or species of the animal mentioned in the input.",
+            0.0,
+            " choose the animal that is more closely related to a reptile. In this case, the crocodile is a reptile, while the chamois is a mammal. Therefore, the output would be \"crocodile\" for the first and fourth inputs. For the second and fifth inputs, the cockapoo and killer whale are both mammals, but the cockapoo is more closely related to a reptile (through its dog ancestry) than the killer whale. Therefore, the output would be \"cockapoo\" for the second and fifth inputs. For the third input, the puppy is a mammal, so the output would be \"puppy.\"",
+            0.4
+        ],
+        [
+            "choose the animal that is not a domesticated pet, so the correct output in each case is the second animal mentioned.",
+            0.6,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            " choose the animal that is a domesticated pet, so the correct output would be the first animal listed in each pair.",
+            0.1,
+            "choose the larger or more dominant animal between the two options.",
+            0.9
+        ],
+        [
+            " choose the animal that is faster between the two given animals.",
+            0.7,
+            " choose the animal that is not a type of dog, so the correct outputs are chamois, elk, mule, sea lion, and bat.",
+            0.6
+        ],
+        [
+            " choose the animal that is not a dog breed, so the output for each input is the first animal mentioned.",
+            0.6,
+            " choose the animal that is a type of fish.",
+            0.1
+        ],
+        [
+            " choose the animal that is not a pet, so the output would be raccoon for the first input, turtle for the third input, and sea lion for the fourth input.",
+            0.65,
+            " choose the animal that is larger in size or more dominant in the pair.",
+            0.95
+        ],
+        [
+            " choose the animal that is not a dog.",
+            0.4,
+            "choose the animal with the larger size, so in each case the larger animal was selected as the output.",
+            0.95
+        ],
+        [
+            "choose the animal that is a domesticated pet, so the correct output for each pair is:\n\nOutput: cockapoo\nOutput: manatee\nOutput: puppy\nOutput: chihuahua",
+            0.45,
+            "choose the animal that is larger in size, so the correct output for each pair of animals is as follows:\n\nInput: octopus, pug\nOutput: octopus\n\nInput: alpaca, racoon\nOutput: alpaca\n\nInput: wolf, chihuahua\nOutput: wolf\n\nInput: gorilla, goldfish\nOutput: gorilla\n\nInput: beagle, hippopotamus\nOutput: hippopotamus",
+            0.95
+        ],
+        [
+            " determine which of the two animals is larger or more dominant.",
+            0.85,
+            "determine which animal is larger.",
+            1.0
+        ],
+        [
+            " choose the animal that is a predator, so for each pair, the predator was selected as the output.",
+            0.65,
+            "choose the animal that is larger in size, so the correct output for each pair of animals is as follows:\n\nInput: liger, bald eagle\nOutput: liger\n\nInput: beagle, hippopotamus\nOutput: hippopotamus\n\nInput: largemouth bass, snail\nOutput: largemouth bass\n\nInput: chihuahua, jaguar\nOutput: jaguar\n\nInput: hummingbird, turtle\nOutput: turtle",
+            0.95
+        ],
+        [
+            "identify the type of animal from the given pair, so the output should be the first animal in each pair.",
+            0.6,
+            " choose the larger animal out of the two given options.",
+            0.95
+        ],
+        [
+            " choose the second word.",
+            0.5,
+            "choose the larger animal.",
+            0.9
+        ],
+        [
+            " choose the larger or more dominant animal in each pair, so the output is the second animal in each pair.",
+            0.65,
+            " choose the animal that is larger or more commonly known as a pet.",
+            0.6
+        ],
+        [
+            " choose the animal that is a mammal.",
+            0.65,
+            " choose the first word in each pair.",
+            0.15
+        ],
+        [
+            " choose the animal that is more commonly associated with being aggressive or dangerous.",
+            0.85,
+            " choose the second word in each input pair.",
+            0.25
+        ],
+        [
+            " choose the animal that is not a pet, so the correct output for each input would be the first animal listed.",
+            0.85,
+            " choose the animal with more letters in its name.",
+            0.6
+        ],
+        [
+            "choose the first animal in the input list.",
+            0.45,
+            "choose the animal that is not a bird.",
+            0.7
+        ],
+        [
+            "choose the animal that is not a type of insect.",
+            0.9,
+            "choose the animal that is larger in size, so the correct output for each pair is:\n\nOutput: cougar\nOutput: wildebeest\nOutput: largemouth bass\nOutput: chamois\nOutput: tuna",
+            1.0
+        ],
+        [
+            "choose the animal that comes later in the alphabet.",
+            0.55,
+            " choose the larger or more powerful animal in each pair, so the correct outputs are: bull shark, golden retriever, pit bull, tiger, manatee.",
+            0.85
+        ],
+        [
+            " choose the larger or more significant animal in each pair, so the output would be the second animal in each pair.",
+            0.35,
+            "choose the animal that is not a pet, so in each case, the non-pet animal was selected.",
+            0.7
+        ],
+        [
+            " choose the animal that is larger or more powerful in each pair.",
+            1.0,
+            " choose the animal with more letters in its name.",
+            0.6
+        ],
+        [
+            " \"Choose the animal that is larger in size.\"",
+            0.95,
+            "determine which animal is larger.",
+            1.0
+        ],
+        [
+            "choose the animal that is larger or more intimidating in each pair.",
+            0.9,
+            "choose the animal that is larger in size or more commonly known as a pet.",
+            0.8
+        ],
+        [
+            "determine which of the two animals is larger or higher in the food chain.",
+            0.6,
+            " choose the animal that is a type of shark.",
+            0.5
+        ],
+        [
+            " choose the larger or more dominant animal in each pair, so the correct outputs are:\n\nOutput: wildebeest\n\nOutput: elk\n\nOutput: raccoon\n\nOutput: tiger\n\nOutput: pit bull",
+            1.0,
+            "choose the animal that comes first in alphabetical order.",
+            0.6
+        ],
+        [
+            " choose the animal with the larger size.",
+            0.95,
+            " choose the animal that is not a domesticated pet, so the output would be the first animal listed in each pair.",
+            0.8
+        ],
+        [
+            " choose the second animal in each pair, so the correct outputs are:\n\nOutput: whale shark\nOutput: rat terrier\nOutput: hippopotamus\nOutput: wombat\nOutput: snail",
+            0.7,
+            " choose the animal that is not a domesticated pet, so the output in each case is the second animal listed.",
+            0.6
+        ],
+        [
+            "\"Choose the word that comes first in alphabetical order.\"",
+            0.45,
+            " choose the second animal from the input.",
+            0.4
+        ],
+        [
+            " choose the second animal in each pair that is larger in size.",
+            1.0,
+            " choose the animal that is larger or stronger.",
+            1.0
+        ],
+        [
+            " choose the animal that is a reptile or bird, so in each pair, the correct output is the first animal listed.",
+            0.4,
+            " choose the second animal from the input.",
+            0.4
+        ],
+        [
+            " choose the larger or more dominant animal out of the two given options.",
+            0.95,
+            " choose the second word if it is longer than the first word, otherwise choose the first word.",
+            0.6
+        ],
+        [
+            " choose the second input.",
+            0.55,
+            " identify the type of animal that is a breed or species, so in each case, the output correctly identifies the breed or species of the animal mentioned in the input.",
+            0.0
+        ],
+        [
+            " choose the animal that is larger or more significant in size.",
+            0.95,
+            "choose the animal that is more commonly kept as a pet.",
+            0.3
+        ],
+        [
+            " choose the first animal in each pair.",
+            0.55,
+            " choose the second animal in each pair.",
+            0.6
+        ],
+        [
+            "choose the animal that is not a domesticated pet, so the correct output is the first animal in each pair.",
+            0.6,
+            " choose the animal that is larger in size or higher on the food chain.",
+            0.85
+        ],
+        [
+            " choose the animal that comes last in alphabetical order.",
+            0.45,
+            " \"Choose the larger animal.\"",
+            0.95
+        ],
+        [
+            " choose the second animal in each pair, so the correct outputs are:\n\nOutput: pit bull\nOutput: chipmunk\nOutput: pug\nOutput: rat\nOutput: pelican",
+            0.45,
+            "choose the animal that is larger in size or more powerful.",
+            0.95
+        ],
+        [
+            "determine which animal is larger in size.",
+            1.0,
+            "choose the animal that is larger or more dangerous in each pair.",
+            1.0
+        ],
+        [
+            " choose the animal that is larger or more intimidating in each pair.",
+            1.0,
+            " choose the first animal listed as the output.",
+            0.5
+        ],
+        [
+            " choose the larger of the two animals mentioned.",
+            0.85,
+            " choose the animal that is not an insect or a type of bird.",
+            0.9
+        ],
+        [
+            " choose the second animal in each pair that is larger in size.",
+            1.0,
+            " choose the second animal from each pair.",
+            0.55
+        ],
+        [
+            "choose the animal that is larger in size, so the correct output for each pair of animals is as follows:\n\nInput: octopus, pug\nOutput: octopus\n\nInput: alpaca, racoon\nOutput: alpaca\n\nInput: wolf, chihuahua\nOutput: wolf\n\nInput: gorilla, goldfish\nOutput: gorilla\n\nInput: beagle, hippopotamus\nOutput: hippopotamus",
+            0.95,
+            "choose the animal that is more closely related to the first animal listed.",
+            0.55
+        ],
+        [
+            " choose the animal that is larger in size or more dominant in the pair.",
+            0.95,
+            " choose the animal that is not a domesticated pet, so the correct output in each case is the first animal listed.",
+            0.65
+        ],
+        [
+            " choose the animal that is larger in size or higher in the food chain.",
+            0.9,
+            "choose the animal that is not an insect or rodent.",
+            0.85
+        ],
+        [
+            " choose the animal that is larger in size or higher on the food chain.",
+            0.85,
+            " choose the larger or more powerful animal out of the two given options.",
+            1.0
+        ],
+        [
+            " \"Choose the larger animal.\"",
+            0.95,
+            " choose the larger animal in each pair, so the output in each case is the first animal listed.",
+            0.95
+        ],
+        [
+            "choose the animal that is a predator or higher in the food chain.",
+            0.6,
+            "choose the animal that is larger or more powerful in each pair.",
+            0.9
+        ],
+        [
+            " choose the animal that is a predator in each pair.",
+            0.8,
+            "determine which animal is larger in size.",
+            1.0
+        ],
+        [
+            " choose the animal that is larger or more intimidating in each pair.",
+            1.0,
+            " choose the animal that is larger or more imposing in each pair.",
+            0.95
+        ],
+        [
+            " choose the animal that is not an insect or a type of bird.",
+            0.9,
+            " choose the larger of the two animals mentioned.",
+            0.85
+        ],
+        [
+            "choose the larger of the two animals.",
+            1.0,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            " choose the animal that is a reptile or bird, so in each pair, the correct output is the first animal listed.",
+            0.4,
+            " choose the predator in each pair, so the output in each case is the predator: largemouth bass, raccoon, crocodile, cougar, killer whale.",
+            0.4
+        ],
+        [
+            " choose the animal that is a predator, so for each pair, the predator was selected as the output.",
+            0.65,
+            " choose the animal that is a mammal, so in each case the mammal was chosen over the non-mammal.",
+            0.55
+        ],
+        [
+            " choose the animal that is larger in size or higher in the food chain.",
+            0.9,
+            " choose the larger animal in each pair.",
+            1.0
+        ],
+        [
+            " choose the animal that is larger in size or higher on the food chain.",
+            0.85,
+            " choose the animal that is larger or more powerful in each pair.",
+            1.0
+        ],
+        [
+            " choose the larger or more powerful animal between the two options given.",
+            1.0,
+            " choose the animal with more letters in its name.",
+            0.6
+        ],
+        [
+            " choose the larger or more powerful animal from the pair.",
+            0.85,
+            "choose the animal that is larger or more powerful in each pair.",
+            0.9
+        ],
+        [
+            "choose the animal that is larger or more dangerous in each pair.",
+            1.0,
+            "determine which animal is larger in size.",
+            1.0
+        ],
+        [
+            " choose the larger or stronger animal.",
+            0.95,
+            " choose the animal that is larger or more intimidating in each pair.",
+            1.0
+        ],
+        [
+            " choose the animal with the larger size or more dominant presence.",
+            1.0,
+            " choose the larger of the two animals mentioned.",
+            0.85
+        ],
+        [
+            "choose the larger of the two animals.",
+            1.0,
+            " choose the second animal in each pair that is larger in size.",
+            1.0
+        ],
+        [
+            "\"Choose the larger animal or breed.\"",
+            1.0,
+            " choose the animal that is a reptile or bird, so in each pair, the correct output is the first animal listed.",
+            0.4
+        ],
+        [
+            " choose the animal that is not an insect or a fish.",
+            0.8,
+            " choose the animal that is larger in size or typically considered more powerful.",
+            0.95
+        ],
+        [
+            "choose the animal that is larger or more powerful.",
+            0.95,
+            " choose the animal that is larger in size or higher in the food chain.",
+            0.9
+        ],
+        [
+            " choose the animal that is larger in size or higher on the food chain.",
+            0.85,
+            " choose the animal that is larger or more powerful in each pair.",
+            1.0
+        ],
+        [
+            "choose the larger or more dominant animal between the two options.",
+            0.9,
+            " choose the larger animal from each pair.",
+            0.9
+        ],
+        [
+            " choose the larger or more powerful animal from the pair.",
+            0.85,
+            "choose the animal that is larger in size or more powerful.",
+            0.95
+        ],
+        [
+            "choose the larger animal from each pair.",
+            0.95,
+            "choose the animal that is larger or more dangerous in each pair.",
+            1.0
+        ],
+        [
+            " choose the larger or stronger animal.",
+            0.95,
+            " choose the animal that is larger or more intimidating in each pair.",
+            1.0
+        ],
+        [
+            " choose the larger or more powerful animal.",
+            1.0,
+            " choose the animal with the larger size or more dominant presence.",
+            1.0
+        ],
+        [
+            "choose the larger of the two animals.",
+            1.0,
+            " choose the larger of the two animals in each pair.",
+            0.9
+        ],
+        [
+            " \"Choose the larger animal or organism.\"",
+            0.95,
+            "\"Choose the larger animal or breed.\"",
+            1.0
+        ],
+        [
+            "\"Choose the animal that is larger in size.\"",
+            1.0,
+            " choose the animal that is larger in size or typically considered more powerful.",
+            0.95
+        ],
+        [
+            " choose the larger of the two animals.",
+            0.95,
+            "choose the animal that is larger or more powerful.",
+            0.95
+        ],
+        [
+            " choose the animal that is larger or more powerful.",
+            0.85,
+            " choose the animal that is larger in size or higher on the food chain.",
+            0.85
+        ],
+        [
+            " choose the animal that is more likely to win in a fight.",
+            0.95,
+            "choose the larger or more dominant animal between the two options.",
+            0.9
+        ],
+        [
+            " choose the larger or more powerful animal from the pair.",
+            0.85,
+            "choose the animal that is larger in size or more powerful.",
+            0.95
+        ],
+        [
+            "choose the larger animal from each pair.",
+            0.95,
+            "choose the animal that is larger or more dangerous in each pair.",
+            1.0
+        ],
+        [
+            " choose the larger or stronger animal.",
+            0.95,
+            " choose the animal that is larger or more intimidating in each pair.",
+            1.0
+        ],
+        [
+            " choose the larger or more powerful animal.",
+            1.0,
+            " choose the animal with the larger size or more dominant presence.",
+            1.0
+        ],
+        [
+            "choose the larger of the two animals.",
+            1.0,
+            " choose the animal that is larger or higher in the food chain.",
+            0.95
+        ],
+        [
+            " \"Choose the larger animal or organism.\"",
+            0.95,
+            "\"Choose the larger animal or breed.\"",
+            1.0
+        ],
+        [
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            "choose the animal that is larger or more powerful.",
+            0.95,
+            " choose the larger of the two animals.",
+            0.95
+        ],
+        [
+            " choose the animal that is larger or more powerful.",
+            0.85,
+            " choose the animal that is larger in size or higher on the food chain.",
+            0.85
+        ],
+        [
+            " choose the animal that is larger or more significant in size.",
+            0.95,
+            " choose the animal that is more likely to win in a fight.",
+            0.95
+        ],
+        [
+            "choose the animal with the larger size or more dominant presence.",
+            1.0,
+            " choose the larger or more powerful animal from the pair.",
+            0.85
+        ],
+        [
+            " choose the larger or more dangerous animal.",
+            0.85,
+            "choose the larger animal from each pair.",
+            0.95
+        ],
+        [
+            " choose the larger or stronger animal.",
+            0.95,
+            " choose the animal that is larger or more intimidating in each pair.",
+            1.0
+        ],
+        [
+            " choose the larger or more powerful animal.",
+            1.0,
+            " choose the animal with the larger size or more dominant presence.",
+            1.0
+        ],
+        [
+            "choose the larger of the two animals.",
+            1.0,
+            " choose the animal that is larger or higher in the food chain.",
+            0.95
+        ],
+        [
+            "choose the animal that is larger or more dangerous.",
+            0.9,
+            " \"Choose the larger animal or organism.\"",
+            0.95
+        ],
+        [
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0,
+            "\"Choose the animal that is larger in size.\"",
+            1.0
+        ],
+        [
+            "choose the animal that is larger or more powerful.",
+            0.95,
+            " choose the larger of the two animals.",
+            0.95
+        ],
+        [
+            " choose the animal that is larger or more powerful.",
+            0.85,
+            " choose the animal that is larger in size or higher on the food chain.",
+            0.85
+        ],
+        [
+            " choose the animal that is larger or more significant in size.",
+            0.95,
+            " choose the animal that is more likely to win in a fight.",
+            0.95
+        ],
+        [
+            "choose the animal with the larger size or more dominant presence.",
+            1.0,
+            " choose the larger or more powerful animal from the pair.",
+            0.85
+        ],
+        [
+            " choose the larger or more dangerous animal.",
+            0.85,
+            " choose the animal that is larger or bigger in size.",
+            0.9
+        ],
+        [
+            " choose the larger or stronger animal.",
+            0.95,
+            " choose the larger or more dominant animal between the two options.",
+            0.95
+        ],
+        [
+            " choose the larger or more powerful animal.",
+            1.0,
+            " choose the animal with the larger size or more dominant presence.",
+            1.0
+        ],
+        [
+            "choose the larger of the two animals.",
+            1.0,
+            " choose the animal that is larger or higher in the food chain.",
+            0.95
+        ],
+        [
+            " choose the larger animal or organism from the given pair.",
+            0.95,
+            "choose the animal that is larger or more dangerous.",
+            0.9
+        ],
+        [
+            " choose the animal that is faster between the two given animals.",
+            0.7,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            "choose the animal that is larger or more powerful.",
+            0.95,
+            " choose the larger of the two animals.",
+            0.95
+        ],
+        [
+            " choose the animal that is larger or more powerful.",
+            0.85,
+            " choose the animal that is larger in size or higher on the food chain.",
+            0.85
+        ],
+        [
+            " choose the animal that is larger or more significant in size.",
+            0.95,
+            " choose the animal that is more likely to win in a fight.",
+            0.95
+        ],
+        [
+            "choose the animal with the larger size or more dominant presence.",
+            1.0,
+            " choose the larger or more powerful animal from the pair.",
+            0.85
+        ],
+        [
+            " choose the larger or more dangerous animal.",
+            0.85,
+            " choose the animal that is larger or bigger in size.",
+            0.9
+        ],
+        [
+            " choose the larger or stronger animal.",
+            0.95,
+            " choose the larger or more dominant animal between the two options.",
+            0.95
+        ],
+        [
+            " choose the larger or more powerful animal.",
+            1.0,
+            " choose the animal with the larger size or more dominant presence.",
+            1.0
+        ],
+        [
+            "choose the larger of the two animals.",
+            1.0,
+            " choose the animal that is stronger or more powerful.",
+            0.9
+        ],
+        [
+            "choose the animal that is bigger in size or higher in the food chain.",
+            0.95,
+            "choose the animal that is larger or more dangerous.",
+            0.9
+        ],
+        [
+            " choose the animal that is faster between the two given animals.",
+            0.7,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            "choose the animal that is larger or more powerful.",
+            0.95,
+            " choose the larger of the two animals.",
+            0.95
+        ],
+        [
+            " choose the animal that is larger or more powerful.",
+            0.85,
+            " choose the animal that is larger in size or higher on the food chain.",
+            0.85
+        ],
+        [
+            " choose the animal that is larger or more significant in size.",
+            0.95,
+            " choose the animal that is more likely to win in a fight.",
+            0.95
+        ],
+        [
+            "choose the animal with the larger size or more dominant presence.",
+            1.0,
+            " choose the larger or more powerful animal from the pair.",
+            0.85
+        ],
+        [
+            " choose the larger or more dangerous animal.",
+            0.85,
+            " choose the animal that is larger or bigger in size.",
+            0.9
+        ],
+        [
+            " choose the larger or stronger animal.",
+            0.95,
+            " choose the larger or more dominant animal between the two options.",
+            0.95
+        ],
+        [
+            " choose the larger or more powerful animal.",
+            1.0,
+            "choose the animal that is larger in size or more dominant.",
+            0.95
+        ],
+        [
+            "choose the larger of the two animals.",
+            1.0,
+            " choose the animal that is stronger or more powerful.",
+            0.9
+        ],
+        [
+            "choose the animal that is bigger in size or higher in the food chain.",
+            0.95,
+            " choose the animal that is larger or more dominant.",
+            1.0
+        ],
+        [
+            " choose the animal that is faster between the two given animals.",
+            0.7,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ],
+        [
+            "choose the animal that is larger or more powerful.",
+            0.95,
+            " choose the larger of the two animals.",
+            0.95
+        ],
+        [
+            " choose the animal that is larger or more powerful.",
+            0.85,
+            " choose the animal that is larger in size or higher on the food chain.",
+            0.85
+        ],
+        [
+            " choose the animal that is larger or more significant in size.",
+            0.95,
+            " choose the animal that is more likely to win in a fight.",
+            0.95
+        ],
+        [
+            "choose the animal with the larger size or more dominant presence.",
+            1.0,
+            " choose the larger or more powerful animal from the pair.",
+            0.85
+        ],
+        [
+            " choose the larger or more dangerous animal.",
+            0.85,
+            " choose the animal that is larger or bigger in size.",
+            0.9
+        ],
+        [
+            " choose the larger or stronger animal.",
+            0.95,
+            " choose the larger or more dominant animal between the two options.",
+            0.95
+        ],
+        [
+            " choose the larger or more powerful animal.",
+            1.0,
+            "choose the animal that is larger in size or more dominant.",
+            0.95
+        ],
+        [
+            "choose the larger of the two animals.",
+            1.0,
+            " choose the animal that is stronger or more powerful.",
+            0.9
+        ],
+        [
+            "choose the animal that is bigger in size or higher in the food chain.",
+            0.95,
+            " choose the animal that is larger or more dominant.",
+            1.0
+        ],
+        [
+            " choose the animal that is faster between the two given animals.",
+            0.7,
+            " choose the animal that is larger in size or typically considered stronger or more dominant.",
+            1.0
+        ]
+    ],
+    "now_values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ]
+}

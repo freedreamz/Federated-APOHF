@@ -1,0 +1,2484 @@
+{
+    "task": "auto_categorization",
+    "n_prompt_tokens": 5,
+    "nu": 0.5,
+    "lamdba": 0.1,
+    "n_init": 40,
+    "n_domain": 500,
+    "total_iter": 165,
+    "local_training_iter": 30,
+    "random_proj": "uniform",
+    "intrinsic_dim": 100,
+    "n_eval": 1000,
+    "name": "",
+    "gpt": "gpt-3.5-turbo",
+    "init_scale": 1,
+    "pooling": "last",
+    "func": "neural",
+    "trial": 0,
+    "magnitude": 10,
+    "norm_method": "standard",
+    "candidate_method": "induction",
+    "test_score": 0.0,
+    "valid_score": 0.2,
+    "best_prompt": [
+        " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs."
+    ],
+    "prompts_set": {
+        "provide an output category based on the input provided.": 0.15,
+        " \"Provide a category for the following groups of terms.\"": 0.15,
+        " categorize the given inputs into different categories.": 0.05,
+        " provide the category or group that each set of words belongs to.": 0.15,
+        " provide synonyms for the given words, but the output provided different categories for each input.": 0.0,
+        " provide synonyms, historical wars, apparel, and popular songs for the given inputs.": 0.0,
+        "identify the category or group that the given items belong to.": 0.15,
+        " provide a category for each group of items given.": 0.25,
+        " categorize the following items.": 0.0,
+        "identify categories or groups based on the given inputs.": 0.15,
+        "classify the following groups of words into categories.": 0.1,
+        " categorize the given terms into specific groups or categories.": 0.1,
+        " identify the category for each group of words.": 0.2,
+        "\"Provide a category for the following inputs.\"": 0.25,
+        " categorize the given items into different categories.": 0.0,
+        " identify the category or type of each group of items given.": 0.2,
+        " \"Identify the category or group that each set of names or terms belongs to.\"": 0.15,
+        " provide a specific output based on the input given.": 0.05,
+        " provide the category or classification of the given items.": 0.15,
+        "classify the given inputs into specific categories or groups.": 0.15,
+        "identify the category or group to which the given items belong.": 0.4,
+        " \"Provide a category or label for the following groups of items.\"": 0.2,
+        " identify the category or type of items based on the input provided.": 0.15,
+        " categorize the given inputs into broader categories or groups.": 0.2,
+        " categorize the given items or entities into appropriate groups or categories.": 0.05,
+        " categorize the given inputs into specific groups based on their characteristics.": 0.1,
+        "identify the category or type of the given items.": 0.25,
+        " categorize the following terms into their respective categories.": 0.0,
+        " identify the category that the items belong to.": 0.25,
+        " categorize the given inputs into a broader category or group based on their characteristics.": 0.2,
+        "provide categories or commonalities for the given inputs.": 0.1,
+        " provide a category or group that the items belong to.": 0.25,
+        "provide the category or classification for each group of items.": 0.35,
+        " identify the category that each group of items belongs to.": 0.2,
+        " categorize the given inputs.": 0.1,
+        " categorize the given items or entities into a broader category.": 0.3,
+        "identify a common theme or category that the inputs belong to.": 0.15,
+        " \"Provide a category for the following groups of names or terms.\"": 0.3,
+        " provide a category for each group of items listed.": 0.35,
+        "provide an output category for each input provided.": 0.15,
+        " categorize the given items or names.": 0.1,
+        " provide an output for each set of inputs.": 0.0,
+        "list items based on the given category.": 0.25,
+        " provide a category or group for each set of items listed.": 0.35,
+        " categorize the given items into groups based on their common characteristics.": 0.15,
+        " provide an appropriate category for the given inputs.": 0.15,
+        "identify whether the input names are people shot by police, games on Steam, or Indian foods.": 0.0,
+        " identify a category or group that these items belong to.": 0.2,
+        " identify the category that the given items belong to.": 0.35,
+        "\"Provide a category for each group of words\"": 0.05,
+        " identify the category of items or individuals based on the given input.": 0.2,
+        " categorize the given items into appropriate groups based on their characteristics.": 0.05,
+        " provide the category or group that the items belong to based on the input given.": 0.2,
+        " provide categories for the given inputs.": 0.15,
+        " categorize the given items into specific groups.": 0.1,
+        " categorize the input items into specific categories.": 0.05,
+        " categorize the following items into the specified category.": 0.05,
+        " identify a category or group that all the items in the list belong to.": 0.25,
+        "determine a category or group that the given items belong to.": 0.35,
+        " identify the category or group that each set of words belongs to.": 0.2,
+        " provide a category or label for each group of items.": 0.25,
+        " identify the category or group to which each input belongs.": 0.15,
+        " \"Provide a category for the following sets of items\"": 0.2,
+        " provide a category that all the inputs belong to.": 0.3,
+        " identify a common category or group that the given items belong to.": 0.25,
+        " categorize the given items into their respective groups.": 0.05,
+        " provide a category or group that each set of items belongs to.": 0.35,
+        "identify the category or theme of each group of inputs.": 0.2,
+        " provide computer file format extensions, tourist attractions, programming languages, and African countries based on the given inputs.": 0.0,
+        " identify the category or group that the items or terms belong to.": 0.1,
+        "provide a category or classification for the given inputs.": 0.15,
+        "identify the category of the given items.": 0.3,
+        " identify the category or group that the items belong to based on the input given.": 0.3,
+        " provide the category or type of the given items.": 0.2,
+        "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.": 0.0,
+        " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.": 0.0,
+        " provide relevant information based on the given input.": 0.0,
+        " provide related terms or categories for the given inputs.": 0.05,
+        " provide synonyms, so the last output should be \"names of people\" instead of \"people shot by police.\"": 0.0,
+        " provide computer file format extensions, religions, periods of Japanese history, and programming languages for the given inputs.": 0.0
+    },
+    "best_values": [
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2
+    ],
+    "best_instruction_over_iter": [
+        [
+            0,
+            " provide the category or type of the given items.",
+            0.2
+        ],
+        [
+            1,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            2,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            3,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            4,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            5,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            6,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            7,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            8,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            9,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            10,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            11,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            12,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            13,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            14,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            15,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            16,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            17,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            18,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            19,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            20,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            21,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            22,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            23,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            24,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            25,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            26,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            27,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            28,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            29,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            30,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            31,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            32,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            33,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            34,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            35,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            36,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            37,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            38,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            39,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            40,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            41,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            42,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            43,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            44,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            45,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            46,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            47,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            48,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            49,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            50,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            51,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            52,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            53,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            54,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            55,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            56,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            57,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            58,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            59,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            60,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            61,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            62,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            63,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            64,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            65,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            66,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            67,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            68,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            69,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            70,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            71,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            72,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            73,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            74,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            75,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            76,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            77,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            78,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            79,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            80,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            81,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            82,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            83,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            84,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            85,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            86,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            87,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            88,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            89,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            90,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            91,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            92,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            93,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            94,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            95,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            96,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            97,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            98,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            99,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            100,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            101,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            102,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            103,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            104,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            105,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            106,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            107,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            108,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            109,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            110,
+            " provide relevant information based on the given input.",
+            0.0
+        ],
+        [
+            111,
+            " provide relevant information based on the given input.",
+            0.0
+        ],
+        [
+            112,
+            " provide relevant information based on the given input.",
+            0.0
+        ],
+        [
+            113,
+            " provide relevant information based on the given input.",
+            0.0
+        ],
+        [
+            114,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            115,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            116,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            117,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            118,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            119,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            120,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            121,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            122,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            123,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            124,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ]
+    ],
+    "init_instructions": [
+        " identify a common theme or category for the given inputs.",
+        " identify the category or common theme of the given items or concepts.",
+        " categorize the given inputs into specific groups or categories.",
+        " identify the category or group that the given names belong to.",
+        " provide a category or group that the listed items belong to.",
+        " categorize the given inputs into appropriate categories.",
+        " categorize the given items into a specific group or category.",
+        " identify the category or group that the given items belong to.",
+        " categorize the given items into broader categories.",
+        " identify the category or group that the items in the input belong to.",
+        " categorize the given inputs into specific categories.",
+        " provide an output category for each set of inputs.",
+        " provide an output based on the input given.",
+        " identify the category or group that the items belong to.",
+        " provide a list of items and identify what category they belong to.",
+        "provide an output based on the input given.",
+        " categorize the given inputs.",
+        " categorize the given items into their respective categories.",
+        "identify the category or group that the given items belong to.",
+        " provide a category or classification for the given inputs.",
+        " categorize the following terms into appropriate groups.",
+        "classify the given inputs into specific categories.",
+        " identify the category or type of the given inputs.",
+        " provide a category or group that the inputs belong to.",
+        " provide an output category for the given inputs.",
+        " categorize the given inputs into a broader category.",
+        "provide an output category based on the input items given.",
+        "identify the category or type of the given inputs.",
+        " provide an output category based on the given inputs.",
+        " identify the category or group that the given inputs belong to.",
+        " provide an output category for a given list of inputs.",
+        " categorize the given inputs into different groups or categories.",
+        " categorize the given items into their respective groups or categories.",
+        "classify the given inputs into categories.",
+        " identify the category or type of the given items.",
+        "identify a common theme or category that the inputs belong to.",
+        " provide a category for the given items or names.",
+        " provide a category or group that each set of items belongs to.",
+        " determine the category or group that the given items belong to.",
+        " provide an output category based on the input items.",
+        " identify a common theme or category for each group of items provided.",
+        "provide an output category for each input provided.",
+        " categorize the given words or phrases into a specific group or category based on their similarities.",
+        " provide an output category for a list of items.",
+        "classify the given inputs into appropriate categories.",
+        " categorize the given inputs into appropriate groups or categories.",
+        "identify the category or type of the given items.",
+        "identify a common theme or category for the given inputs.",
+        " categorize the given inputs into a specific category.",
+        " classify the given inputs into specific categories.",
+        " provide specific outputs based on the given inputs.",
+        " categorize the given inputs into the specified categories.",
+        " categorize the following items into a specific group or category.",
+        " categorize the given items into appropriate groups.",
+        " identify the category of the given inputs.",
+        "classify the following items into appropriate categories.",
+        " identify a common category or group that the items belong to.",
+        " identify the category or group to which the given items belong.",
+        "classify the given inputs into different categories.",
+        " categorize the given input into specific groups or categories.",
+        " identify a category or group that the given items belong to.",
+        "\"Provide an appropriate category for each set of inputs.\"",
+        " provide the category or group that the items belong to based on the input given.",
+        "\"Identify the category to which the given items belong.\"",
+        "identify the category or group that the items belong to.",
+        " provide a category for each group of items.",
+        "provide a category or common trait for the given inputs.",
+        " provide a category or group that the given items belong to.",
+        " provide a category for the given list of items.",
+        " provide an appropriate category for the given inputs.",
+        " classify the given inputs into categories.",
+        " provide a category for each group of words.",
+        " categorize the following terms into groups based on their similarities.",
+        "provide categories for the given inputs.",
+        " provide an output based on the given input.",
+        " categorize the given inputs into their respective categories.",
+        " categorize the given items into specific groups based on their characteristics or attributes.",
+        " provide a category for each set of inputs.",
+        "provide a category or group that the inputs belong to.",
+        " categorize the given terms into specific groups or categories.",
+        " identify the category or group that each input belongs to.",
+        " identify the category of each group of items provided.",
+        " categorize the given items into specific groups or categories.",
+        "provide an output category based on the given input.",
+        " provide computer file format extensions, tourist attractions, programming languages, and African countries based on the given inputs.",
+        " identify the category or group to which the given inputs belong.",
+        " categorize the given inputs into a broader category or group.",
+        " categorize the given inputs into a specific group or category.",
+        "\"Provide a category for the following groups of items or individuals.\"",
+        " categorize the input into different groups or categories.",
+        " categorize the given inputs into a specific category or group.",
+        " categorize the given items into appropriate groups or categories.",
+        " provide categories for the given inputs.",
+        " provide a category or group that the given inputs belong to.",
+        " provide a category or group for the given inputs.",
+        " categorize the input into specific groups or categories.",
+        " provide an output category for each input group.",
+        " categorize the given items or names.",
+        " categorize the given inputs into specific groups.",
+        " provide a unifying category for the given inputs.",
+        " \"Provide examples for the following categories: historical wars, extinct languages, people shot by police, Indian foods, and winners of the Nobel Prize.\"",
+        " \"Identify the category or common thread among the following items.\"",
+        " categorize the given inputs into their respective groups or categories.",
+        " identify whether the given inputs are extinct languages or people who were shot by police.",
+        " categorize the given items into the appropriate group or category.",
+        "identify the category or group that the items belong to based on the given input.",
+        " \"Identify the category or group that the following items belong to.\"",
+        " categorize the given inputs into the appropriate categories.",
+        "\"Identify the category or group that the given items belong to.\"",
+        " provide a category that these words or phrases belong to.",
+        "provide an output category for each set of inputs.",
+        " identify the category or group that each set of words belongs to.",
+        " provide a category or group for each set of items listed.",
+        " categorize the given inputs into specific groups or categories based on common characteristics.",
+        " provide an appropriate category for each set of inputs.",
+        " categorize the given inputs into broader categories.",
+        "identify the common category or group that the inputs belong to.",
+        " provide a category or group that each set of inputs belongs to.",
+        "classify the given inputs into specific categories or groups.",
+        " categorize the given items into appropriate categories.",
+        " identify the category of items based on the given inputs.",
+        "classify the given items into categories.",
+        " categorize the given inputs into appropriate categories based on their similarities or relationships.",
+        " identify the category of the given items.",
+        "\"Provide a category for each set of inputs.\"",
+        " identify the category to which the given items belong.",
+        " categorize the given items or entities into a specific group or category.",
+        " categorize the given inputs into different groups based on a common characteristic.",
+        "identify the category of the given items.",
+        " provide an output category for each input.",
+        " classify the given inputs into a specific category.",
+        " provide a category or commonality for the given items.",
+        " categorize the given inputs into a single category or theme.",
+        " provide a category or label for each group of items.",
+        " identify the category that the given items belong to.",
+        " provide a category or group that these items belong to.",
+        " provide a category or group that all the inputs belong to.",
+        " categorize the given items into groups or categories.",
+        " provide outputs based on the given inputs.",
+        " categorize the given inputs into appropriate categories based on their characteristics or attributes.",
+        " provide a term or category that encompasses the given inputs.",
+        " provide an input and the corresponding output. Here are some examples based on the given instructions.",
+        " provide a category or label for each group of items given.",
+        " \"Identify the category of the following items.\"",
+        " categorize the given items into appropriate groups based on their characteristics.",
+        " categorize the given inputs into appropriate groups.",
+        " identify the common theme or category of the given items.",
+        " provide an appropriate category for the given list of items.",
+        " identify the category or group that the items belong to based on the given input.",
+        " provide an output category based on the given input.",
+        " provide a description or category for the given input.",
+        " provide the category or group that the given items belong to.",
+        " provide a specific category or group that all the inputs belong to.",
+        " categorize the given items or locations into the appropriate category.",
+        "classify the given items into specific categories.",
+        " classify the given inputs into different categories.",
+        "identify the category or type of each input.",
+        " provide an output category based on the input provided.",
+        " provide a category or description for the given inputs.",
+        " classify the given items into categories.",
+        " categorize the following items into specific groups or categories.",
+        "identify the category or group that the given inputs belong to.",
+        " categorize the given items into their respective groups.",
+        "identify the category or group to which the items in the input belong.",
+        " provide an output category based on the input terms given.",
+        " identify the category or group that the items or names belong to.",
+        " categorize the inputs into specific groups or categories.",
+        "\"Identify the following categories based on the given inputs.\"",
+        " categorize the given inputs into different categories.",
+        " provide synonyms for the given input words.",
+        " identify the commonality between the items in the input list.",
+        "classify the given inputs into a specific category.",
+        " identify the category or common characteristic of the given items.",
+        " determine the category or group that the given inputs belong to.",
+        " identify the common theme or category of the given input items.",
+        " identify the category or group that the input items belong to.",
+        "identify the category or type of the items listed in the input.",
+        " identify the category or common theme of the given items.",
+        " provide a category or group that each input belongs to.",
+        " categorize the following items into appropriate groups.",
+        " identify the category or group that each set of inputs belongs to.",
+        " provide synonyms, so the correct output for the last input should be \"pokemon\" instead of \"pokeman\".",
+        " provide an output category based on the given input terms.",
+        " categorize the given items into groups based on their common characteristics.",
+        "provide the computer file format extensions, ingredients of a sandwich, solvents, African countries, and popular songs corresponding to the given inputs.",
+        " identify the category or group to which the items belong.",
+        " categorize the given items into a broader category.",
+        " identify a common theme or category for each group of words.",
+        "classify the inputs into categories based on the given criteria.",
+        " identify the category that the input terms belong to.",
+        "provide an output category for each input list.",
+        " categorize the following items into their respective categories.",
+        "list items based on the given category.",
+        " provide an output category for each group of inputs.",
+        " categorize the items into groups.",
+        "identify specific categories or groups based on the input provided.",
+        " categorize the input items into specific categories.",
+        " \"Identify the category or group that each set of names or terms belongs to.\"",
+        "classify the given items into appropriate categories.",
+        " categorize the following inputs into appropriate categories.",
+        "\"Provide a category or group that these items belong to.\"",
+        "\"Provide a category for the following groups of items.\"",
+        " provide an output category for each input set.",
+        " categorize the given inputs into different groups.",
+        " categorize the given inputs into a specific category or group based on their common characteristics.",
+        " provide a category or group name for the given list of items.",
+        " classify the given items into appropriate categories.",
+        " identify the category or group that the inputs belong to.",
+        " categorize the following items into appropriate categories.",
+        " categorize the following items into broader categories.",
+        "determine the category or group that each set of items belongs to.",
+        " identify a common category or theme among the given items.",
+        "classify the following inputs into appropriate categories.",
+        " categorize the given items or names into a specific group or category.",
+        " identify the category or type of items based on the input provided.",
+        " \"Provide a category or group that these items belong to.\"",
+        "provide examples of the given category.",
+        "identify the category or commonality among the given items.",
+        " provide a word or phrase that connects the given inputs.",
+        " provide computer file format extensions, Nobel Prize winners, people shot by police, extinct languages, and infectious diseases based on the given inputs.",
+        "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+        "identify the common theme or category of the given inputs.",
+        " categorize the given items into different categories.",
+        " provide the category or group that each set of words belongs to.",
+        " categorize the following words or phrases into the specified categories.",
+        "provide an output category based on the input provided.",
+        " provide a list of items that fall into the specified category.",
+        "identify the category or group that each set of items belongs to.",
+        "provide an output category based on the given inputs.",
+        " categorize the items into different groups.",
+        " identify the common theme or category of the items listed in the input.",
+        " provide an output category for each group of input terms.",
+        " provide a category for the given items or entities.",
+        " identify a category or group that the input items belong to.",
+        "classify the given terms into categories.",
+        " provide a category for each set of input words.",
+        " categorize the given items into broader categories or groups.",
+        " provide the category or type of each input.",
+        "\"Identify the category or group that these items belong to.\"",
+        " categorize the given items into the appropriate group.",
+        "\"Provide a category for each group of words\"",
+        " categorize the given inputs into a common group or category.",
+        " provide an output category for each input term.",
+        " provide a term that encompasses the given items.",
+        "identify a category or common theme among the given items.",
+        " identify a common category or group that the inputs belong to.",
+        " classify the given inputs into their respective categories.",
+        "\"Provide a category for the following groups of items/people.\"",
+        " provide an output for each set of inputs.",
+        " categorize the given inputs into specific genres or categories.",
+        " categorize the given items into groups based on their similarities.",
+        " provide the category or group that each set of items belongs to.",
+        " identify the category or type of items based on the given inputs.",
+        " provide an output category based on the input items given.",
+        " \"Provide a category that all of the input items belong to.\"",
+        " provide categories for each set of inputs.",
+        " provide computer file format extensions, top journals, apparel, pokeman, and the media for the given inputs.",
+        " categorize the given inputs into a common category or group.",
+        " categorize the given inputs into relevant groups or categories.",
+        " identify the category or classification of the given inputs.",
+        "identify a category or group that the input items belong to.",
+        " identify a common category or theme among the given inputs.",
+        " categorize the input terms into specific categories.",
+        " \"Identify the category or group that the given items belong to.\"",
+        " \"Provide a category or commonality for the following groups of terms.\"",
+        "classify the given items into their respective categories.",
+        " \"Provide an output category for each input category.\"",
+        " identify certain categories based on the input provided.",
+        "\"Provide a category for the following groups of words.\"",
+        " categorize the given items into specific groups based on their characteristics.",
+        " \"Identify the category or group that the items belong to.\"",
+        "provide a category or theme for each set of inputs.",
+        " identify the category that each group of items belongs to.",
+        " identify the category or commonality among the given items.",
+        " identify the common theme or category of the given inputs.",
+        " identify a category or group that these items belong to.",
+        " categorize the given words or phrases into specific groups or categories.",
+        " provide categories or groupings for the given inputs.",
+        " provide examples of the given category based on the input.",
+        " provide a word or phrase that encompasses the items listed.",
+        " identify a category or group that all the input items belong to.",
+        "\"Provide a category or group that each set of items belongs to.\"",
+        " \"Provide a category or label for the following inputs.\"",
+        " provide a category for each group of items given.",
+        " identify the category of each input.",
+        "\"Provide a category for the following items.\"",
+        " provide a categorization or description of the items listed in the input.",
+        " categorize the given inputs into broader categories or themes.",
+        " identify the category or type of each input.",
+        "provide the category or classification for each group of items.",
+        "provide a category or classification for the given inputs.",
+        " provide an output category based on the given input items.",
+        " categorize the given items or names into different groups based on their similarities.",
+        " \"Provide a category for the following groups of terms.\"",
+        " provide a category or label for the given inputs.",
+        " provide a category or group that the input items belong to.",
+        "classify the given inputs into the specified category.",
+        " categorize the given items based on a common theme or category.",
+        "\"Provide the category for the following inputs.\"",
+        "classify the given inputs into their respective categories.",
+        " categorize the given items into a common group or category.",
+        " provide a category or group that the given items or individuals belong to.",
+        "identify the category of the items given.",
+        " provide an output category based on the input words given.",
+        " provide a category for each group of input items.",
+        " categorize the input into a specific group or category.",
+        " provide a category or group for each set of words.",
+        " identify the category to which the given inputs belong.",
+        "identify the category or type of the given items or terms.",
+        " provide a category that all the inputs belong to.",
+        " identify the category or group for each set of items.",
+        " identify a common category or group that the given items belong to.",
+        "determine a category or group that the given items belong to.",
+        " categorize the items into their respective categories.",
+        " identify the common theme or category among the given inputs.",
+        " categorize the following items into the specified category.",
+        "identify a common category or group that the items belong to.",
+        "\"Provide categories for the following items.\"",
+        " identify the category or group that each set of items belongs to.",
+        "provide a category or commonality for the given inputs.",
+        " determine the category or classification of the given inputs.",
+        " provide computer file format extensions, sports, pokeman, historical wars, and synonyms for the given inputs.",
+        " categorize the given items into different groups.",
+        " identify the category or common theme of the given inputs.",
+        " provide a category for the given inputs.",
+        " identify the category or type of the items listed.",
+        " categorize the given inputs into specific categories based on their characteristics.",
+        " categorize the given items or entities into a broader category.",
+        " provide the category or classification of the given items.",
+        " categorize the given inputs into different groups based on a specific criteria.",
+        " categorize the given inputs into the appropriate category.",
+        " \"Provide a category for the following groups of names or terms.\"",
+        " categorize the input terms into their respective categories.",
+        " \"Identify the category or group that each set of names belongs to.\"",
+        "identify whether the input names are people shot by police, games on Steam, or Indian foods.",
+        " provide a category or common theme for the given list of words or phrases.",
+        " categorize the given inputs into specific categories based on the provided outputs.",
+        " classify the given inputs into appropriate categories.",
+        "\"Provide examples of each category.\"",
+        " categorize the given items into specific groups.",
+        "provide categories or commonalities for the given inputs.",
+        "provide a category for each input.",
+        " provide a category for each set of items given as input.",
+        " categorize the following terms into their respective categories.",
+        "provide an output based on the given input.",
+        " identify the category or group that the given terms belong to.",
+        "provide computer file format extensions for the given inputs.",
+        " identify the category or connection between the given inputs.",
+        " categorize the given inputs into broader categories or groups.",
+        " identify the category that each set of items belongs to.",
+        " provide categories or classifications for the given inputs.",
+        "identify the category or group to which the items belong.",
+        " provide a specific output based on the input given.",
+        " provide an output category based on the input given.",
+        "identify a category or group that the items belong to.",
+        "identify the category or commonality among the given inputs.",
+        " categorize the following items into the specified categories.",
+        "\"Provide a category for the following inputs.\"",
+        " categorize the given items into broader categories based on their characteristics or attributes.",
+        "provide a category or group that each input belongs to.",
+        "determine the category or group that the items belong to.",
+        " identify the category or group that the items or entities belong to.",
+        "provide categories or groups that the given inputs belong to.",
+        " provide synonyms, so the last output should be \"names of people\" instead of \"people shot by police.\"",
+        " provide an output category for a given list of items.",
+        " provide specific categories or types of the given inputs.",
+        " identify the category or group that the given words belong to.",
+        "\"Provide a category or classification for the following items.\"",
+        " categorize the given inputs into different groups based on their similarities.",
+        " provide a category or type of the items listed in the input.",
+        " categorize the given items into a common group based on their characteristics or attributes.",
+        " identify the category of the items listed in the input.",
+        " identify the category or group to which each input belongs.",
+        " provide the category or type of the given items.",
+        " categorize the items or entities listed in the input.",
+        " provide a category or commonality for the given list of items.",
+        " categorize the given items or names into a broader category.",
+        "identify the common theme or category of the given items.",
+        " \"Identify the category or group that these items belong to.\"",
+        "determine the category or group that the given items belong to.",
+        " provide a category for each group of items given as input.",
+        "\"Provide a category for the following groups of items or concepts.\"",
+        " categorize the items into different groups based on their type or category.",
+        " provide categories or groups that the input items belong to.",
+        "classify the given inputs into the appropriate categories.",
+        " categorize the given inputs into different categories based on their characteristics.",
+        "provide a list of items and the output would be a category they belong to.",
+        " provide a category or group that the input terms belong to.",
+        " identify the category or group that the items belong to based on the given inputs.",
+        "classify the input into different categories.",
+        " \"Identify the category or common theme for the following groups of items\"",
+        " provide computer file format extensions, religions, periods of Japanese history, and programming languages for the given inputs.",
+        " provide a category or common theme for the given inputs.",
+        "identify a category or group that the given items or names belong to.",
+        " provide a category or classification for each group of items given.",
+        " identify the category or type of each group of items given.",
+        " provide related terms or categories for the given inputs.",
+        " identify the common theme or category that the given inputs belong to.",
+        " group the given items into categories.",
+        "provide an output category for each input.",
+        " categorize the given items or names into appropriate categories.",
+        " categorize the given inputs into a broader category or group based on their characteristics.",
+        "provide a category or group for the given inputs.",
+        " \"Identify whether the following inputs are people shot by police, games on Steam, extinct languages, or Computer Science journals.\"",
+        " provide relevant information based on the given input.",
+        " categorize the given inputs into specific groups or categories based on their common characteristics.",
+        " \"Provide categories for the following inputs.\"",
+        "identify the category or theme of each group of inputs.",
+        " provide a category or group that each set of words belongs to.",
+        " categorize the given items into a broader category or group.",
+        " \"Identify the category or group that each set of items belongs to.\"",
+        " provide a certain type of information based on the input given.",
+        "identify categories or groups based on the given inputs.",
+        " identify the category or group that the items or terms belong to.",
+        " categorize the items or books into different groups or categories.",
+        " categorize the given inputs into specific groups based on certain criteria.",
+        " identify a common theme or category for the given input items.",
+        " identify specific categories or characteristics of the given inputs.",
+        " provide a category or commonality for the given inputs.",
+        " categorize the given items based on their common characteristics.",
+        " identify the category or group that the items listed belong to.",
+        " categorize the following items.",
+        " categorize the given items.",
+        " categorize the following items into their respective groups.",
+        " categorize the following inputs.",
+        " \"Provide a category for the following sets of items\"",
+        " identify the common theme or category of the items listed.",
+        " categorize the inputs into specific categories.",
+        " \"Provide a category for the following groups of items.\"",
+        " provide related information or categorize the given inputs.",
+        "provide computer file format extensions, programming languages, Nobel Prize winners, artists, and long rivers based on the given inputs.",
+        " identify a common characteristic or category for the given inputs.",
+        " provide categories or groups based on the given inputs.",
+        " identify the category or group that the items or individuals belong to.",
+        " categorize the given inputs into specific groups based on their similarities.",
+        " identify the category of items or individuals based on the given input.",
+        " classify the given inputs into the appropriate category.",
+        " provide a term that encompasses the given inputs.",
+        " identify and categorize the given inputs.",
+        " identify a common category or characteristic among the items listed.",
+        " categorize the input items into specific groups or categories.",
+        " identify a category or group that all the items in the list belong to.",
+        " classify the given terms into their respective categories.",
+        " identify the category or theme of the given inputs.",
+        " categorize the input into different groups based on their similarities.",
+        "provide computer file format extensions, computer science journals, winners of the Nobel Prize, people shot by police, and natural disasters based on the given inputs.",
+        " identify the category or type of the given items or terms.",
+        " provide a category for each group of items listed.",
+        " provide examples of the given category.",
+        " identify a common theme or category among the given items.",
+        " provide file format extensions, popular songs, Computer Science journals, synonyms, and tourist attractions based on the given inputs.",
+        " identify a category for each set of inputs.",
+        "provide a group or category that the given items belong to.",
+        " \"Provide a category or connection for the following groups of terms.\"",
+        " categorize the given inputs into specific groups based on their characteristics.",
+        " identify a common category or group for the given inputs.",
+        " identify the common theme or category for the given inputs.",
+        " provide a category or group that the items belong to.",
+        " identify the category for each group of words.",
+        " identify the category or common theme among the given items.",
+        "identify the category or group that the items listed belong to.",
+        " categorize the given inputs into different groups or types.",
+        "classify the given items into categories based on their common characteristics.",
+        " categorize the given inputs into the appropriate groups.",
+        " identify the category or type of each input term.",
+        "identify the category or group that the items belong to based on the given inputs.",
+        " categorize the inputs into broader categories.",
+        "classify the following groups of words into categories.",
+        " identify the category or group to which the items in the input belong.",
+        " identify the category or common theme of the given list of items.",
+        "identify the category or type of each item in the list.",
+        " categorize the given terms into their respective categories.",
+        " provide categories based on the given inputs.",
+        " identify the category or common theme among the given inputs.",
+        " provide synonyms for the given words, but the output provided different categories for each input.",
+        " identify the category or group that the input terms belong to.",
+        "provide a category for each group of items given as input.",
+        "provide a category or group that all the inputs belong to.",
+        " categorize the following items into different groups.",
+        " identify the category or group that the items belong to based on the input given.",
+        " \"Provide a category or label for the following groups of items.\"",
+        " identify the category of each group of items.",
+        " provide an appropriate category for each input.",
+        "identify the category or group to which the given items belong.",
+        " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+        " categorize the given items or entities into appropriate groups or categories.",
+        " provide synonyms, historical wars, apparel, and popular songs for the given inputs.",
+        " identify the category of the given items or names.",
+        " identify the category that the items belong to.",
+        "identify the category or group that the inputs belong to.",
+        "identify and categorize the items based on a specific criteria.",
+        " categorize the given inputs into the appropriate group or category.",
+        "\"Provide the category or group that the given items belong to.\"",
+        " provide a word or phrase that connects the listed items.",
+        " categorize the given items into specific groups or categories based on their common characteristics.",
+        " categorize the inputs into their respective groups or categories.",
+        " categorize the given inputs into the appropriate categories based on the information provided.",
+        " categorize the following terms into appropriate categories.",
+        "provide an output category for the given inputs.",
+        " provide computer file format extensions, tourist attractions, the media, continents, and programming languages based on the given inputs."
+    ],
+    "instruction_select_history": [
+        [
+            "provide an output category based on the input provided.",
+            0.15,
+            " \"Provide a category for the following groups of terms.\"",
+            0.15
+        ],
+        [
+            " categorize the given inputs into different categories.",
+            0.05,
+            " provide the category or group that each set of words belongs to.",
+            0.15
+        ],
+        [
+            " provide synonyms for the given words, but the output provided different categories for each input.",
+            0.0,
+            " provide synonyms, historical wars, apparel, and popular songs for the given inputs.",
+            0.0
+        ],
+        [
+            "identify the category or group that the given items belong to.",
+            0.15,
+            " provide a category for each group of items given.",
+            0.25
+        ],
+        [
+            " categorize the following items.",
+            0.0,
+            "identify categories or groups based on the given inputs.",
+            0.15
+        ],
+        [
+            "classify the following groups of words into categories.",
+            0.1,
+            " categorize the given terms into specific groups or categories.",
+            0.1
+        ],
+        [
+            " identify the category for each group of words.",
+            0.2,
+            "\"Provide a category for the following inputs.\"",
+            0.25
+        ],
+        [
+            " categorize the given items into different categories.",
+            0.0,
+            " identify the category or type of each group of items given.",
+            0.2
+        ],
+        [
+            " \"Identify the category or group that each set of names or terms belongs to.\"",
+            0.15,
+            " provide a specific output based on the input given.",
+            0.05
+        ],
+        [
+            " provide the category or classification of the given items.",
+            0.15,
+            "classify the given inputs into specific categories or groups.",
+            0.15
+        ],
+        [
+            "identify the category or group to which the given items belong.",
+            0.4,
+            " \"Provide a category or label for the following groups of items.\"",
+            0.2
+        ],
+        [
+            " identify the category or type of items based on the input provided.",
+            0.15,
+            " categorize the given inputs into broader categories or groups.",
+            0.2
+        ],
+        [
+            " categorize the given items or entities into appropriate groups or categories.",
+            0.05,
+            " categorize the given inputs into specific groups based on their characteristics.",
+            0.1
+        ],
+        [
+            "identify the category or type of the given items.",
+            0.25,
+            " categorize the following terms into their respective categories.",
+            0.0
+        ],
+        [
+            " identify the category that the items belong to.",
+            0.25,
+            " categorize the given inputs into a broader category or group based on their characteristics.",
+            0.2
+        ],
+        [
+            " \"Provide a category for the following groups of terms.\"",
+            0.15,
+            "provide categories or commonalities for the given inputs.",
+            0.1
+        ],
+        [
+            " provide a category or group that the items belong to.",
+            0.25,
+            "provide the category or classification for each group of items.",
+            0.35
+        ],
+        [
+            " identify the category that each group of items belongs to.",
+            0.2,
+            " categorize the given inputs.",
+            0.1
+        ],
+        [
+            " categorize the given items or entities into a broader category.",
+            0.3,
+            "identify a common theme or category that the inputs belong to.",
+            0.15
+        ],
+        [
+            " \"Provide a category for the following groups of names or terms.\"",
+            0.3,
+            " provide a category for each group of items listed.",
+            0.35
+        ],
+        [
+            "provide an output category for each input provided.",
+            0.15,
+            " categorize the given items or names.",
+            0.1
+        ],
+        [
+            " provide an output for each set of inputs.",
+            0.0,
+            "list items based on the given category.",
+            0.25
+        ],
+        [
+            " identify the category for each group of words.",
+            0.2,
+            " provide a category or group for each set of items listed.",
+            0.35
+        ],
+        [
+            " categorize the given items into groups based on their common characteristics.",
+            0.15,
+            " provide an appropriate category for the given inputs.",
+            0.15
+        ],
+        [
+            "identify whether the input names are people shot by police, games on Steam, or Indian foods.",
+            0.0,
+            " identify a category or group that these items belong to.",
+            0.2
+        ],
+        [
+            " identify the category that the given items belong to.",
+            0.35,
+            "\"Provide a category for each group of words\"",
+            0.05
+        ],
+        [
+            " identify the category of items or individuals based on the given input.",
+            0.2,
+            " categorize the given items into appropriate groups based on their characteristics.",
+            0.05
+        ],
+        [
+            " provide the category or group that the items belong to based on the input given.",
+            0.2,
+            " provide a category or group for each set of items listed.",
+            0.35
+        ],
+        [
+            " provide categories for the given inputs.",
+            0.15,
+            "provide categories or commonalities for the given inputs.",
+            0.1
+        ],
+        [
+            " categorize the given items into specific groups.",
+            0.1,
+            " categorize the input items into specific categories.",
+            0.05
+        ],
+        [
+            " categorize the following items into the specified category.",
+            0.05,
+            " identify a category or group that all the items in the list belong to.",
+            0.25
+        ],
+        [
+            "determine a category or group that the given items belong to.",
+            0.35,
+            " identify the category or group that each set of words belongs to.",
+            0.2
+        ],
+        [
+            " provide a category or label for each group of items.",
+            0.25,
+            " identify the category or group to which each input belongs.",
+            0.15
+        ],
+        [
+            " \"Provide a category for the following sets of items\"",
+            0.2,
+            " provide a category that all the inputs belong to.",
+            0.3
+        ],
+        [
+            " identify a common category or group that the given items belong to.",
+            0.25,
+            " categorize the given items into their respective groups.",
+            0.05
+        ],
+        [
+            " provide a specific output based on the input given.",
+            0.05,
+            " provide a category or group that each set of items belongs to.",
+            0.35
+        ],
+        [
+            "identify the category or theme of each group of inputs.",
+            0.2,
+            " categorize the given items into their respective groups.",
+            0.05
+        ],
+        [
+            " provide computer file format extensions, tourist attractions, programming languages, and African countries based on the given inputs.",
+            0.0,
+            " identify the category or group that the items or terms belong to.",
+            0.1
+        ],
+        [
+            "provide a category or classification for the given inputs.",
+            0.15,
+            " categorize the given items into different categories.",
+            0.0
+        ],
+        [
+            "identify the category of the given items.",
+            0.3,
+            " identify the category or group that the items belong to based on the input given.",
+            0.3
+        ],
+        [
+            " provide the category or type of the given items.",
+            0.2,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide relevant information based on the given input.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide the category or type of the given items.",
+            0.2
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide the category or type of the given items.",
+            0.2
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide the category or type of the given items.",
+            0.2
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide related terms or categories for the given inputs.",
+            0.05
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide the category or type of the given items.",
+            0.2
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide the category or type of the given items.",
+            0.2
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide the category or type of the given items.",
+            0.2
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide the category or type of the given items.",
+            0.2
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide the category or type of the given items.",
+            0.2
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide the category or type of the given items.",
+            0.2
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide the category or type of the given items.",
+            0.2
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " provide synonyms, so the last output should be \"names of people\" instead of \"people shot by police.\"",
+            0.0
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " provide the category or type of the given items.",
+            0.2
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " provide the category or type of the given items.",
+            0.2
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " provide the category or type of the given items.",
+            0.2
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide the category or type of the given items.",
+            0.2
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide the category or type of the given items.",
+            0.2
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide computer file format extensions, religions, periods of Japanese history, and programming languages for the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide the category or type of the given items.",
+            0.2
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " provide the category or type of the given items.",
+            0.2
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " provide the category or type of the given items.",
+            0.2
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide relevant information based on the given input.",
+            0.0
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " provide relevant information based on the given input.",
+            0.0
+        ],
+        [
+            " provide relevant information based on the given input.",
+            0.0,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            " provide relevant information based on the given input.",
+            0.0,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            " provide relevant information based on the given input.",
+            0.0,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            " provide relevant information based on the given input.",
+            0.0,
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " provide relevant information based on the given input.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide relevant information based on the given input.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide relevant information based on the given input.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide relevant information based on the given input.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide relevant information based on the given input.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide relevant information based on the given input.",
+            0.0
+        ],
+        [
+            "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+            0.0,
+            " provide relevant information based on the given input.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide relevant information based on the given input.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide relevant information based on the given input.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide relevant information based on the given input.",
+            0.0
+        ],
+        [
+            " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+            0.0,
+            " provide relevant information based on the given input.",
+            0.0
+        ]
+    ],
+    "now_values": [
+        0.2,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+    ]
+}

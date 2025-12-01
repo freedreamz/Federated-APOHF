@@ -1,0 +1,3395 @@
+{
+    "task": "orthography_starts_with",
+    "n_prompt_tokens": 5,
+    "nu": 0.3,
+    "lamdba": 1,
+    "n_init": 5,
+    "n_domain": 500,
+    "total_iter": 165,
+    "local_training_iter": 30,
+    "random_proj": "uniform",
+    "intrinsic_dim": 100,
+    "n_eval": 1000,
+    "name": "",
+    "gpt": "gpt-3.5-turbo",
+    "init_scale": 1,
+    "pooling": "last",
+    "func": "neural",
+    "trial": 0,
+    "magnitude": 10,
+    "norm_method": "standard",
+    "candidate_method": "induction",
+    "agent_N_list": [
+        1,
+        2,
+        3,
+        4,
+        5
+    ],
+    "test_score": 0.0,
+    "valid_score": 0.86,
+    "best_prompt": [
+        " identify the indefinite article in each sentence."
+    ],
+    "prompts_set": {},
+    "best_values": [
+        0.76,
+        0.76,
+        0.76,
+        0.76,
+        0.76,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86
+    ],
+    "best_instruction_over_iter": [
+        [
+            0,
+            "identify and output the verb in each sentence.",
+            0.76
+        ],
+        [
+            0,
+            "identify and output the verb in each sentence.",
+            0.76
+        ],
+        [
+            0,
+            "identify and output the verb in each sentence.",
+            0.76
+        ],
+        [
+            0,
+            "identify and output the verb in each sentence.",
+            0.76
+        ],
+        [
+            0,
+            "identify and output the verb in each sentence.",
+            0.76
+        ],
+        [
+            1,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            1,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            1,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            1,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            1,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            2,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            2,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            2,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            2,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            2,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            3,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            3,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            3,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            3,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            3,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            4,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            4,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            4,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            4,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            4,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            5,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            5,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            5,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            5,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            5,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            6,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            6,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            6,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            6,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            6,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            7,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            7,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            7,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            7,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            7,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            8,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            8,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            8,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            8,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            8,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            9,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            9,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            9,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            9,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            9,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            10,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            10,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            10,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            10,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            10,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            11,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            11,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            11,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            11,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            11,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            12,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            12,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            12,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            12,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            12,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            13,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            13,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            13,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            13,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            13,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            14,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            14,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            14,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            14,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            14,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            15,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            15,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            15,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            15,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            15,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            16,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            16,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            16,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            16,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            16,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            17,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            17,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            17,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            17,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            17,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            18,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            18,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            18,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            18,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            18,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            19,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            19,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            19,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            19,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            19,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            20,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            20,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            20,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            20,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            20,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            21,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            21,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            21,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            21,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            21,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            22,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            22,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            22,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            22,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            22,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            23,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            23,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            23,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            23,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            23,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            24,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            24,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            24,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            24,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            24,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            25,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            25,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            25,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            25,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            25,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            26,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            26,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            26,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            26,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            26,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            27,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            27,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            27,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            27,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            27,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            28,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            28,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            28,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            28,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            28,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            29,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            29,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            29,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            29,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            29,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            30,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            30,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            30,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            30,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            30,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            31,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            31,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            31,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            31,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            31,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            32,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            32,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            32,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            32,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            32,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            33,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            33,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            33,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            33,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            33,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            34,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            34,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            34,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            34,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            34,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            35,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            35,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            35,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            35,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            35,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            36,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            36,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            36,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            36,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            36,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            37,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            37,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            37,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            37,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            37,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            38,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            38,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            38,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            38,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            38,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            39,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            39,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            39,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            39,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            39,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            40,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            40,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            40,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            40,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            40,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            41,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            41,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            41,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            41,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            41,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            42,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            42,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            42,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            42,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            42,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            43,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            43,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            43,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            43,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            43,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            44,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            44,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            44,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            44,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            44,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            45,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            45,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            45,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            45,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            45,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            46,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            46,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            46,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            46,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            46,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            47,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            47,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            47,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            47,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            47,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            48,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            48,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            48,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            48,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            48,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            49,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            49,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            49,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            49,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            49,
+            " identify the indefinite article in each sentence.",
+            0.86
+        ]
+    ],
+    "init_instructions": [
+        "\"Identify the word that starts with the given letter.\"",
+        "find and return the word that matches the given letter in the input sentence.",
+        " identify the verb in each sentence.",
+        "find and output the word that starts with the given letter.",
+        "identify the subject of the sentence.",
+        " identify the article in each sentence.",
+        " identify the word that is the subject of the sentence.",
+        "identify the preposition in each sentence.",
+        "identify and output the subject of the sentence.",
+        "find the word in each sentence that starts with the specified letter.",
+        " identify and provide the word starting with the specified letter in each sentence.",
+        "identify the target word in each sentence.",
+        " identify the word that corresponds to the given letter in the sentence.",
+        " identify the word that starts with the letter provided in the input sentence.",
+        " identify the word that starts with the given letter in each sentence.",
+        "identify and output all words that start with the specified letter in each sentence.",
+        " identify and output the word that follows the specified letter in each sentence.",
+        " identify and provide the first word that starts with the given letter in each sentence.",
+        " identify and provide the word that starts with the given letter in each sentence.",
+        "find the word that starts with the given letter.",
+        "find and output the word that starts with the specified letter in each sentence.",
+        " identify the word that is the requested part of speech.",
+        "identify the word that is the preposition in each sentence.",
+        "identify and list all words that contain the specified letter.",
+        "convert the given word to lowercase if it starts with the specified letter.",
+        "identify the prepositions in the given sentences.",
+        "find the word in the sentence that starts with the given letter.",
+        " identify the word that starts with the letter provided in brackets.",
+        " identify the word that starts with the given letter.",
+        " these to was paint relating",
+        "find the word that contains the given letter.",
+        " identify the word in brackets that is a proper noun.",
+        " provide the first word of the sentence.",
+        "identify and provide the word that starts with the given letter.",
+        "output the word that starts with the given letter.",
+        "find and output the first word starting with the specified letter in each input sentence.",
+        "identify the word that starts with the given letter.",
+        " identify and output the verb in each sentence.",
+        " identify the word in the sentence that starts with the specified letter.",
+        "identify and output the word that corresponds to the given letter in each sentence.",
+        " identify and provide the word that starts with the specified letter in brackets.",
+        " identify the word that corresponds to the given part of speech tag in each sentence.",
+        "capitalize the word that starts with the specified letter.",
+        "identify the verb in each sentence.",
+        " identify the word that starts with the specified letter.",
+        "provide the first letter of the word requested in the input sentence.",
+        " identify the noun in each sentence.",
+        "identify the word in brackets that is a function word.",
+        "identify and extract proper nouns from the given sentences.",
+        "identify the word in the sentence that starts with the given letter.",
+        " identify the pronoun in each sentence.",
+        "identify and output the word that starts with the given letter.",
+        " identify the word that is an adverb.",
+        "capitalize the word that starts with the given letter.",
+        "change the first letter of the word to the specified letter.",
+        " identify the first word in each sentence.",
+        "find the word indicated by the letter in brackets.",
+        "identify and output the target word in each sentence based on the given instruction letter.",
+        "identify the word in each sentence that begins with the given letter.",
+        "identify the word that starts with the specified letter in each sentence.",
+        "identify the word that comes after the specified letter in each sentence.",
+        "identify the object of the verb in each sentence.",
+        " identify the preposition in each sentence.",
+        " identify and extract the verb in each sentence.",
+        "identify and list all the prepositions in the given sentences.",
+        "identify the word that is the subject of the sentence.",
+        "identify and output the proper noun(s) in each sentence.",
+        " identify and provide the first word that starts with the specified letter in the given sentence.",
+        "capitalize the first letter of the word in the brackets.",
+        " identify the requested word class (part of speech) for each word in the given sentence.",
+        "\"List the word or words that start with the given letter.\"",
+        "identify the word or words that serve as the subject in the sentence.",
+        "identify and output the word that starts with the specified letter.",
+        "identify the determiner in each sentence.",
+        "identify and provide the word that starts with the given letter in each sentence.",
+        "identify and extract the requested word or phrase from the given sentence.",
+        "identify the first word that starts with the specified letter in each sentence.",
+        " identify and provide the verb in each sentence.",
+        " identify and provide the preposition in each sentence.",
+        "report the word that is being referred to by the specified letter in brackets.",
+        "identify the relative pronoun in each sentence.",
+        "capitalize the proper nouns in the given sentences.",
+        " identify and output the word that starts with the specified letter.",
+        "find and correct the errors in the given sentences.",
+        "identify the word that is an adjective.",
+        "underline the word that starts with the given letter.",
+        " identify the word that starts with the specified letter in the given sentence.",
+        "find the word in the sentence that starts with the given letter in brackets.",
+        "identify the proper nouns in the given sentences.",
+        "identify the word that is the third word in the sentence.",
+        "convert the first word of the sentence to lowercase.",
+        "identify the pronoun in each sentence.",
+        "identify the word that corresponds to the given letter in the sentence.",
+        " identify the correct article or conjunction in each sentence.",
+        " identify the subject of the sentence.",
+        "capitalize the first letter of the word requested.",
+        "identify and list all words that start with the given letter in the input sentence.",
+        "find the word that contains the specified letter within the brackets.",
+        "identify the noun in each sentence.",
+        " find the word that starts with the given letter.",
+        " identify the proper noun in each sentence.",
+        "find and output the word that starts with the specified letter.",
+        " identify and output the word that starts with the specified letter in each sentence.",
+        "identify the word in brackets that is the object of the sentence.",
+        " identify the verb in each sentence starting with the given letter.",
+        " identify the conjunction in each sentence.",
+        "identify the word that contains the specified letter.",
+        "identify the word in each sentence that starts with the given letter.",
+        " identify the word that is being asked for in each sentence.",
+        "identify and extract words that start with the given letter.",
+        "identify the article in each sentence.",
+        " provide the first word in the sentence that starts with the given letter.",
+        " identify the word that corresponds to the given letter in brackets.",
+        "find and output the word that corresponds to the given letter within the sentence.",
+        " identify the last word that starts with the given letter in each sentence.",
+        "identify the word that starts with the given letter in each sentence.",
+        "identify the word that starts with the specified letter in the given sentence.",
+        "identify and output the word in each sentence that starts with the given letter.",
+        " identify and highlight the word that is a verb in each sentence.",
+        " find the word that contains the specified letter within the brackets.",
+        " identify and return the word that starts with the given letter in the input sentence.",
+        "find and return the word that contains the specified letter.",
+        "identify and output the word that comes after the specified letter in the input sentence.",
+        " identify and list all the prepositions in the given sentence.",
+        " identify and output the word starting with the given letter in each sentence.",
+        "identify the word in brackets that is the noun in each sentence.",
+        "capitalize the first letter of the word that comes after the specified letter.",
+        "identify the word or words that start with the specified letter.",
+        " provide the proper noun in each sentence.",
+        "find and output the word that starts with the specified letter in brackets.",
+        " identify the pronouns in each sentence.",
+        "convert the given word into lowercase.",
+        " identify the word specified in brackets.",
+        "identify and provide the part of speech for the specified word in the sentence.",
+        "provide the word that begins with the same letter as the letter in brackets.",
+        "find the word specified in brackets in each sentence and output that word.",
+        "find and output the word that corresponds to the given letter in the sentence.",
+        " identify and output the word in the sentence that contains the specified letter.",
+        " identify and provide the word requested within the brackets in each sentence.",
+        "identify and output the adjectives in the given sentences.",
+        "find the word or phrase that matches the given letter in the input sentence.",
+        "find the word that is incorrect in each sentence.",
+        "identify and output the word that starts with the given letter in each sentence.",
+        "identify the word in brackets and output the word itself without the brackets.",
+        "identify the word in brackets that is a pronoun.",
+        "find and return the word that starts with the given letter in each sentence.",
+        "find the word that is the direct object in each sentence.",
+        " identify the word that corresponds to the given part of speech tag in the sentence.",
+        " find and output the word that starts with the given letter in the input sentence.",
+        " provide the word that starts with the given letter in the sentence.",
+        "identify the word in the sentence that is a preposition.",
+        "identify and output the first word in each sentence that starts with the specified consonant.",
+        "find the word that contains the specified letter.",
+        "find the noun in each sentence.",
+        "identify the word that is a determiner.",
+        "find and output the word that starts with the given letter in the sentence.",
+        " identify the word that corresponds to the given letter in the input sentence.",
+        "identify and output the word in each sentence that contains the specified letter.",
+        "identify the word that is capitalized in the sentence.",
+        "identify and output the word that starts with the given letter within the sentence.",
+        " identify and output the word that starts with the given letter in each sentence.",
+        "identify the main verb in each sentence.",
+        " identify the word in each sentence that starts with the given letter.",
+        "identify and provide the word that starts with the specified letter in each sentence.",
+        "identify the first letter of each sentence.",
+        "identify and extract the verb in each sentence.",
+        "identify the word in each sentence that is a preposition.",
+        "\"Identify the noun in each sentence.\"",
+        " identify and output the word that corresponds to the given letter in the sentence.",
+        " identify the first word in the sentence or phrase given.",
+        "highlight the words that start with the letter provided in brackets.",
+        "identify and output the noun in each sentence.",
+        "identify the prepositions in the sentence.",
+        "capitalize the first letter of each word in the sentence.",
+        " identify the word indicated in brackets.",
+        "identify and output the last word of the sentence.",
+        "identify the word that contains the given letter.",
+        " identify and extract the word that starts with the specified letter.",
+        "identify and correct the errors in the given sentences.",
+        "identify the word in each sentence that contains the specified letter.",
+        "identify and extract the word that starts with the given letter in brackets.",
+        "\"Identify the word that starts with the specified letter in each sentence.\"",
+        "identify the word or words that start with the letter provided in brackets.",
+        " identify the word in the sentence that starts with the given letter.",
+        "identify and output the pronoun used in each sentence.",
+        " find and output the word that starts with the given letter.",
+        "identify the word that is a preposition in each sentence.",
+        " identify the subject of each sentence.",
+        " identify and extract the word that starts with the given letter from the input sentence.",
+        " identify the word that comes after the specified letter in each sentence.",
+        "\"Identify the common noun(s) in the given sentence.\"",
+        "extract the word starting with the specified letter in brackets.",
+        " provide the pronoun or proper noun from the given sentence.",
+        " identify the word requested within the given sentence.",
+        " identify the word that starts with the given letter in the input sentence.",
+        "identify the word that starts with the given letter in brackets.",
+        "identify the word that starts with the letter provided in brackets.",
+        "find the word that the given letter is the first letter of.",
+        "find the word that starts with the specified letter.",
+        "capitalize the first word of each sentence.",
+        "identify the word starting with the given letter in the input sentence.",
+        "identify and output the word that starts with the specified letter in each sentence.",
+        " identify the word that starts with the specified letter in the sentence.",
+        "identify the subject of each sentence.",
+        " provide the word that starts with the specified letter in brackets.",
+        " identify and extract the word specified in brackets.",
+        " identify the word that starts with the given letter in the sentence.",
+        "identify the word in each sentence that is considered a function word.",
+        " \"Find the word indicated in brackets.\"",
+        "identify and extract the word(s) that start with the specified letter.",
+        "identify the word that starts with the specified letter.",
+        " identify the word that fits the given criteria (e.g. starting with a specific letter, containing a specific letter, etc.) in each sentence.",
+        "identify and provide the words that start with the letter given in brackets.",
+        " identify and output the last word in each sentence.",
+        " identify the common noun in each sentence.",
+        "identify and output the word in the sentence that contains the given letter.",
+        " identify the word that corresponds to the given part of speech in the sentence.",
+        "find and output the word that contains the given letter.",
+        "identify and output the shortest word in each input sentence.",
+        "identify the word in the sentence that corresponds to the given letter.",
+        " identify and output the word that starts with the given letter.",
+        "identify the subject in each sentence.",
+        "\"Identify the word in the sentence that starts with the given letter.\"",
+        "output the name of the person starting with the given letter.",
+        " identify the adjective in each sentence.",
+        " identify and extract the word or words that start with the given letter in brackets.",
+        "identify the key word in each sentence.",
+        " identify the specified word types in the given sentences.",
+        " identify the word that starts with the given letter in brackets.",
+        "identify the word that begins with the specified letter within the given sentence.",
+        "capitalize the name of the person mentioned in the sentence.",
+        " find and output the word that starts with the given letter in each sentence.",
+        " identify and extract the word that starts with the specified letter in brackets.",
+        " identify and list all words that start with the given letter in the sentence.",
+        "\"Identify the word that is a noun in each sentence.\"",
+        " identify and extract all the words starting with the letter provided in the brackets.",
+        " provide the word that contains the specified letter.",
+        " identify and extract all words that start with the given letter.",
+        "output the word starting with the given letter in the sentence.",
+        " identify the word requested within the sentence provided.",
+        " identify the word in the sentence that contains the specified letter.",
+        " identify and provide the missing words in the given sentences.",
+        "identify and extract the noun or nouns from the given sentence.",
+        "identify and extract the word that starts with the given letter.",
+        " identify the pronoun in the sentence.",
+        " find and output the word specified in brackets.",
+        " identify the word that contains the specified letter.",
+        "find the word starting with the given letter.",
+        "identify the word that should be replaced with the word in brackets.",
+        "identify and provide the word that is a noun in each sentence.",
+        "identify and extract the word that starts with the specified letter within brackets in the given sentence.",
+        "identify the specific word or phrase requested in brackets.",
+        "identify the word that begins with the given letter in each sentence.",
+        "find the main verb in each sentence.",
+        "identify the object of the preposition in each sentence.",
+        "identify and highlight the prepositions in the given sentences.",
+        "find the word in each sentence that starts with the given letter.",
+        "find the article in each sentence.",
+        " identify and output the word that starts with the given letter in the input sentence.",
+        " identify and capitalize the proper nouns in the given sentences.",
+        "identify the word indicated in brackets.",
+        " identify and output the word that comes after the specified letter in brackets.",
+        "identify the first word in the sentence that starts with the given letter.",
+        "identify the first word of the sentence.",
+        "convert the first word in the sentence that starts with the given letter to lowercase.",
+        "identify the article or adjective in the given sentence.",
+        " identify and extract the proper nouns from the given sentences.",
+        "identify the word that corresponds to the specified letter in the sentence.",
+        "identify the word starting with the given letter in the sentence.",
+        " identify and provide the adjective in each sentence.",
+        " identify and extract the verbs from the given sentences.",
+        "identify and output the first word of the sentence that corresponds to the given letter.",
+        "identify and extract the verb from each sentence.",
+        " identify and list all the words that are not part of the input sentence.",
+        " highlight the word that starts with the given letter.",
+        "find the word starting with the given letter in each sentence.",
+        "identify the first word in the sentence.",
+        "find the word that begins with the given letter.",
+        " identify and extract the word(s) that contain the specified letter.",
+        " identify the underlined word in each sentence.",
+        "capitalize the first letter of the word.",
+        "identify the word or words that best complete the sentence.",
+        "find the pronoun in the sentence.",
+        "find and output the word that starts with the given letter in each sentence.",
+        "identify and output the word that corresponds to the given letter in the sentence.",
+        " identify the word in each sentence that contains the specified letter.",
+        "capitalize the first word of the sentence.",
+        "identify the transitive verb in each sentence.",
+        "identify the type of word (article, preposition, verb, conjunction, etc.) highlighted in brackets in each sentence.",
+        "capitalize the first letter of the input word.",
+        "identify and extract the subject from each sentence.",
+        "identify the words that start with the given letter.",
+        "find and return the word that starts with the given letter in brackets.",
+        "identify the adjective in each sentence.",
+        "find the word in each sentence that contains the given letter.",
+        " provide the word that corresponds to the specified letter in the given sentence.",
+        " identify and output the word in the sentence that starts with the given letter in brackets.",
+        "identify and report the word that comes after the specified letter within the given sentence.",
+        "provide the missing word in each sentence within brackets.",
+        "identify the proper noun in each sentence.",
+        "find and output the word starting with the specified letter in each sentence.",
+        " identify the word in the sentence that is a preposition.",
+        " identify and capitalize the word that starts with the given letter in the sentence.",
+        " identify the key word in each sentence.",
+        " identify the requested word type (subject, verb, adjective, adverb) in each sentence.",
+        " identify the word in brackets based on the part of speech given.",
+        " identify and extract the specified word types from the given input sentences.",
+        "identify the specified word in the sentence.",
+        " provide the word that starts with the given letter in the input sentence.",
+        " identify the specific word that is in brackets in each sentence.",
+        "identify and output the verb in each sentence.",
+        " identify the word that is in the infinitive form.",
+        " identify and output all the words that start with the given letter in the input sentence.",
+        "find the word that starts with the given letter in the input sentence.",
+        "identify and extract the word or words starting with the specified letter in the given sentence.",
+        "find and output the word or words starting with the given letter in the sentence.",
+        " identify and output the word that starts with the specified letter in the sentence given.",
+        " identify the word starting with the specified letter in brackets.",
+        " identify and capitalize the word that starts with the given letter.",
+        "identify the word indicated in brackets in each sentence.",
+        "output the word that starts with the given letter in square brackets.",
+        "report the word that contains the specified letter.",
+        "find the verb in the sentence.",
+        " identify the adjectives in the given sentences.",
+        "find the determiner in each sentence.",
+        "find the target word or words that start with the given letter.",
+        " identify and output the word in the sentence that starts with the given letter.",
+        "identify the adverbs in each sentence.",
+        "identify and remove all words that do not begin with the specified letter.",
+        " find and output the word that contains the specified letter.",
+        " identify the word that is a determiner (determiner) in each sentence.",
+        " find the first letter of the word that immediately follows the specified word in the sentence.",
+        "find the word in each sentence that contains the specified letter.",
+        " identify the definite article in each sentence.",
+        "identify and provide the word starting with the given letter in the sentence.",
+        "convert the proper nouns in the sentences to lowercase.",
+        "find the word that starts with the given letter within the sentence.",
+        "identify the word in brackets that is a verb.",
+        "provide the subject of the sentence.",
+        "capitalize the first letter of the word that corresponds to the given letter in the input.",
+        " provide the word that starts with the specified letter in the given sentence.",
+        " identify and output the words that start with the given letter.",
+        "identify the subject pronoun in each sentence.",
+        "find the word in the sentence that corresponds to the given letter.",
+        " identify the subject-verb pairs in the given sentences.",
+        " identify and provide the word that is a noun in each sentence.",
+        "find and output the word that starts with the given letter in brackets.",
+        " identify and provide the word that begins with the letter specified in brackets.",
+        "identify the highlighted word in each sentence.",
+        " identify the first word in each sentence given in the input.",
+        "find and highlight all words that contain the specified letter.",
+        " identify the main verb in each sentence.",
+        "identify the pronouns in the sentence.",
+        "identify the first letter of each word in the sentence given in brackets.",
+        "identify and extract the key word or words from the given input sentence.",
+        "identify the verb in the sentence.",
+        "identify and output all the adjectives in the given sentence.",
+        "identify the proper nouns in each sentence.",
+        " identify and extract the word requested within the brackets in each sentence.",
+        "find the word that corresponds to the given letter in each sentence.",
+        "identify and provide the missing word in each sentence.",
+        " follow the prompts and give the corresponding part of speech for each word in the sentence.",
+        "identify and extract the word that starts with the specified letter.",
+        "identify and return the proper nouns in the given sentences.",
+        "identify and highlight the verb in each sentence.",
+        "identify and provide the first word that starts with the given letter in the sentence.",
+        "provide the word that corresponds to the given letter in the sentence.",
+        "find the word that is in the same position in the sentence as the letter provided.",
+        "convert the first word of each sentence to lowercase.",
+        " identify and output the word that contains the given letter.",
+        "find the word that starts with the given letter in each sentence.",
+        "identify the word that corresponds to the given letter in each sentence.",
+        "identify and return the word that is in lowercase and has no punctuation.",
+        "identify the word that is repeated in each sentence. \n\n1. \"said\" is repeated in the sentence.\n2. \"great\" is repeated in the sentence.\n3. \"it is\" and \"interest\" are repeated in the sentence.\n4. \"and\" is repeated in the sentence.\n5. \"students\" and \"say\" are repeated in the sentence.",
+        " identify and output the word that follows the given letter in each sentence.",
+        "change the first letter of the word to lowercase.",
+        "identify the key word or phrase in each sentence.",
+        "identify and highlight the words that start with the given letter in the sentence.",
+        "highlight the words that start with the specified letter in each sentence.",
+        "identify and extract the word starting with the specified letter from each sentence.",
+        " identify the subject of the sentence and provide the corresponding word.",
+        " identify and extract the word that is bolded in the input sentence.",
+        " identify and remove the unnecessary word in each sentence.",
+        "identify and output the word in each sentence that starts with the specified letter.",
+        " identify the word in brackets that is a preposition, superlative adjective, verb, or relative pronoun.",
+        " identify the word that is a verb in each sentence.",
+        "identify the word or words that come after the specified word in the sentence.",
+        "\"Identify the adjective, adverb, noun, or verb in the sentence.\"",
+        " identify and extract the word that starts with the given letter in square brackets.",
+        " identify and output the proper noun in each sentence.",
+        "provide the word starting with the specified letter in the sentence.",
+        " Identify the verb in each sentence.",
+        "identify and provide the word that starts with the given letter in brackets.",
+        "find the word that starts with the specified letter in each sentence.",
+        "identify the word that is a verb in each sentence.",
+        "\"Provide the word that starts with the letter indicated in brackets.\"",
+        "capitalize the first letter of the word that is the answer to the given question.",
+        "capitalize the first letter of the word that starts with the given letter.",
+        "find the word requested in brackets and provide it as the output.",
+        "identify and output the requested word type (w for verb, r for noun, j for proper noun) in each sentence.",
+        " identify and extract the verbs in the given sentences. Here are the extracted verbs:\n\n- expected\n- knew\n- mention\n- dealt\n- talked\n- came",
+        " change the first word of each sentence to lowercase.",
+        "identify the helping verb in each sentence.",
+        " remove the word indicated in the square brackets from the input sentence.",
+        "identify and output the word that starts with the letter provided in the brackets.",
+        "identify the common noun in the given sentence.",
+        " output the proper noun mentioned in the sentence.",
+        " provide the first word starting with the given letter in the sentence.",
+        "change the word in brackets to lowercase.",
+        "identify the first word in each sentence.",
+        " identify the indefinite article in each sentence.",
+        "identify the pronoun in the sentence.",
+        "change the first letter of each input word to lowercase.",
+        " identify and output the word that is the third word in the sentence.",
+        " identify the word that is the past tense form of the verb in the sentence.",
+        "identify and give the adjective in each sentence.",
+        " identify the last word in each sentence.",
+        " identify and extract the word requested in the square brackets from the given input sentence.",
+        " provide the word indicated in brackets.",
+        "provide the word that starts with the given letter in the input sentence.",
+        " find and highlight the words that start with the letter \"f\".",
+        " identify and output the word in each sentence that contains the given letter.",
+        "capitalize the word that starts with the letter provided in brackets.",
+        "find and capitalize the first word in each sentence.",
+        "convert the given word to lowercase.",
+        "identify the word in brackets that is a noun (b) or a verb (t) in each sentence.",
+        "find and output the word in the sentence that starts with the given letter.",
+        " identify and extract the word starting with the given letter from the input sentence.",
+        "identify and output the word that starts with the given letter in brackets.",
+        " find and capitalize the proper noun in each sentence.",
+        "identify and extract the word or words that start with the given letter.",
+        " identify the word that is capitalized in the sentence.",
+        " identify the word that starts with the specified letter in each sentence.",
+        "identify and output the adjective in each sentence based on the given prompt letter.",
+        " provide the lowercase word requested in each sentence.",
+        "capitalize the first letter of the first word in each sentence.",
+        "identify the word that is an article.",
+        "identify the words that start with the given letter in the input sentence.",
+        "identify and provide the word that is a verb in each sentence.",
+        "\"Find the word starting with the given letter.\"",
+        "identify and extract the conjunctions in each sentence.",
+        "identify the last word in each sentence.",
+        "identify and output the adjectives in the given sentence.",
+        " identify and output the first word of the sentence.",
+        "\"Identify the pronoun in the sentence.\"",
+        " identify the word that is a preposition.",
+        "identify the word that starts with the given letter in the sentence.",
+        "identify the word that appears before and after the word specified in brackets.",
+        " complete the sentence with the correct word.",
+        "change the name of the person mentioned in the sentence to lowercase.",
+        " identify the word that corresponds to the given part of speech in each sentence.",
+        "identify and output the specified word in each sentence.",
+        "find and output the word that contains the specified letter.",
+        "identify the target word in each sentence that starts with the letter provided in brackets.",
+        " identify and provide the word that starts with the given letter.",
+        "provide the word that contains the specified letter.",
+        "identify and output the first word that starts with the same letter as the given letter in the input sentence.",
+        "capitalize the first letter of the word starting with the given letter.",
+        "identify the word in the sentence that contains the specified letter.",
+        "identify the word that corresponds to the given letter.",
+        " output the word that starts with the letter given in brackets.",
+        "identify and provide the letter that is the first letter of the last word in each sentence.",
+        "provide the specific word starting with the given letter in the sentence.",
+        "Identify the first word in each sentence based on the given category.",
+        " identify the word or phrase that fits the given category: [n] = noun, [a] = adjective, [b] = adverb, [i] = interjection, [w] = verb phrase.",
+        " identify the adverb in each sentence.",
+        " capitalize the first letter of the name in each sentence.",
+        " identify the first word in the sentence.",
+        "identify and provide the first adjective in each sentence.",
+        "identify and correct any errors in the given words.",
+        " find and output the word in each sentence that contains the given letter.",
+        "identify the word that is a common noun.",
+        " identify and extract the specified word from the sentence given in brackets.",
+        " identify and provide the word that is the subject of the sentence.",
+        " identify the word that starts with the specified letter in brackets.",
+        " identify the main subject of the sentence.",
+        " identify the word starting with the specified letter in each sentence.",
+        "output the word that corresponds to the given letter in brackets.",
+        "identify the word in each sentence that corresponds to the given letter.",
+        " identify the proper nouns in each sentence.",
+        "Identify the word that starts with the specified letter.",
+        "identify and list all the words that start with the specified letter in the given sentence.",
+        " identify the word that is associated with the given letter within the sentence.",
+        " identify and provide the word that starts with the specified letter in the input sentence.",
+        "identify and output the noun that starts with the given letter.",
+        " identify the word that corresponds to the specified letter in the sentence.",
+        " identify and extract the target word in each sentence.",
+        "identify the word indicated by the bracketed letter in each sentence.",
+        " identify and output the word that corresponds to the given part of speech in the sentence.",
+        "find the word that contains the letter provided in brackets.",
+        "find the word in each sentence that is a preposition.",
+        " remove all words in the sentence that do not contain the specified letter.",
+        "identify the verbs in the given sentences.",
+        "identify the word in the sentence that starts with the given letter in brackets.",
+        "identify the specified word in each sentence.",
+        " identify the word in brackets.",
+        "convert the first word in each sentence to lowercase.",
+        "identify and output the word that contains the specified letter within the brackets.",
+        "provide the word starting with the specified letter.",
+        "identify and list the prepositions in the given sentence."
+    ],
+    "instruction_select_history": [
+        [
+            " remove all words in the sentence that do not contain the specified letter.",
+            0.52
+        ],
+        [
+            "change the first letter of the word to lowercase.",
+            0.06
+        ],
+        [
+            "identify the key word in each sentence.",
+            0.56
+        ],
+        [
+            "identify the object of the verb in each sentence.",
+            0.08
+        ],
+        [
+            " identify and remove the unnecessary word in each sentence.",
+            0.72
+        ],
+        [
+            " identify the requested word class (part of speech) for each word in the given sentence.",
+            0.12
+        ],
+        [
+            "find the word that contains the given letter.",
+            0.1
+        ],
+        [
+            "identify and output the adjectives in the given sentences.",
+            0.14
+        ],
+        [
+            " identify and capitalize the proper nouns in the given sentences.",
+            0.08
+        ],
+        [
+            " identify the word that starts with the specified letter in the given sentence.",
+            0.0
+        ],
+        [
+            " identify and provide the word that starts with the given letter in each sentence.",
+            0.86
+        ],
+        [
+            "identify and output the verb in each sentence.",
+            0.76
+        ],
+        [
+            " identify the word that corresponds to the given part of speech tag in each sentence.",
+            0.16
+        ],
+        [
+            " identify the word in the sentence that starts with the given letter.",
+            0.74
+        ],
+        [
+            "find the main verb in each sentence.",
+            0.1
+        ],
+        [
+            "identify the word in brackets and output the word itself without the brackets.",
+            0.58
+        ],
+        [
+            "identify the word that should be replaced with the word in brackets.",
+            0.84
+        ],
+        [
+            "identify the word that is the third word in the sentence.",
+            0.06
+        ],
+        [
+            "change the first letter of the word to the specified letter.",
+            0.28
+        ],
+        [
+            "find the word that starts with the given letter in each sentence.",
+            0.08
+        ],
+        [
+            " identify and output the verb in each sentence.",
+            0.82
+        ],
+        [
+            "identify the word that is a preposition in each sentence.",
+            0.82
+        ],
+        [
+            "identify and extract the key word or words from the given input sentence.",
+            0.04
+        ],
+        [
+            "identify the type of word (article, preposition, verb, conjunction, etc.) highlighted in brackets in each sentence.",
+            0.38
+        ],
+        [
+            " identify and extract the word that starts with the given letter from the input sentence.",
+            0.88
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " find and capitalize the proper noun in each sentence.",
+            0.72
+        ],
+        [
+            "identify the object of the verb in each sentence.",
+            0.08
+        ],
+        [
+            "identify and output the requested word type (w for verb, r for noun, j for proper noun) in each sentence.",
+            0.08
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify and provide the missing word in each sentence.",
+            0.0
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify and provide the missing word in each sentence.",
+            0.0
+        ],
+        [
+            "identify the first letter of each sentence.",
+            0.06
+        ],
+        [
+            "identify and provide the word that starts with the given letter in each sentence.",
+            0.58
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify and output the pronoun used in each sentence.",
+            0.1
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify and extract the conjunctions in each sentence.",
+            0.0
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "\"Identify the common noun(s) in the given sentence.\"",
+            0.6
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "find and correct the errors in the given sentences.",
+            0.1
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the adverbs in each sentence.",
+            0.58
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the word that is a determiner (determiner) in each sentence.",
+            0.7
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the prepositions in the sentence.",
+            0.0
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify and output the verb in each sentence.",
+            0.76
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " provide the proper noun in each sentence.",
+            0.0
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the pronoun in each sentence.",
+            0.22
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "\"Identify the common noun(s) in the given sentence.\"",
+            0.6
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the word indicated in brackets in each sentence.",
+            0.76
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the pronoun in each sentence.",
+            0.22
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the pronoun in each sentence.",
+            0.22
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the pronoun in each sentence.",
+            0.22
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the pronoun in each sentence.",
+            0.22
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "\"Identify the common noun(s) in the given sentence.\"",
+            0.6
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the pronoun in each sentence.",
+            0.22
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the pronoun in each sentence.",
+            0.22
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the pronoun in each sentence.",
+            0.22
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ],
+        [
+            "identify the subject pronoun in each sentence.",
+            0.28
+        ],
+        [
+            " identify the correct article or conjunction in each sentence.",
+            0.74
+        ],
+        [
+            " identify the indefinite article in each sentence.",
+            0.86
+        ]
+    ],
+    "now_values": [
+        0.76,
+        0.76,
+        0.76,
+        0.76,
+        0.76,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.86
+    ]
+}

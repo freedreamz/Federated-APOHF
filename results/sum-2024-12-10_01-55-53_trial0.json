@@ -1,0 +1,2481 @@
+{
+    "task": "sum",
+    "n_prompt_tokens": 5,
+    "nu": 0.1,
+    "lamdba": 0.1,
+    "n_init": 40,
+    "n_domain": 500,
+    "total_iter": 165,
+    "local_training_iter": 30,
+    "random_proj": "uniform",
+    "intrinsic_dim": 100,
+    "n_eval": 1000,
+    "name": "",
+    "gpt": "gpt-3.5-turbo",
+    "init_scale": 1,
+    "pooling": "last",
+    "func": "neural",
+    "trial": 0,
+    "magnitude": 10,
+    "norm_method": "standard",
+    "candidate_method": "induction",
+    "test_score": 1.0,
+    "valid_score": 1.0,
+    "best_prompt": [
+        "Enter two numbers and display their sum."
+    ],
+    "prompts_set": {
+        "Combine the two provided numbers to obtain the final result.": 1.0,
+        "Determine the total of the two numbers that are provided as input.": 1.0,
+        "Input two integers and output the sum of the integers.": 1.0,
+        "add the two input numbers together.": 1.0,
+        "Calculate the total of both numbers given in each input.": 1.0,
+        "Combine the two given numbers.": 0.95,
+        "calculate the total of the two numbers.": 1.0,
+        "Add together the provided numbers in each input.": 1.0,
+        "Add the two numbers together to get the total sum.": 1.0,
+        "Input two numbers and determine the sum of the two integers.": 1.0,
+        "add together the two numbers given in each input.": 1.0,
+        "sum the two inputted numbers.": 1.0,
+        "Calculate the sum of the two numbers provided in each input, and display the result as the output.": 1.0,
+        "Add the two numbers provided in each input to find the total sum.": 1.0,
+        "Combine the two numbers and display the total as the result.": 1.0,
+        "Determine the total by adding together the two provided numbers.": 1.0,
+        "Find the difference between the two numbers by subtracting the smaller number from the larger number and provide the result.": 0.05,
+        "Accept two numbers as input and calculate the sum of the two numbers.": 1.0,
+        "Calculate the total of the two whole numbers.": 1.0,
+        "Input two numbers and output the sum of the numbers.": 1.0,
+        "Find the total by adding the two numbers provided.": 1.0,
+        "add the two provided numbers together.": 1.0,
+        "Input two numbers and output their sum.": 1.0,
+        "Input two integers and calculate the sum of the two numbers.": 1.0,
+        "Combine the two numbers into a sum.": 1.0,
+        "Determine the total when adding the two provided numbers together.": 1.0,
+        "sum the two numbers.": 1.0,
+        "Add the two numbers given in each input.": 1.0,
+        "Calculate the sum of the two numbers provided and output the result.": 1.0,
+        "Combine the sum of two numbers.": 1.0,
+        "Sum the two numbers provided.": 1.0,
+        "Find the total of the given pair of numbers.": 1.0,
+        "Find the total of the two numbers given as input.": 1.0,
+        "combine both numbers.": 0.0,
+        "Calculate the total of the two numbers given as input.": 1.0,
+        "Combine the two numbers and display the result.": 0.85,
+        "Add together the two numbers that were input.": 1.0,
+        "Find the total of both numbers.": 1.0,
+        "add two numbers together to find the total sum.": 1.0,
+        "Calculate the total of the two numbers given in the input.": 1.0,
+        "Add together the two numbers from each input to find the sum.": 1.0,
+        "add two numbers together to get the total sum.": 1.0,
+        "calculate the total of the two numbers entered.": 1.0,
+        "find the total of the two provided numbers.": 1.0,
+        " Find the total of two numbers.": 1.0,
+        "calculate the total of the two input numbers.": 1.0,
+        "Provide two numbers as input and display the sum of the two numbers as output.": 1.0,
+        "Determine the sum of the two numbers given to obtain the total sum of the inputs.": 1.0,
+        "Calculate and display the total of the two given numbers.": 1.0,
+        "Combine the two numbers and output their sum.": 1.0,
+        "calculate the total of two given numbers.": 1.0,
+        "Sum two numbers and display the result.": 1.0,
+        "Find the sum of the two numbers given in each input.": 1.0,
+        "calculate the total of the two numbers provided as input.": 1.0,
+        "Determine the total by adding the two numbers provided in each input.": 1.0,
+        "combine the two numbers given.": 1.0,
+        "determine the total of the two numbers provided in each input.": 1.0,
+        "Add the two input numbers and then display the resulting sum.": 1.0,
+        "Enter two numbers and provide the total sum.": 1.0,
+        "calculate the total of the two given numbers and display the result.": 1.0,
+        "Find the total of the two numbers provided.": 1.0,
+        "Add together two numbers to find their total sum.": 1.0,
+        "Input two numbers, find the sum, and display the result.": 1.0,
+        "calculate the total of the provided two numbers.": 1.0,
+        "Add up the two provided numbers.": 1.0,
+        " Calculate the total of two numbers.": 1.0,
+        "Add together two numbers to get the total.": 1.0,
+        "Add together two numbers that are provided as input and display the outcome.": 1.0,
+        "Find the total of the two provided numbers.": 1.0,
+        "Calculate the total of the two given numbers and return the result.": 1.0,
+        "Determine the total of two specified numbers.": 1.0,
+        "Find the sum of the two numbers.": 1.0,
+        "Add together the two input numbers to find the total sum.": 1.0,
+        "Calculate the total of the two numbers provided in each entry.": 1.0,
+        "first, add the two numbers together and then add 50 to the total.": 0.0,
+        "Enter two numbers and display their sum.": 1.0,
+        "Sum the two numbers and display the total.": 1.0
+    },
+    "best_values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ],
+    "best_instruction_over_iter": [
+        [
+            0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            1,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            2,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            3,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            4,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            5,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            6,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            7,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            8,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            9,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            10,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            11,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            12,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            13,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            14,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            15,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            16,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            17,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            18,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            19,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            20,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            21,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            22,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            23,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            24,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            25,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            26,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            27,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            28,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            29,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            30,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            31,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            32,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            33,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            34,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            35,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            36,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            37,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            38,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            39,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            40,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            41,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            42,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            43,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            44,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            45,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            46,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            47,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            48,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            49,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            50,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            51,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            52,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            53,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            54,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            55,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            56,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            57,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            58,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            59,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            60,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            61,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            62,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            63,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            64,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            65,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            66,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            67,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            68,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            69,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            70,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            71,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            72,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            73,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            74,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            75,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            76,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            77,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            78,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            79,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            80,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            81,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            82,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            83,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            84,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            85,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            86,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            87,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            88,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            89,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            90,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            91,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            92,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            93,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            94,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            95,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            96,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            97,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            98,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            99,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            100,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            101,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            102,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            103,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            104,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            105,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            106,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            107,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            108,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            109,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            110,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            111,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            112,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            113,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            114,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            115,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            116,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            117,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            118,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            119,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            120,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            121,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            122,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            123,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            124,
+            "Enter two numbers and display their sum.",
+            1.0
+        ]
+    ],
+    "init_instructions": [
+        "combine the two numbers.",
+        "add two numbers together.",
+        "combine the two numbers to find the sum.",
+        "Calculate the total of two numbers.",
+        "Find the total of the two numbers.",
+        "Calculate the total of the two numbers provided as input.",
+        "find the total of two numbers.",
+        "Add together the two numbers provided in each input.",
+        "Add together the two numbers to find the total sum.",
+        "Add together two numbers.",
+        "Find the total of the two numbers provided as input.",
+        "Calculate the total of the two numbers.",
+        "Receive two numbers as input and provide the sum of both numbers as the output. The correct outputs for the given inputs are as follows: \n\nInput: 35 90 \nOutput: 125 \nInput: 31 41 \nOutput: 72 \nInput: 65 97 \nOutput: 162 \nInput: 96 96 \nOutput: 192 \nInput: 31 72 \nOutput: 103",
+        "calculate the total of two numbers.",
+        "Provide two numbers as input, then calculate the sum to obtain the output.",
+        "Add together the two numbers provided as input.",
+        "Calculate the total of the two numbers given as input.",
+        "Determine the total of the two numbers provided in each input.",
+        "calculate the total of the two numbers.",
+        "add together two numbers.",
+        "Take in two integers and find the sum of them.",
+        "combine the two provided numbers.",
+        "Find the total of the two numbers inputted.",
+        "Determine the total of the two input numbers.",
+        "Add the two numbers provided in each input to find the sum.",
+        "Combine the two numbers.",
+        "Combine two numbers.",
+        "combine two numbers.",
+        "Determine the total of two numbers.",
+        "Add the two input numbers together.",
+        "Calculate the total of the two given numbers.",
+        "Add together the two numbers.",
+        "Calculate the total by adding the two input numbers.",
+        "Determine the total of the two numbers provided in the input.",
+        "determine the total of two numbers.",
+        "Add together the two numbers that were input.",
+        "Add together the two numbers to find the total.",
+        "Add together two numbers to get the total.",
+        "Combine two numbers and give the total as the result.",
+        "calculate the total of the two provided numbers.",
+        "Calculate the total by adding the two numbers given as input.",
+        "Calculate the total of the two numbers given in the input.",
+        "combine the two numbers to get the total.",
+        "Add together the two input numbers.",
+        "Combine the two numbers provided.",
+        "add the two numbers together.",
+        "sum the two numbers.",
+        "Calculate the total of the two numbers provided.",
+        "Combine the two provided numbers.",
+        "Calcuate the total of the numbers that were inputted.",
+        "Add the two numbers together to find the total.",
+        "combine or sum the two numbers.",
+        "Calculate the total of the two provided numbers.",
+        "Determine the total of the two numbers given in each input.",
+        "combine the two input numbers.",
+        "Provide two numbers as input and calculate their sum. Here are the correct results for the specified inputs:",
+        "Add together two numbers to calculate their sum.",
+        "Add the two numbers together.",
+        "Find the total of two numbers.",
+        "Find the total of the numbers given in each input.",
+        "calculate the total of the two given numbers.",
+        "Provide two integers as input and compute the sum of the two numbers.",
+        "Find the sum of the two numbers given in each input.",
+        "Add together two numbers and display the result.",
+        "Calculate the total by adding the two provided numbers together.",
+        "Add together the two numbers given in each input.",
+        "Figure out the total of the two numbers.",
+        "Calculate the total by adding together the two numbers provided as input.",
+        "Enter two numbers and display their sum.",
+        "calculate the total of the two input numbers.",
+        "Add the two numbers given in each input together.",
+        "Combine the two numbers and give the total as the result.",
+        " sum two numbers.",
+        "calculate the total of two numbers provided as input.",
+        "calculate the total of two specified numbers.",
+        "Determine the total of the two numbers that have been entered.",
+        "combine the two given input numbers.",
+        "Calculate the sum of the two numbers in each input pair to determine the corresponding output.",
+        "determine the total of the two numbers provided.",
+        "sum the two inputted numbers.",
+        "Add two numbers together to get the total sum.",
+        "Calculate the sum of the two numbers provided in the input.",
+        "Combine both numbers to get the correct output.",
+        "calculate the total of the two numbers given.",
+        "Find the total of the two provided numbers.",
+        "calculate the total of both given numbers.",
+        "Add together the two numbers you are given.",
+        "Enter two numbers and calculate their total.",
+        "Add the two numbers provided in each input.",
+        "Add two numbers together.",
+        "Input two numbers and output the sum of them.",
+        "Calculate the total of the two input numbers.",
+        "calculate the total of the two numbers provided as input.",
+        "calculate the total of the two numbers provided.",
+        "add together the two numbers.",
+        "Combine two numbers and display the result as the output.",
+        "find the total of the two numbers.",
+        "Add together the two numbers from each input to find the sum.",
+        "Calculate the total of the two numbers that are input.",
+        "perform the addition of the two numbers.",
+        "combine the two numbers to find their sum.",
+        "Find the total of the two numbers provided in each input.",
+        "combine the sum of the two numbers.",
+        "Calculate the total of the two numbers provided in each input.",
+        "Add together the two numbers that have been entered.",
+        "Calculate the sum of the two numbers provided in each input.",
+        "add the numbers given in the input to get the sum.",
+        "add together two integers.",
+        "Enter two numbers and calculate their sum.",
+        "Combine two numbers to get the total.",
+        "add together two numbers to find their total sum.",
+        "calculate the total of the two given numbers and display the result.",
+        "find the total of the two provided numbers.",
+        "Add together the two input numbers to find the sum.",
+        "combining the two numbers.",
+        "add together the two specified numbers.",
+        "Find the total of both numbers given in each input.",
+        "Calculate the sum of the two numbers provided as input.",
+        "Input two numbers and output the sum of the numbers.",
+        "Sum the two given numbers.",
+        "add together the two provided numbers.",
+        "add together the two input numbers to find the total sum.",
+        "Determine the total of the two numbers provided as input.",
+        "find the total of the two specified numbers.",
+        "Determine the total of the two numbers.",
+        "Add together two numbers that are provided as input.",
+        "Add the two given numbers together to find the total sum.",
+        "calculate the total of the two numbers given as input.",
+        "Find the sum of the two numbers.",
+        "determine the total when adding together two numbers.",
+        "Calculate the total of the two numbers provided in each input and display the result as shown below:",
+        "Identify the total of the two numbers provided in each input.",
+        "Calculate the sum of two numbers and provide the result.",
+        "Find the total of the two numbers provided.",
+        "Calculate and display the total of the two given numbers.",
+        "combine the two numbers and deliver the total as the result.",
+        "calculate the total of two values.",
+        "Combine the two input numbers.",
+        "calculate the sum of the two provided numbers.",
+        "Add the two given numbers together.",
+        "Add the two numbers together to find the total sum.",
+        "Find the total of the two numbers given in each input.",
+        "Add together the two numbers provided.",
+        "Determine the total by adding the two numbers given in the input.",
+        "Sum two numbers and display the result.",
+        "Input two numbers and output the sum of the two numbers.",
+        "Determine the total of the two numbers entered.",
+        "Add together the two numbers given in the input.",
+        "Add the difference between the first and second number to the second number.",
+        "sum up two numbers.",
+        "calculate the total of the two specified numbers.",
+        "Find the sum of the two provided numbers.",
+        "Sum two given numbers together and display the result.",
+        "determine the total of the two numbers.",
+        "Provide two numbers as input and calculate the sum of the two numbers.",
+        "Input two numbers and calculate the total sum.",
+        "Combine the two numbers to find the sum.",
+        " calculate the total of two numbers.",
+        " Add together the two numbers provided.",
+        "combine the two numbers into a sum.",
+        "Find the total of the two given numbers.",
+        "calculate the sum of the two numbers provided.",
+        " Calculate the total of two numbers.",
+        "combine the sum of two numbers.",
+        "Calculate the total of the two numbers entered.",
+        "Find the total value of the two numbers provided in each input.",
+        "Sum the two numbers and display the total.",
+        "add the two given numbers together.",
+        "Input two integers and output the sum of the integers.",
+        " combine the two numbers.",
+        "Calculate the sum of two input numbers.",
+        "Calculate the total of two numbers and display the outcome.",
+        "Input two numbers and calculate their sum as output.",
+        "Create a program that receives two integers as inputs and calculates their sum.",
+        "Calculate the total of the two numbers entered. Check the correct outputs for the given input values.",
+        "Enter two numbers, calculate their sum, and display the result. This is why the output shown is the sum of the input numbers.",
+        "Give the total of the two whole number inputs.",
+        "Calculate the total of the two numbers given in each input.",
+        "Add together the two numbers provided to find the total sum.",
+        "Calculate the sum of the two numbers given in the input.",
+        "Enter two numbers and calculate the total of the two numbers.",
+        "add together the two numbers given as input.",
+        "Provide two numbers, compute their sum, and display the result.",
+        " Find the total of two numbers.",
+        "Calculate the total of the two numbers that have been input.",
+        "Add together the two provided numbers.",
+        "Calculate the total of two specified numbers.",
+        "Take two integers as input and calculate their sum as output.",
+        "Calculate and display the sum of the two given numbers.",
+        "find the total of the two numbers provided.",
+        "Find the total of the two numbers entered.",
+        "Combine the two numbers to get the sum.",
+        "calculate the total of the two numbers entered.",
+        "Calculate the total of both numbers provided in each input.",
+        "Combine the two numbers to find the total sum.",
+        "Calculate the total of two whole numbers.",
+        "combine the two numbers given.",
+        "Find the difference between the two numbers by subtracting the smaller number from the larger number and provide the result.",
+        "Find the total of two specified numbers.",
+        "Calculate and display the total of two whole numbers provided as input.",
+        "Add the two numbers given in the input.",
+        "add together two specified numbers.",
+        "Combine the two numbers to find their sum, which will be the correct output.",
+        "Add the two input numbers together to get the total sum.",
+        " Combine the two numbers to find the sum.",
+        "Calculate the sum of the two numbers and display the result.",
+        "Calculate the total of the two numbers provided in the input.",
+        "Add together two specified numbers.",
+        "Find the total of the two input numbers.",
+        "Determine the total value by adding the two numbers given in each input.",
+        "Find the total of two numbers by adding them together. The result should be the addition of the two numbers provided as input.",
+        "Enter two numbers and calculate the sum.",
+        "Determine the total of the two provided numbers.",
+        "Add together the given pair of numbers.",
+        "Input two numbers and output their sum.",
+        "calculate the total of the two numbers given in each input.",
+        "Add the two numbers provided as input.",
+        "Add together two numbers to find their sum.",
+        "Add together the two numbers provided in the input.",
+        "Calculate the sum of the numbers given in the input.",
+        "Input two numbers and provide the sum as output.",
+        "calculate the total of the two numbers that are input.",
+        "Combine the two numbers and display the total as the result.",
+        "add the two input numbers together.",
+        "combine the numbers to get the sum.",
+        "Combine the two provided numbers to obtain the final result.",
+        "find the sum of the two numbers.",
+        "combine the two numbers provided.",
+        "add the two numbers.",
+        "Enter two numbers and find the sum of them as an output.",
+        "Calculate the total of the two numbers that are entered.",
+        "Add together the two input numbers to find their sum.",
+        "Combine the two input numbers to find the sum.",
+        "Calculate the total of the two numbers that are provided as input.",
+        "Add the numbers provided in each input to get the sum.",
+        "Enter two numbers and find the total of both numbers.",
+        "Calculate the total of the two numbers that were provided as input.",
+        "combine two numbers to find their sum.",
+        "combine or sum two numbers.",
+        "Sum the two input numbers.",
+        "Combine the two numbers and output their sum.",
+        "Input two numbers and calculate their sum.",
+        "Find the total of both input numbers.",
+        "Add together the two numbers that were inputted.",
+        "Calculate the sum of the two input numbers and display the result.",
+        "No instruction was given.",
+        "Enter two numbers and find their total.",
+        "Find the total of the two numbers given.",
+        "add two numbers together to get the total sum.",
+        "Create a program that computes the total of two numbers.",
+        "Add two numbers together to determine their sum.",
+        "Combine two numbers and report the total as the result.",
+        "combine the two numbers to find the total.",
+        "Determine the total of two numbers given in the input.",
+        "Add together two numbers to find the total sum.",
+        "Calculate the sum of the two numbers and then increase it by 30.",
+        "Add the two numbers together and provide the result as output.",
+        "Calculate the sum of the two numbers and output the result.",
+        "Add together the two numbers that are provided as input.",
+        " calculate the total of the two numbers provided.",
+        "Calculate the sum of the two numbers entered.",
+        "Add together the two given numbers.",
+        "Add together the two numbers given as input.",
+        "Combine the two numbers and state the total.",
+        "Add together two numbers to get their sum.",
+        "Calculate the total of the two numbers provided in each entry.",
+        "Determine the total of the two given numbers.",
+        " Add together two numbers.",
+        "Combine the two numbers and display the result as the sum.",
+        "Combine the two numbers. Thank you for your assistance.",
+        "Add the two numbers provided in the input to calculate the sum.",
+        "Add together the two input numbers and display the total.",
+        "combine both numbers.",
+        "Calculate the total by adding the two numbers provided in the input.",
+        "Calculate the sum of the two provided numbers and display the result.",
+        "Determine the sum of the two numbers given to obtain the total sum of the inputs.",
+        "Add together the two numbers given.",
+        "Add the two provided numbers together.",
+        "Provide two numbers as input and calculate their sum as output.",
+        "sum up the two numbers.",
+        "Add together the two numbers provided to find the sum.",
+        "Combine the two numbers and output the sum.",
+        "Add two numbers together to find the total sum.",
+        "Add together the provided numbers in each input.",
+        "calculate the total of two whole numbers.",
+        "combine the two numbers and give the result as the output.",
+        "Choose two numbers and sum them to find the output.",
+        "Take in two numbers and find the total sum of the numbers.",
+        "Calculate the total of the two numbers given.",
+        "Find the total of the two numbers given as input.",
+        "Determine the total of two specified numbers.",
+        "add the two numbers provided in each input.",
+        "add up the two given numbers.",
+        "Determine the total of the two numbers that are provided as input.",
+        "Add together the two numbers that have been input.",
+        "add together the two input numbers to get the sum.",
+        "Determine the combined total of adding two numbers together.",
+        "Provide two numbers and find the sum of the two numbers.",
+        "Calculate the sum of the two given input numbers.",
+        "determine the total of the two provided numbers.",
+        "Combine the two numbers to find the result.",
+        "Develop a program that accepts two integers as input and displays the sum of the two numbers.",
+        "Calculate the sum of two numbers and display the result.",
+        "Add together the numbers provided in each input.",
+        "Add two numbers together to get their sum.",
+        "Add the two numbers given in each input and display the result.",
+        "Sum two numbers together and output the result.",
+        "calculate the total of both input numbers.",
+        "Combine two numbers and give the total.",
+        "calculate the total of the provided two numbers.",
+        "Add the two input numbers together to find the sum.",
+        "Add up the two provided numbers.",
+        "Enter two numbers and provide the total sum.",
+        "Compute the total of the given two numbers.",
+        "add together the two numbers provided.",
+        "determine the total of the two numbers provided in each input.",
+        "Find the total of the two numbers that are entered.",
+        "calculate the total of the two numbers provided in each input.",
+        "Calculate the total of the two numbers that are given as input.",
+        "Determine the total of the two numbers provided.",
+        "Add together two numbers to find the total.",
+        "Combine the two numbers to find their sum.",
+        "Add the two input numbers together and provide the result as the sum.",
+        "Calculate the total amount of the two numbers entered.",
+        "sum two numbers.",
+        "add together two numbers to get the total.",
+        "Calculate the total of the provided pair of numbers.",
+        "Combine the two numbers and display the result.",
+        "Calculate the total of the two whole numbers.",
+        "Find the total of the two numbers given in the input.",
+        " Combine the two numbers.",
+        "Find the total of both numbers.",
+        "Calculate the total of two specified integers.",
+        "Calculate the sum by adding two numbers together.",
+        "Provide two numbers as input and display the sum of the two numbers as output.",
+        "Calculate the total of the two numbers provided as inputs.",
+        " have the capability to add together two numbers.",
+        "Provide two numbers as input and calculate their sum to produce an output.",
+        "Add two numbers together to find their sum.",
+        "Determine the total by adding the two numbers provided in each input.",
+        "Sum the two numbers provided.",
+        "Add together the two numbers that are input.",
+        "sum the two provided numbers.",
+        "Add the two numbers given in each input.",
+        "Add together the two input numbers to find the total.",
+        "Determine the total of the numbers provided in each input.",
+        "determine the total of two specified numbers.",
+        "add two numbers together to get the total.",
+        "Input two integers and calculate the sum of the two numbers.",
+        "Combine the two numbers and display the sum.",
+        "Calculate the total of both input numbers.",
+        "Input two numbers and compute their sum.",
+        "Accept two numbers as input and calculate the sum of the two numbers.",
+        "\"Combine the two numbers.\"",
+        "Calculate the sum of two numbers given as input. Here are the correct calculations.",
+        "Find the total of the two numbers that have been entered.",
+        "add two numbers together to find the total.",
+        "Add the two numbers provided in each input to find the total sum.",
+        "find the sum of two numbers.",
+        "Ask for two integers as input and produce the sum of the integers as output.",
+        "find the total of the two given numbers.",
+        "find the total of two specified numbers.",
+        "combine the numbers and give the total as the result.",
+        "Sum the two numbers.",
+        "Sum the two numbers provided in the input.",
+        "Calculate the sum of two numbers and return the result.",
+        "Combine the two numbers to determine the result.",
+        "Add together two specified integers.",
+        "Receive two numbers as input, sum them together, and display the outcome.",
+        "Calculate the total of the two specified numbers.",
+        "Add together  the two numbers provided in the input.",
+        "Determine the total of the pair of numbers given in each input.",
+        "Add together two numbers to find their total sum.",
+        "Calculate the total of both numbers.",
+        "Determine the total by adding the two numbers given in each input.",
+        "Please enter two numbers and the result will be the sum of the two numbers.",
+        "determine the total of the two specified numbers.",
+        "determine the total of the pair of numbers provided in each input.",
+        "first, add the two numbers together and then add 50 to the total.",
+        "Input two numbers and determine their sum.",
+        "Add together the two numbers you have input.",
+        " calculate the total of the two numbers provided as input.",
+        "Calculate the sum of the two provided numbers.",
+        "Combine two numbers. The results of the calculations are displayed following the \"Output:\" label.",
+        "Sum the two numbers and then increase the total by 90.",
+        "Calculate the sum of the two numbers given as input.",
+        "calculate the total of the two entered numbers.",
+        "find the total by adding the two numbers that were input.",
+        "Calculate the sum of the two given numbers.",
+        "Add up two numbers.",
+        "find the total of the two numbers provided as input.",
+        "calculate the sum of two specified integers.",
+        "Sum the two numbers and display the result.",
+        "Calculate the sum of the two input numbers.",
+        "find the total of the two numbers entered.",
+        "Determine the total by adding together the two provided numbers.",
+        "add together the two numbers that were input.",
+        "Combine the two numbers to get the result.",
+        "\"Enter two numbers and calculate the sum of both.\"",
+        "Add the two input numbers.",
+        "Take two numbers, combine them, and display the result.",
+        "Combine the sum of two numbers.",
+        "Calculate the total of two specific numbers.",
+        "calculate the total of the two numbers provided in the input.",
+        "Find the total of the two numbers included in each input.",
+        "calculate the total of the two numbers that are provided as input.",
+        "Determine the total of each pair of numbers to get the following results:",
+        "Add together two numbers that are provided as input and display the outcome.",
+        "Calculate the sum of the two numbers given in the input and display the result as the output.",
+        "Find the total of the pair of numbers given.",
+        "Add together two numbers to determine the total.",
+        "Find the total when adding the two numbers provided in each input.",
+        "Input two numbers and determine the sum of the two integers.",
+        "Calculate the total of the two given numbers and return the result.",
+        "Calculate the sum of the provided pair of numbers.",
+        "determine the total of the two numbers given as input.",
+        "Find the sum of two numbers and display the result.",
+        "add the two input numbers to calculate their sum.",
+        "Provide two numbers as input and compute their sum as output.",
+        "Calculate the total of the two numbers listed in each input.",
+        "Add the two numbers given in the input to get the sum. The outputs for each input are as follows:",
+        "Add the two numbers together to get the total sum.",
+        "Calculate the total of two numbers entered in the input.",
+        "Calculate the total of the two entered numbers.",
+        "Enter two numbers and display the result of adding them together.",
+        "Input two numbers, find the sum, and display the result.",
+        "Add together the two input numbers to calculate the sum.",
+        "Add the two input numbers together to find the total sum.",
+        "Add two numbers.",
+        "find the sum of the two input numbers.",
+        "Determine the total of the two numbers that have been input.",
+        "determine the total of the two numbers given in each input.",
+        " Sum the two numbers provided in the input.",
+        "Find the total of the two numbers given in each pair of inputs.",
+        "Add together the two given numbers to determine the total sum.",
+        "calculate the total of two given numbers.",
+        "Develop a program that accepts two numbers as input and displays the sum of the two numbers.",
+        "calculate the total of two numbers provided in the input.",
+        " find the total of the two numbers provided in each input.",
+        "calculate the total of both numbers.",
+        "Consider two numbers and find their sum.",
+        "Add the two input numbers and then display the resulting sum.",
+        "add together two numbers to determine the total.",
+        "Combine the two numbers and provide the final outcome.",
+        "Calculate the output by combining the two provided numbers.",
+        "  combine the two numbers.",
+        "Find the total of the two numbers that are input.",
+        "add two numbers together to find the total sum.",
+        "Combine the two numbers provided in each input.",
+        "Determine the total of the two numbers given as input.",
+        "Add together the two numbers that have been provided.",
+        "calculate the sum of the two numbers that are entered.",
+        "Calculates the total of the two numbers entered as input.",
+        "Add together the two numbers to get their sum.",
+        "Determine the total when adding the two provided numbers together.",
+        "Please enter two numbers and find the sum of them.",
+        "Add the two numbers in each input to find the sum.",
+        "Find the total of the given pair of numbers.",
+        "Calculate the sum of the two numbers provided in each input, and display the result as the output.",
+        "Add together the two numbers provided to find their total sum.",
+        "Combine the two provided numbers to find the sum.",
+        "Calculate the sum of the two numbers that are provided as input and display the result.",
+        "Develop a program that takes two numbers as input, calculates their sum, and displays the result alongside the input numbers in an equation format. Follow the provided examples to ensure correct functionality.",
+        "Find the sum of two numbers.",
+        "Find the sum of the two input numbers.",
+        "Find the total of two numbers that are inputted.",
+        "Combine the two numbers and give the result.",
+        "add together the two numbers given in each input.",
+        "Add two numbers together to find the total.",
+        "sum the two numbers provided.",
+        "Determine the total by adding together the two numbers given as input.",
+        "calculate the sum of the two numbers provided in the input.",
+        "Enter two numbers and find the total.",
+        "Find the total when adding two numbers together.",
+        "Calculate the total of both numbers given in each input.",
+        "Determine the total of the two numbers that are input.",
+        "Calculate and display the total of both input numbers.",
+        "calculate the total of both input figures.",
+        "add together two whole numbers.",
+        "Add together the two input numbers to find the total sum.",
+        "add the two provided numbers together.",
+        "Calculate the sum of the two given numbers. Here are the results: \n\nInput 1: 64, Input 2: 66, Sum: 130 \nInput 1: 12, Input 2: 53, Sum: 65 \nInput 1: 5, Input 2: 99, Sum: 104 \nInput 1: 3, Input 2: 49, Sum: 52 \nInput 1: 94, Input 2: 94, Sum: 188",
+        "combine the provided numbers to calculate their sum.",
+        "Find the total by adding the two numbers provided.",
+        "Calculate the total of two numbers that are provided as input.",
+        "Combine the two numbers into a sum.",
+        "Combine the two given numbers.",
+        " Add the two provided numbers together.",
+        "Calculate the sum of the two numbers provided and output the result.",
+        "Calculate the sum of two numbers given in the input.",
+        "Sum of the two numbers provided in the input.",
+        "Add the two input numbers to find the sum using the following examples:\n\n- 39 + 99 = 138\n- 3 + 32 = 35\n- 59 + 90 = 149\n- 3 + 49 = 52\n- 29 + 59 = 88",
+        "Identify the total of the two provided numbers.",
+        "Determine the total of the two numbers given in the input.",
+        "Add the two numbers given as input.",
+        "Develop a program that takes two numbers as input, calculates their sum, and outputs the result.",
+        "Add the two numbers provided in the input to find their sum.",
+        "Create a program that accepts two integers as input and displays the sum of the two numbers.",
+        "determine the total of both input numbers.",
+        "Calculate the total of the two numbers and then include 37."
+    ],
+    "instruction_select_history": [
+        [
+            "Combine the two provided numbers to obtain the final result.",
+            1.0,
+            "Determine the total of the two numbers that are provided as input.",
+            1.0
+        ],
+        [
+            "Input two integers and output the sum of the integers.",
+            1.0,
+            "add the two input numbers together.",
+            1.0
+        ],
+        [
+            "Calculate the total of both numbers given in each input.",
+            1.0,
+            "Combine the two given numbers.",
+            0.95
+        ],
+        [
+            "calculate the total of the two numbers.",
+            1.0,
+            "Add together the provided numbers in each input.",
+            1.0
+        ],
+        [
+            "Add the two numbers together to get the total sum.",
+            1.0,
+            "Input two numbers and determine the sum of the two integers.",
+            1.0
+        ],
+        [
+            "add together the two numbers given in each input.",
+            1.0,
+            "sum the two inputted numbers.",
+            1.0
+        ],
+        [
+            "Calculate the sum of the two numbers provided in each input, and display the result as the output.",
+            1.0,
+            "Add the two numbers provided in each input to find the total sum.",
+            1.0
+        ],
+        [
+            "Combine the two numbers and display the total as the result.",
+            1.0,
+            "Determine the total by adding together the two provided numbers.",
+            1.0
+        ],
+        [
+            "Find the difference between the two numbers by subtracting the smaller number from the larger number and provide the result.",
+            0.05,
+            "Accept two numbers as input and calculate the sum of the two numbers.",
+            1.0
+        ],
+        [
+            "Calculate the total of the two whole numbers.",
+            1.0,
+            "Input two numbers and output the sum of the numbers.",
+            1.0
+        ],
+        [
+            "Find the total by adding the two numbers provided.",
+            1.0,
+            "add the two provided numbers together.",
+            1.0
+        ],
+        [
+            "Input two numbers and output their sum.",
+            1.0,
+            "Input two integers and calculate the sum of the two numbers.",
+            1.0
+        ],
+        [
+            "Combine the two numbers into a sum.",
+            1.0,
+            "Determine the total when adding the two provided numbers together.",
+            1.0
+        ],
+        [
+            "sum the two numbers.",
+            1.0,
+            "Add the two numbers given in each input.",
+            1.0
+        ],
+        [
+            "Calculate the sum of the two numbers provided and output the result.",
+            1.0,
+            "Combine the sum of two numbers.",
+            1.0
+        ],
+        [
+            "Determine the total of the two numbers that are provided as input.",
+            1.0,
+            "Sum the two numbers provided.",
+            1.0
+        ],
+        [
+            "Find the total of the given pair of numbers.",
+            1.0,
+            "Find the total of the two numbers given as input.",
+            1.0
+        ],
+        [
+            "combine both numbers.",
+            0.0,
+            "Calculate the total of the two numbers given as input.",
+            1.0
+        ],
+        [
+            "Combine the two numbers and display the result.",
+            0.85,
+            "Add together the two numbers that were input.",
+            1.0
+        ],
+        [
+            "Find the total of both numbers.",
+            1.0,
+            "add two numbers together to find the total sum.",
+            1.0
+        ],
+        [
+            "Calculate the total of the two numbers given in the input.",
+            1.0,
+            "Add together the two numbers from each input to find the sum.",
+            1.0
+        ],
+        [
+            "add two numbers together to get the total sum.",
+            1.0,
+            "calculate the total of the two numbers entered.",
+            1.0
+        ],
+        [
+            "Calculate the sum of the two numbers provided in each input, and display the result as the output.",
+            1.0,
+            "find the total of the two provided numbers.",
+            1.0
+        ],
+        [
+            " Find the total of two numbers.",
+            1.0,
+            "calculate the total of the two input numbers.",
+            1.0
+        ],
+        [
+            "Provide two numbers as input and display the sum of the two numbers as output.",
+            1.0,
+            "Determine the sum of the two numbers given to obtain the total sum of the inputs.",
+            1.0
+        ],
+        [
+            "Calculate and display the total of the two given numbers.",
+            1.0,
+            "Combine the two numbers and output their sum.",
+            1.0
+        ],
+        [
+            "calculate the total of two given numbers.",
+            1.0,
+            "Sum two numbers and display the result.",
+            1.0
+        ],
+        [
+            "Find the sum of the two numbers given in each input.",
+            1.0,
+            "find the total of the two provided numbers.",
+            1.0
+        ],
+        [
+            "calculate the total of the two numbers provided as input.",
+            1.0,
+            "Sum the two numbers provided.",
+            1.0
+        ],
+        [
+            "Determine the total by adding the two numbers provided in each input.",
+            1.0,
+            "combine the two numbers given.",
+            1.0
+        ],
+        [
+            "determine the total of the two numbers provided in each input.",
+            1.0,
+            "Add the two input numbers and then display the resulting sum.",
+            1.0
+        ],
+        [
+            "Enter two numbers and provide the total sum.",
+            1.0,
+            "calculate the total of the two given numbers and display the result.",
+            1.0
+        ],
+        [
+            "Find the total of the two numbers provided.",
+            1.0,
+            "Add together two numbers to find their total sum.",
+            1.0
+        ],
+        [
+            "Input two numbers, find the sum, and display the result.",
+            1.0,
+            "calculate the total of the provided two numbers.",
+            1.0
+        ],
+        [
+            "Add up the two provided numbers.",
+            1.0,
+            " Calculate the total of two numbers.",
+            1.0
+        ],
+        [
+            "Accept two numbers as input and calculate the sum of the two numbers.",
+            1.0,
+            "Add together two numbers to get the total.",
+            1.0
+        ],
+        [
+            "Add together two numbers that are provided as input and display the outcome.",
+            1.0,
+            " Calculate the total of two numbers.",
+            1.0
+        ],
+        [
+            "Find the total of the two provided numbers.",
+            1.0,
+            "Calculate the total of the two given numbers and return the result.",
+            1.0
+        ],
+        [
+            "Determine the total of two specified numbers.",
+            1.0,
+            "Combine the two numbers and display the total as the result.",
+            1.0
+        ],
+        [
+            "Find the sum of the two numbers.",
+            1.0,
+            "Add together the two input numbers to find the total sum.",
+            1.0
+        ],
+        [
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0,
+            "first, add the two numbers together and then add 50 to the total.",
+            0.0
+        ],
+        [
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Calculate the total of the two numbers provided in each entry.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Sum the two numbers and display the total.",
+            1.0,
+            "Enter two numbers and display their sum.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "Sum the two numbers and display the total.",
+            1.0
+        ],
+        [
+            "Enter two numbers and display their sum.",
+            1.0,
+            "first, add the two numbers together and then add 50 to the total.",
+            0.0
+        ]
+    ],
+    "now_values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+    ]
+}

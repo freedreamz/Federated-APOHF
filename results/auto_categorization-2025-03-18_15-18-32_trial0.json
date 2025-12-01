@@ -1,0 +1,2189 @@
+{
+    "task": "auto_categorization",
+    "n_prompt_tokens": 5,
+    "nu": 1,
+    "lamdba": 0.1,
+    "n_init": 40,
+    "n_domain": 500,
+    "total_iter": 165,
+    "local_training_iter": 30,
+    "random_proj": "uniform",
+    "intrinsic_dim": 100,
+    "n_eval": 1000,
+    "name": "",
+    "gpt": "gpt-3.5-turbo",
+    "init_scale": 1,
+    "pooling": "last",
+    "func": "neural",
+    "trial": 0,
+    "magnitude": 10,
+    "norm_method": "standard",
+    "candidate_method": "induction",
+    "agent_N": 10,
+    "test_score": 0.0,
+    "valid_score": 0.3,
+    "best_prompt": [
+        " provide a category for each group of terms."
+    ],
+    "prompts_set": {
+        " categorize the given inputs into specific groups.": 0.1,
+        " identify certain categories based on the given inputs.": 0.2,
+        " provide categories or groups for the given inputs.": 0.0,
+        " provide an output category for each input item.": 0.2,
+        " categorize the following items into their respective groups.": 0.0,
+        " provide a category that the given items belong to.": 0.2,
+        " categorize the given inputs into appropriate groups or categories.": 0.0,
+        "identify a category or group that the given inputs belong to.": 0.15,
+        " identify the category or theme of the given inputs.": 0.15,
+        " categorize the given inputs into a broader category or group based on their characteristics.": 0.15,
+        "provide an output that categorizes the given inputs.": 0.15,
+        " categorize the given inputs into a specific category or group.": 0.2,
+        " provide a category or group that all the items in the input list belong to.": 0.15,
+        "provide computer file format extensions for the given inputs.": 0.0,
+        "\"Provide a category for the given list of items.\"": 0.25,
+        " provide an output that categorizes the given inputs.": 0.05,
+        " provide an output category based on the input terms given.": 0.2,
+        "\"Provide a category for the following inputs\"": 0.25,
+        " categorize the input into a specific group or category.": 0.2,
+        " identify the category or type of the given inputs.": 0.15,
+        " provide synonyms for the given words, so the output should be words that have a similar meaning to the input words.": 0.0,
+        "provide categories based on the given inputs.": 0.15,
+        " identify the category of the items listed.": 0.15,
+        " categorize the inputs into different groups based on a common theme.": 0.1,
+        "provide a category for each group of items given as input.": 0.1,
+        " classify the given inputs into the appropriate category.": 0.2,
+        " categorize the given words or phrases into a specific group or category based on their similarities.": 0.25,
+        " categorize the input terms into their respective categories.": 0.0,
+        "provide a category or group that the given inputs belong to.": 0.2,
+        " provide computer file format extensions, religions, periods of Japanese history, and programming languages for the given inputs.": 0.0,
+        " categorize the given inputs into different groups based on a specific criteria.": 0.05,
+        "identify a common category or characteristic among the items listed.": 0.05,
+        " identify the category or group that the items belong to based on the given input.": 0.25,
+        "\"Provide a category for the following groups of items/people.\"": 0.15,
+        " identify the category to which the given inputs belong.": 0.15,
+        " provide a category for each group of input items.": 0.2,
+        " identify the category or type of the given items.": 0.1,
+        " provide an output category for each input phrase.": 0.1,
+        "provide computer file format extensions, programming languages, Nobel Prize winners, artists, and long rivers based on the given inputs.": 0.0,
+        " identify the category or group to which the given items belong.": 0.25,
+        " identify the category or group to which the given inputs belong.": 0.05,
+        " provide a list of items that fall into the specified category.": 0.1,
+        " categorize the following items into appropriate groups.": 0.05,
+        " categorize the given items into appropriate groups or categories.": 0.1,
+        " identify the category or group that the items or names belong to.": 0.35,
+        " identify the category or group that each set of inputs belongs to.": 0.15,
+        "identify a common category or classification for the given items.": 0.25,
+        " provide an output category for each input group.": 0.15,
+        " categorize the given inputs into appropriate categories based on their common characteristics.": 0.2,
+        "provide examples of specific categories based on the given inputs.": 0.0,
+        " identify a common theme or category for the given items or entities.": 0.15,
+        "identify the category of the given items.": 0.35,
+        " determine the category or group that the given items belong to.": 0.1,
+        " identify the category or group that each input belongs to.": 0.1,
+        " provide the category or classification of the given items.": 0.2,
+        "classify the given items into categories.": 0.0,
+        "provide the category or classification for each input.": 0.05,
+        " \"Provide a category for the following sets of items\"": 0.3,
+        " provide a categorization or description of the items listed.": 0.1,
+        " \"Identify the category or common thread among the following items.\"": 0.1,
+        "identify the category of items based on the given inputs.": 0.2,
+        "provide categories or groups that the given inputs belong to.": 0.1,
+        " \"Identify the category or group that each set of items belongs to.\"": 0.2,
+        " provide a category for the given list of items or names.": 0.35,
+        "\"Provide a category for the following items.\"": 0.25,
+        " identify the common theme or category of the given items.": 0.35,
+        "identify a common theme or category that the inputs belong to.": 0.25,
+        " identify a common theme or category among the given items.": 0.1,
+        " provide examples of different categories based on the given inputs.": 0.0,
+        " provide a specific output based on the input given.": 0.05,
+        "identify the category or group that the inputs belong to.": 0.05,
+        " provide a category or common factor for the given inputs.": 0.3,
+        " categorize the given terms into their respective categories.": 0.1,
+        " identify a common theme or category for the given inputs.": 0.05,
+        "identify a common theme or category for the given inputs.": 0.3,
+        " categorize the input into specific groups or categories.": 0.1,
+        " provide a category for each group of items given.": 0.25,
+        " categorize the given inputs into specific groups based on common characteristics.": 0.15,
+        "classify the given terms into categories.": 0.05,
+        " provide examples of the given category based on the input.": 0.0,
+        "\"Provide examples of each category.\"": 0.0,
+        " provide a category or common theme for the given inputs.": 0.15,
+        " identify the category or group to which each set of items belongs.": 0.15,
+        " categorize the given items into broader categories.": 0.1,
+        " provide an appropriate category for the given inputs.": 0.15,
+        " provide the category or type of the given items.": 0.3,
+        "provide an output category based on the given inputs.": 0.15,
+        " categorize the given items into broader categories or groups.": 0.05,
+        " categorize the given items into appropriate groups based on their characteristics.": 0.0,
+        " provide a category or group that the listed items belong to.": 0.1,
+        " provide a category for each group of terms.": 0.1,
+        " identify the category or group to which the items belong.": 0.25,
+        " categorize the following items into the specified categories.": 0.0,
+        " identify the category of items based on the given input.": 0.2,
+        "identify the category or group to which the items belong.": 0.05,
+        " identify a category or group that these items belong to.": 0.1,
+        " categorize the given items into appropriate groups based on their common characteristics.": 0.05,
+        " provide a category or group that these items belong to.": 0.05,
+        "classify the given items into different categories.": 0.0,
+        " identify the category to which the items belong.": 0.2,
+        " provide a category or group that the items belong to.": 0.25,
+        " provide an appropriate category for each group of items given.": 0.2,
+        " provide a category for each set of items or individuals.": 0.2,
+        " determine the category or classification of the given items.": 0.15,
+        " provide a category or group that the items listed belong to.": 0.15,
+        " provide the category or group that the items belong to.": 0.1,
+        " provide the category or group that the given items belong to.": 0.05,
+        " provide a category for each set of items.": 0.25,
+        " provide a category or classification for the given list of items.": 0.1
+    },
+    "best_values": [
+        0.05,
+        0.05,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3
+    ],
+    "best_instruction_over_iter": [
+        [
+            0,
+            " identify a common theme or category for the given inputs.",
+            0.05
+        ],
+        [
+            0,
+            " identify a common theme or category for the given inputs.",
+            0.05
+        ],
+        [
+            0,
+            " categorize the input into specific groups or categories.",
+            0.1
+        ],
+        [
+            0,
+            " categorize the input into specific groups or categories.",
+            0.1
+        ],
+        [
+            0,
+            " categorize the input into specific groups or categories.",
+            0.1
+        ],
+        [
+            0,
+            "classify the given terms into categories.",
+            0.05
+        ],
+        [
+            0,
+            "classify the given terms into categories.",
+            0.05
+        ],
+        [
+            0,
+            "classify the given terms into categories.",
+            0.05
+        ],
+        [
+            0,
+            " provide a category or common theme for the given inputs.",
+            0.15
+        ],
+        [
+            0,
+            " provide a category or common theme for the given inputs.",
+            0.15
+        ],
+        [
+            1,
+            " provide a category or group that the listed items belong to.",
+            0.1
+        ],
+        [
+            1,
+            " provide an appropriate category for the given inputs.",
+            0.15
+        ],
+        [
+            1,
+            " provide an appropriate category for the given inputs.",
+            0.15
+        ],
+        [
+            1,
+            " provide an appropriate category for the given inputs.",
+            0.15
+        ],
+        [
+            1,
+            " provide an appropriate category for the given inputs.",
+            0.15
+        ],
+        [
+            1,
+            " provide an appropriate category for the given inputs.",
+            0.15
+        ],
+        [
+            1,
+            " provide an appropriate category for the given inputs.",
+            0.15
+        ],
+        [
+            1,
+            " provide an appropriate category for the given inputs.",
+            0.15
+        ],
+        [
+            1,
+            " provide an appropriate category for the given inputs.",
+            0.15
+        ],
+        [
+            1,
+            " provide an appropriate category for the given inputs.",
+            0.15
+        ],
+        [
+            2,
+            " provide a category or group that these items belong to.",
+            0.05
+        ],
+        [
+            2,
+            " provide a category or group that these items belong to.",
+            0.05
+        ],
+        [
+            2,
+            " provide a category or group that these items belong to.",
+            0.05
+        ],
+        [
+            2,
+            " provide a category or group that these items belong to.",
+            0.05
+        ],
+        [
+            2,
+            " provide a category or group that these items belong to.",
+            0.05
+        ],
+        [
+            2,
+            " provide a category or group that these items belong to.",
+            0.05
+        ],
+        [
+            2,
+            " provide a category or group that these items belong to.",
+            0.05
+        ],
+        [
+            2,
+            " provide a category or group that these items belong to.",
+            0.05
+        ],
+        [
+            2,
+            " provide a category or group that these items belong to.",
+            0.05
+        ],
+        [
+            2,
+            " provide a category or group that these items belong to.",
+            0.05
+        ],
+        [
+            3,
+            " provide a category or group that the listed items belong to.",
+            0.1
+        ],
+        [
+            3,
+            " provide a category or group that the listed items belong to.",
+            0.1
+        ],
+        [
+            3,
+            " provide a category or group that the listed items belong to.",
+            0.1
+        ],
+        [
+            3,
+            " provide a category or group that the listed items belong to.",
+            0.1
+        ],
+        [
+            3,
+            " provide a category or group that the listed items belong to.",
+            0.1
+        ],
+        [
+            3,
+            " provide a category or group that the listed items belong to.",
+            0.1
+        ],
+        [
+            3,
+            " provide a category or group that the listed items belong to.",
+            0.1
+        ],
+        [
+            3,
+            " provide a category or group that the listed items belong to.",
+            0.1
+        ],
+        [
+            3,
+            " provide a category or group that the listed items belong to.",
+            0.1
+        ],
+        [
+            3,
+            " identify the category to which the items belong.",
+            0.2
+        ],
+        [
+            4,
+            " identify the category to which the items belong.",
+            0.2
+        ],
+        [
+            4,
+            " identify the category to which the items belong.",
+            0.2
+        ],
+        [
+            4,
+            " identify the category to which the items belong.",
+            0.2
+        ],
+        [
+            4,
+            " identify the category to which the items belong.",
+            0.2
+        ],
+        [
+            4,
+            " identify the category to which the items belong.",
+            0.2
+        ],
+        [
+            4,
+            " identify the category to which the items belong.",
+            0.2
+        ],
+        [
+            4,
+            " identify the category to which the items belong.",
+            0.2
+        ],
+        [
+            4,
+            " identify the category to which the items belong.",
+            0.2
+        ],
+        [
+            4,
+            " identify the category to which the items belong.",
+            0.2
+        ],
+        [
+            4,
+            " identify the category to which the items belong.",
+            0.2
+        ],
+        [
+            5,
+            " provide a category or group that these items belong to.",
+            0.05
+        ],
+        [
+            5,
+            " provide a category or group that these items belong to.",
+            0.05
+        ],
+        [
+            5,
+            " provide a category or group that these items belong to.",
+            0.05
+        ],
+        [
+            5,
+            " provide a category or group that these items belong to.",
+            0.05
+        ],
+        [
+            5,
+            " provide a category or group that these items belong to.",
+            0.05
+        ],
+        [
+            5,
+            " provide a category or group that these items belong to.",
+            0.05
+        ],
+        [
+            5,
+            " provide a category for each set of items or individuals.",
+            0.2
+        ],
+        [
+            5,
+            " provide a category for each set of items or individuals.",
+            0.2
+        ],
+        [
+            5,
+            " provide a category for each set of items or individuals.",
+            0.2
+        ],
+        [
+            5,
+            " provide a category for each set of items or individuals.",
+            0.2
+        ],
+        [
+            6,
+            " provide the category or type of the given items.",
+            0.3
+        ],
+        [
+            6,
+            " provide the category or type of the given items.",
+            0.3
+        ],
+        [
+            6,
+            " provide the category or type of the given items.",
+            0.3
+        ],
+        [
+            6,
+            " provide the category or type of the given items.",
+            0.3
+        ],
+        [
+            6,
+            " provide the category or type of the given items.",
+            0.3
+        ],
+        [
+            6,
+            " provide the category or type of the given items.",
+            0.3
+        ],
+        [
+            6,
+            " provide the category or type of the given items.",
+            0.3
+        ],
+        [
+            6,
+            " provide the category or type of the given items.",
+            0.3
+        ],
+        [
+            6,
+            " provide the category or type of the given items.",
+            0.3
+        ],
+        [
+            6,
+            " provide the category or type of the given items.",
+            0.3
+        ],
+        [
+            7,
+            " provide the category or type of the given items.",
+            0.3
+        ],
+        [
+            7,
+            " provide the category or type of the given items.",
+            0.3
+        ],
+        [
+            7,
+            " provide the category or type of the given items.",
+            0.3
+        ],
+        [
+            7,
+            " provide the category or type of the given items.",
+            0.3
+        ],
+        [
+            7,
+            " provide the category or type of the given items.",
+            0.3
+        ],
+        [
+            7,
+            " provide the category or type of the given items.",
+            0.3
+        ],
+        [
+            7,
+            " provide the category or type of the given items.",
+            0.3
+        ],
+        [
+            7,
+            " provide the category or type of the given items.",
+            0.3
+        ],
+        [
+            7,
+            " provide the category or type of the given items.",
+            0.3
+        ],
+        [
+            7,
+            " provide the category or type of the given items.",
+            0.3
+        ],
+        [
+            8,
+            "classify the given terms into categories.",
+            0.05
+        ],
+        [
+            8,
+            "classify the given terms into categories.",
+            0.05
+        ],
+        [
+            8,
+            "classify the given terms into categories.",
+            0.05
+        ],
+        [
+            8,
+            "classify the given terms into categories.",
+            0.05
+        ],
+        [
+            8,
+            "classify the given terms into categories.",
+            0.05
+        ],
+        [
+            8,
+            "classify the given terms into categories.",
+            0.05
+        ],
+        [
+            8,
+            "classify the given terms into categories.",
+            0.05
+        ],
+        [
+            8,
+            "classify the given terms into categories.",
+            0.05
+        ],
+        [
+            8,
+            "classify the given terms into categories.",
+            0.05
+        ],
+        [
+            8,
+            "classify the given terms into categories.",
+            0.05
+        ],
+        [
+            9,
+            " provide a category for each group of terms.",
+            0.1
+        ],
+        [
+            9,
+            " provide a category for each group of terms.",
+            0.1
+        ],
+        [
+            9,
+            " provide a category for each group of terms.",
+            0.1
+        ],
+        [
+            9,
+            " provide a category for each group of terms.",
+            0.1
+        ],
+        [
+            9,
+            " provide a category for each group of terms.",
+            0.1
+        ],
+        [
+            9,
+            " provide a category for each group of terms.",
+            0.1
+        ],
+        [
+            9,
+            " provide a category for each group of terms.",
+            0.1
+        ],
+        [
+            9,
+            " provide a category for each group of terms.",
+            0.1
+        ],
+        [
+            9,
+            " provide a category for each group of terms.",
+            0.1
+        ],
+        [
+            9,
+            " provide a category for each group of terms.",
+            0.1
+        ]
+    ],
+    "init_instructions": [
+        " identify a common theme or category for the given inputs.",
+        " identify the category or common theme of the given inputs.",
+        " categorize the given inputs into specific groups or categories.",
+        " identify the category or group that the given names belong to.",
+        " provide a category or group that the listed items belong to.",
+        " provide an output category for each input term.",
+        " categorize the given items into a specific group or category.",
+        " identify the category or group that the given items belong to.",
+        " categorize the given items into broader categories.",
+        " identify the category or group that the items belong to.",
+        " categorize the given inputs into specific categories.",
+        " provide an output category for each set of inputs.",
+        " provide an output based on the input given.",
+        " identify the category or group that the items listed belong to.",
+        "provide an output based on the given input.",
+        " categorize the given items into their respective categories.",
+        " identify the category to which the given inputs belong.",
+        " provide a category or classification for the given inputs.",
+        " categorize the given inputs into appropriate groups or categories.",
+        "classify the given inputs into specific categories.",
+        " categorize the given inputs.",
+        " identify the category or type of each input.",
+        " provide an output category for a list of items.",
+        " provide a category or group that the given inputs belong to.",
+        " provide a category or group that the input items belong to.",
+        " categorize the given inputs into a broader category.",
+        " categorize the given inputs into appropriate categories.",
+        "provide an output category based on the input items given.",
+        "provide an output based on the input given.",
+        "identify the category or type of the given inputs.",
+        " provide an output category based on the given inputs.",
+        " provide an output category for a list of inputs.",
+        " categorize the given inputs into different groups or categories.",
+        " categorize the given items into their respective groups or categories.",
+        " classify the given inputs into specific categories.",
+        " identify the category or type of the given items.",
+        " identify the category or group that the items in the input belong to.",
+        "identify a common theme or category that the inputs belong to.",
+        " provide a category for the given items or names.",
+        " provide a category or group that each set of items belongs to.",
+        " provide the category or group that the given items belong to.",
+        " identify the category or group to which the given items belong.",
+        " categorize the given items or names into appropriate groups.",
+        " provide an output category based on the input items.",
+        " identify a common theme or category for each group of items provided.",
+        " categorize the given inputs into a specific group or category.",
+        " categorize the given words or phrases into a specific group or category based on their similarities.",
+        " provide an output category for the given inputs.",
+        "classify the given inputs into appropriate categories.",
+        " categorize the given items or topics into specific groups or categories.",
+        "identify the category or type of the given items.",
+        "identify a common theme or category for the given inputs.",
+        "identify the category or group that the items belong to.",
+        " categorize the given inputs into specific categories or groups.",
+        "\"Provide a category for the following groups of items.\"",
+        " provide an output based on the given input.",
+        "identify the category or group that the given items belong to.",
+        " provide an appropriate category for the given inputs.",
+        " categorize the given inputs into their respective categories.",
+        " categorize the following items into groups or categories.",
+        " categorize the given items into appropriate groups.",
+        " \"Provide a category for the given items.\"",
+        " determine the category or group that the given items belong to.",
+        " identify the category of the given inputs.",
+        " identify a common category or group that the items belong to.",
+        " provide an output category for each input.",
+        "classify the input into different categories.",
+        " categorize the given input into specific groups or categories.",
+        " categorize the given inputs into a common category.",
+        " identify the category or group that each set of inputs belongs to.",
+        " provide an output category based on the input given.",
+        " provide the category or group that each set of words belongs to.",
+        " identify a common category or group that the given items belong to.",
+        " provide a category or commonality for the given list of items.",
+        " classify the given items into a specific category.",
+        "provide a category or common trait for the given inputs.",
+        " classify the given items into categories.",
+        " provide a category for the given list of items.",
+        " provide an appropriate category for the given input.",
+        " categorize the given inputs into a specific category or group.",
+        " identify the category or group that each set of inputs belong to.",
+        " categorize the following items.",
+        " classify the given inputs into categories.",
+        " provide a category for each set of items given.",
+        " provide examples of different categories based on the given inputs.",
+        "provide categories for the given inputs.",
+        "classify the given inputs into categories.",
+        " provide the category or group that the input items belong to.",
+        "\"Provide categories for the following sets of words.\"",
+        " categorize the given items into specific groups based on their characteristics.",
+        " provide a category for each set of inputs.",
+        " categorize the given terms into specific groups based on their common characteristics.",
+        " identify the category or group that each input belongs to.",
+        " identify the category of each group of items provided.",
+        " categorize the given items into specific groups or categories.",
+        "provide an output category based on the given input.",
+        " provide computer file format extensions, tourist attractions, programming languages, and African countries based on the given inputs.",
+        " identify the category or group to which the given inputs belong.",
+        " categorize the given inputs into a broader category or group.",
+        "\"Provide a category for the following groups of items or individuals.\"",
+        " categorize the input into different groups or categories.",
+        " provide categories for the given inputs.",
+        " categorize each set of words into a specific category.",
+        " categorize the input into specific groups or categories.",
+        " provide the category or type of the given items.",
+        " categorize the given items or names.",
+        " \"Provide a category for the following groups of items/people.\"",
+        " provide a category for each group of terms.",
+        " \"Provide examples for the following categories: historical wars, extinct languages, people shot by police, Indian foods, and winners of the Nobel Prize.\"",
+        "classify the input terms into their respective categories.",
+        " categorize the given inputs into appropriate groups.",
+        " \"Identify the category or common thread among the following items.\"",
+        " categorize the given items into appropriate groups or categories.",
+        " categorize the given inputs into their respective groups or categories.",
+        "classify the given inputs into different categories.",
+        " identify whether the given inputs are extinct languages or people who were shot by police.",
+        " categorize the given items into the appropriate group or category.",
+        "identify the category or group that the items belong to based on the given input.",
+        " identify the category or type of the given inputs.",
+        " categorize the given inputs into the appropriate categories.",
+        "\"Identify the category or group that the given items belong to.\"",
+        " provide a category that these words or phrases belong to.",
+        "provide outputs based on the given inputs.",
+        " provide synonyms, religions, people shot by police, solvents, and extinct languages for the given inputs.",
+        " provide a category or group for each set of items given.",
+        " categorize the given inputs into specific groups or categories based on common characteristics.",
+        " provide an appropriate category for each set of inputs.",
+        "\"Provide a category for the following sets of items or topics.\"",
+        " provide a category or common factor for the given inputs.",
+        "\"Provide a category or description for the following inputs.\"",
+        " provide a category or group that each set of inputs belongs to.",
+        " categorize the given items into specific categories.",
+        " identify the category or group that the given inputs belong to.",
+        "identify the category of items based on the given inputs.",
+        " categorize the given inputs into appropriate categories based on their common characteristics.",
+        " identify the category of the given items.",
+        "\"Provide a category for each group of items.\"",
+        " identify the category to which the given items belong.",
+        " categorize the given items or names into a specific group or category.",
+        " categorize the given inputs into a specific category.",
+        " provide a category or group that each input belongs to.",
+        "provide examples based on the given input.",
+        " categorize the given items into their respective groups.",
+        " categorize the given inputs into different groups based on their common characteristics.",
+        "identify the category of the given items.",
+        " classify the given inputs into a specific category.",
+        " provide a category or commonality for the given items.",
+        " classify the given inputs into appropriate categories.",
+        " categorize the given inputs into broader categories.",
+        " identify the common theme or category among the given inputs.",
+        " categorize the given inputs into a single category or theme.",
+        " provide a category for each group of items given.",
+        " provide a classification based on the given input.",
+        " provide a category or group that these items belong to.",
+        " provide a category or group that all the inputs belong to.",
+        " categorize the given items into groups or categories.",
+        " provide outputs based on the given inputs.",
+        " provide a term or category that encompasses the given inputs.",
+        " categorize the given inputs into different categories.",
+        " provide an input and the corresponding output. Here are some examples based on the given instructions.",
+        " provide an appropriate category for each set of items given.",
+        " categorize the input items.",
+        " identify the common theme or category of the given items.",
+        " provide an output category based on the given input.",
+        " provide a specific category for each group of input.",
+        "identify the category or type of each group of items.",
+        "provide a specific category or classification for the given inputs.",
+        " identify the category for each set of inputs.",
+        " provide categories or groups for the given inputs.",
+        " categorize the given items into appropriate categories.",
+        "identify the category or group that the given inputs belong to.",
+        " categorize the given items into a common group or category.",
+        " categorize the given items or entities into a specific group or category.",
+        " categorize the given inputs into the appropriate group or category.",
+        "classify the given inputs into the appropriate categories.",
+        " provide an output category for a given list of inputs.",
+        " \"Provide a category for the following items.\"",
+        "identify the category or type of each input.",
+        " identify a common category or group for the given inputs.",
+        " provide an output category based on the input provided.",
+        " provide a category or description for the given inputs.",
+        "provide an output category for each input.",
+        "identify the category or group to which the items belong based on the given inputs.",
+        " identify the category or group that the items or names belong to.",
+        "\"Identify the following categories based on the given inputs.\"",
+        " categorize the given items into a broader category.",
+        "provide synonyms for the given words or phrases.",
+        " identify the commonality between the input items.",
+        " identify the category or common characteristic of the given items.",
+        " identify the common theme or category of the given input items.",
+        " identify the category or group that the input items belong to.",
+        " provide an output category based on the given input terms.",
+        " categorize the following items into appropriate groups.",
+        " categorize the following items into their respective categories.",
+        " provide synonyms, so the output should be words that have similar meanings to the input words.",
+        " categorize the given inputs into the specified categories.",
+        "classify the given items into categories.",
+        " provide an output category based on the input terms given.",
+        " identify the category or type of the given items or entities.",
+        "\"Identify the category or group that the items belong to.\"",
+        " categorize the given inputs into their respective categories or groups.",
+        "provide the computer file format extensions, ingredients of a sandwich, solvents, African countries, and popular songs corresponding to the given inputs.",
+        " categorize the given inputs into specific groups based on common characteristics.",
+        "provide an output category based on the given inputs.",
+        " identify the category or group to which the items belong.",
+        " identify a common theme or category for each group of words.",
+        "classify the inputs into categories based on the given criteria.",
+        "classify the input items into categories.",
+        " provide an output category for each set of input items.",
+        " \"Provide a category for the following items/people\"",
+        " categorize the following items into a specific group or category.",
+        " provide an output category based on the input terms.",
+        " provide categories for the given sets of words.",
+        " provide a category or group for each set of inputs.",
+        " identify the category of the items listed.",
+        " provide an output category for each group of inputs.",
+        " identify the category or group that the inputs belong to.",
+        " provide an output category for each group of input terms.",
+        " \"Provide a category or common factor for the following groups of names.\"",
+        " categorize the given items based on their common characteristics.",
+        " identify the category or group that the items or entities belong to.",
+        "\"Provide a category for the given items or names.\"",
+        "\"Provide a category for the given list of items.\"",
+        " provide an output category for each input item.",
+        "identify the category or group that the items or names belong to.",
+        " categorize the given inputs into specific groups.",
+        " classify the given items into appropriate categories.",
+        "\"Provide a category for the following inputs.\"",
+        " provide a category or group that the items belong to.",
+        " categorize the following items into broader categories.",
+        " categorize the given items into broader categories based on their common characteristics.",
+        " identify a common category or theme among the given items.",
+        " classify the given inputs into the appropriate categories.",
+        " \"Identify the category of the following items\"",
+        " provide a category or group that the given items belong to.",
+        " identify the category or type of items based on the input provided.",
+        " \"Provide a category or group that these items belong to.\"",
+        "provide examples of the given category.",
+        " identify the category or group that each set of items belongs to.",
+        " provide a word or phrase that connects the given inputs.",
+        "provide examples of specific categories based on the given inputs.",
+        " classify the given inputs into different categories.",
+        " provide computer file format extensions, Nobel Prize winners, people shot by police, extinct languages, and infectious diseases based on the given inputs.",
+        "provide computer file format extensions, prokaryotic cells, Indian foods, the media, and ingredients of a sandwich based on the given inputs.",
+        " categorize the given inputs into a broader category or theme.",
+        "provide an output category for the given inputs.",
+        " categorize the given items into different categories.",
+        "provide an output category based on the input provided.",
+        " provide a list of items that fall into the specified category.",
+        "identify the category or group that each input belongs to.",
+        " categorize the items into different groups or categories.",
+        " identify the common theme or category of the items listed in the input.",
+        " identify a category or group that the input items belong to.",
+        "provide an output category for each set of inputs.",
+        "classify the given terms into categories.",
+        " provide a category for each group of input words.",
+        " categorize the given items into broader categories or groups.",
+        " provide the category or type of each input.",
+        " categorize the items into different groups based on their similarities.",
+        "\"Identify the category or group that each set of items belongs to.\"",
+        "\"Provide a category for the following groups of words.\"",
+        " provide the category or type of the given inputs.",
+        " provide a term that encompasses the given items.",
+        " categorize the following items into the specified categories.",
+        " categorize the given items or subjects into a specific group or category.",
+        " provide an input and the output category or group that the items belong to.",
+        " identify the category or commonality among the given items.",
+        " categorize the following inputs into appropriate categories.",
+        " categorize the input items into a specific category.",
+        " identify a common category or group for the given items.",
+        " identify a common category or theme for the given inputs.",
+        " classify the given inputs into their respective categories.",
+        "\"Provide a category for the following groups of items/people.\"",
+        " provide an output category for each input based on the given examples.",
+        " identify the genre or category of the given books or titles.",
+        " provide an output category for each input group.",
+        " provide the category or group that each set of items belongs to.",
+        " provide an appropriate category for each group of items given.",
+        " identify the category or type of items based on the given inputs.",
+        " identify the category or commonality among the given inputs.",
+        " determine the category or group that the given inputs belong to.",
+        " provide computer file format extensions, top journals, apparel, pokeman, and the media for the given inputs.",
+        " categorize the given inputs into relevant groups or categories.",
+        "identify a category or group that the given inputs belong to.",
+        "\"Identify the category or group that these items belong to.\"",
+        " categorize the input terms into specific categories.",
+        " \"Identify the category or group that the given inputs belong to.\"",
+        " provide a category for each set of words or phrases given.",
+        " \"Provide a category or commonality for the following groups of terms.\"",
+        " identify the category or group that the items belong to based on the given input.",
+        "identify the category or group that the inputs belong to.",
+        "\"Provide an output category for each input category.\"",
+        " provide an appropriate category for each group of items.",
+        " identify certain categories based on the given inputs.",
+        "\"Provide the category or common theme for the following groups of words.\"",
+        " provide a category for the given inputs.",
+        " \"Identify the category or group that the items belong to.\"",
+        " identify the category that the given inputs belong to.",
+        " identify the common theme or category of the items mentioned.",
+        "classify the following inputs into specific categories.",
+        " provide a category for each input.",
+        " categorize the given words into specific groups or categories.",
+        " provide a category for each group of inputs.",
+        " provide categories or groupings for the given inputs.",
+        " provide examples of the given category based on the input.",
+        " provide a word or phrase that encompasses the items listed.",
+        " identify a category or group that all the input items belong to.",
+        "\"Provide a category or group that each set of items belongs to.\"",
+        " \"Provide a category or theme that connects the given inputs.\"",
+        " provide a category for the given list of items or names.",
+        " identify the category of items based on the given input.",
+        "\"Provide a category for the following items.\"",
+        " provide a categorization or description of the items listed.",
+        " categorize the given inputs into broader categories or themes.",
+        " identify the category or type of each input term.",
+        "provide the category or classification for each input.",
+        " categorize the given items into a broader category or group.",
+        "\"Provide categories for the following inputs.\"",
+        "provide a category or group that these inputs belong to.",
+        " identify the category or common theme among the given items.",
+        " provide a category or label for the given inputs.",
+        "\"Provide the category or group that the given items belong to.\"",
+        "classify the given inputs into their respective categories.",
+        " provide a word or phrase that groups the given items together.",
+        " categorize the given inputs into a common group or category.",
+        " provide a category for each set of items or individuals.",
+        "identify the category of the items given.",
+        " provide a category for each group of input items.",
+        " categorize the input into a specific group or category.",
+        " provide a category or group for each set of words.",
+        " identify the category of each group of items.",
+        " provide an output category for each input phrase.",
+        "\"Identify the category to which the following items belong.\"",
+        " categorize the given inputs into the specified outputs.",
+        "identify a common category or classification for the given items.",
+        "provide a category or commonality for the given inputs.",
+        " determine the category or classification of the given inputs.",
+        " provide computer file format extensions for the given inputs.",
+        " categorize the given items into groups.",
+        " provide the category or classification of the given items.",
+        " categorize the given inputs into different groups based on a specific criteria.",
+        " identify the category or common theme for each group of items.",
+        " categorize the given items into broader categories based on their similarities.",
+        " categorize the input terms into their respective categories.",
+        " identify the common theme or category of the given inputs.",
+        " identify whether the input names are people shot by police, games on Steam, or Indian foods.",
+        " provide a category or common theme for the given list of words or phrases.",
+        " provide a category for each group of items listed.",
+        " categorize the inputs into different groups based on a common theme.",
+        "provide a category or group that these items belong to.",
+        " identify the category that the input items belong to.",
+        "\"Provide examples of each category.\"",
+        "\"Provide a category for the following inputs\"",
+        " provide categories or commonalities for the given inputs.",
+        " provide a category for each set of items given as input.",
+        " categorize the given terms into appropriate groups.",
+        " identify the category or group that the given terms belong to.",
+        "provide computer file format extensions for the given inputs.",
+        " identify the category or connection between the given inputs.",
+        " categorize the given items into appropriate groups based on their characteristics.",
+        " identify the category that each set of items belongs to.",
+        "identify the category or group to which the items belong.",
+        " provide a category or group that the inputs belong to.",
+        "provide an output category for each input given.",
+        "identify a category or group that the items belong to.",
+        "\"Provide categories for the following items.\"",
+        "identify the category or commonality among the given inputs.",
+        " identify the computer file format extensions, computer science books, and Indian foods from the given inputs.",
+        " \"Provide categories for the following inputs.\"",
+        " categorize the given items into broader categories based on their characteristics.",
+        "provide a category or group that each set of words belongs to.",
+        "determine the category or group that the items in the input belong to.",
+        "provide categories or groups that the given inputs belong to.",
+        " provide synonyms, so the last output should be \"names of people\" instead of \"people shot by police\".",
+        " provide a category for the given input words.",
+        " provide specific categories or types of the given inputs.",
+        " identify the category or group that the given words belong to.",
+        "identify the category or type of items based on the given inputs.",
+        " identify and categorize the given inputs into specific groups or categories.",
+        " categorize the given inputs into relevant groups.",
+        " categorize the given words into appropriate groups or categories.",
+        " categorize the given items into different groups or categories.",
+        " categorize the given items into specific groups or categories based on their similarities.",
+        " categorize the given items or names into a broader category.",
+        "identify the common theme or category of the given items.",
+        " \"Identify the category or group that these items belong to.\"",
+        "classify the given items into specific categories.",
+        "determine the category or group that the given items belong to.",
+        " provide a specific type of output based on the given inputs.",
+        "\"Provide a category for the following groups of items or concepts.\"",
+        " provide an output category or classification for each input.",
+        " categorize the given inputs into broader categories or groups.",
+        " provide a category for each set of items.",
+        " categorize the items into different groups based on their type or category.",
+        " provide categories for each input.",
+        " provide an output that categorizes the given inputs.",
+        " identify the common theme or category for the given list of items.",
+        " categorize the given inputs into the appropriate groups or categories.",
+        " categorize the given items.",
+        " provide a category or group that the input terms belong to.",
+        " \"Identify the category or common theme for the following groups of items\"",
+        " provide computer file format extensions, religions, periods of Japanese history, and programming languages for the given inputs.",
+        " provide a category or common theme for the given inputs.",
+        "identify the category or group that each set of items belongs to.",
+        "identify a category or group that the given items or names belong to.",
+        " provide a category or classification for each group of words given as input.",
+        "identify the category or group that the input items belong to.",
+        " identify a common theme or category among the given items.",
+        "\"Provide the category for the following inputs.\"",
+        " identify a category or group that these items belong to.",
+        " provide related terms or categories for the given inputs.",
+        " categorize the given items or entities into appropriate groups or categories.",
+        " categorize the given inputs into a broader category or group based on their characteristics.",
+        " provide a specific output based on the input given.",
+        " categorize the following items into a common group or category.",
+        " categorize the given inputs into appropriate groups based on their common characteristics.",
+        " \"Identify whether the following inputs are people shot by police, games on Steam, extinct languages, or Computer Science journals.\"",
+        " provide relevant information based on the given input.",
+        "classify the given items into different categories.",
+        " categorize the given inputs into specific groups or categories based on their common characteristics.",
+        " provide a category or classification for each set of inputs.",
+        " identify the category or theme of the given inputs.",
+        " identify a category or group that the given items belong to.",
+        " identify the category or group that the items belong to based on the given inputs.",
+        " provide a category or group that each set of words belongs to.",
+        " \"Identify the category or group that each set of items belongs to.\"",
+        " determine the category or classification of the given items.",
+        " provide a certain type of information based on the input given.",
+        "identify categories or groups based on the given inputs.",
+        " identify the category or group that the items or terms belong to.",
+        " identify the category that the given items belong to.",
+        " categorize the items or books based on the given input.",
+        "provide a category or group that each set of items belongs to.",
+        " categorize the given inputs into specific groups based on certain criteria.",
+        " provide a category or group that the items listed belong to.",
+        " identify a common theme or category for the given items or entities.",
+        " \"Provide examples of the following categories\"",
+        " provide a category or classification for the given list of items.",
+        " categorize the following items into their respective groups or categories.",
+        " categorize the given inputs into the appropriate category.",
+        "identify the category or group that the items belong to based on the given inputs.",
+        " \"Provide a category for the following sets of items\"",
+        " categorize the following terms into their respective categories.",
+        " identify the common theme or category of the items listed.",
+        " categorize the inputs into specific categories.",
+        " identify the common category or group that the given items belong to.",
+        " provide related information or categorize the given inputs.",
+        "provide computer file format extensions, programming languages, Nobel Prize winners, artists, and long rivers based on the given inputs.",
+        " provide an output category for the given input terms.",
+        " identify a common theme or category for the given items.",
+        " provide a category for the given input words or phrases.",
+        "identify the category or group to which the given inputs belong.",
+        " identify the category of each input.",
+        " identify the category or group to which each set of items belongs.",
+        " classify the given inputs into the appropriate category.",
+        " provide a term that encompasses all the given inputs.",
+        " provide a category or type for each group of items.",
+        "identify a common category or characteristic among the items listed.",
+        " provide a category or group that all the items in the input list belong to.",
+        " categorize the input into different groups based on their similarities.",
+        "provide computer file format extensions, computer science journals, winners of the Nobel Prize, people shot by police, and natural disasters based on the given inputs.",
+        " provide a category or common theme for the given list of items.",
+        " provide file format extensions, popular songs, Computer Science journals, synonyms, and tourist attractions based on the given inputs.",
+        " categorize the given items into appropriate groups based on their common characteristics.",
+        " identify a category for each set of inputs.",
+        " provide an output based on the given inputs.",
+        " identify the category to which the items belong.",
+        "provide an output that categorizes the given inputs.",
+        " \"Provide a category or connection for the following groups of terms.\"",
+        " identify the common theme or category for the given inputs.",
+        " provide the category or group that the items belong to.",
+        " provide a category or group name for the given list of items.",
+        " identify the category for each group of words.",
+        " identify the category of each group of words.",
+        " categorize the following items into their respective groups.",
+        "identify the category or group that the items listed belong to.",
+        " categorize the given inputs into broader categories based on their similarities.",
+        " identify the category or group to which the items in the input belong.",
+        " identify the category or group to which each input belongs.",
+        " categorize the given terms into their respective categories.",
+        "provide categories based on the given inputs.",
+        " provide a category or grouping for the given list of items.",
+        " identify the category or common theme among the given inputs.",
+        " provide synonyms for the given words, so the output should be words that have a similar meaning to the input words.",
+        "classify the given items into their respective categories.",
+        "provide a category for each group of items given as input.",
+        " provide a category that the given items belong to.",
+        " identify a category or group that the given inputs belong to.",
+        "provide a category or group that the given inputs belong to.",
+        " categorize the following items into different groups.",
+        " categorize the given items into specific groups.",
+        " categorize the given items or names into specific groups or categories.",
+        " provide an appropriate category for each input.",
+        " identify the common theme or category among the items listed.",
+        "identify the category or group to which the given items belong.",
+        " identify synonyms, popular songs, science fiction books, and African countries based on the given inputs.",
+        "\"Group the following inputs into a common category.\"",
+        " identify the category or relationship between the given inputs.",
+        "\"Identify the category of the following groups of items.\"",
+        " identify the category or group that the items in the list belong to."
+    ],
+    "instruction_select_history": [
+        [
+            " categorize the given inputs into specific groups.",
+            0.1,
+            " identify certain categories based on the given inputs.",
+            0.2
+        ],
+        [
+            " provide categories or groups for the given inputs.",
+            1e-06,
+            " provide an output category for each input item.",
+            0.2
+        ],
+        [
+            " categorize the following items into their respective groups.",
+            1e-06,
+            " provide a category that the given items belong to.",
+            0.2
+        ],
+        [
+            " categorize the given inputs into appropriate groups or categories.",
+            1e-06,
+            "identify a category or group that the given inputs belong to.",
+            0.15
+        ],
+        [
+            " identify the category or theme of the given inputs.",
+            0.15,
+            " categorize the given inputs into a broader category or group based on their characteristics.",
+            0.15
+        ],
+        [
+            "provide an output that categorizes the given inputs.",
+            0.15,
+            " categorize the given inputs into a specific category or group.",
+            0.2
+        ],
+        [
+            " provide a category or group that all the items in the input list belong to.",
+            0.15,
+            "provide computer file format extensions for the given inputs.",
+            1e-06
+        ],
+        [
+            "\"Provide a category for the given list of items.\"",
+            0.25,
+            " provide an output that categorizes the given inputs.",
+            0.05
+        ],
+        [
+            " provide an output category based on the input terms given.",
+            0.2,
+            "\"Provide a category for the following inputs\"",
+            0.25
+        ],
+        [
+            " categorize the input into a specific group or category.",
+            0.2,
+            " identify the category or type of the given inputs.",
+            0.15
+        ],
+        [
+            " provide synonyms for the given words, so the output should be words that have a similar meaning to the input words.",
+            1e-06,
+            "provide categories based on the given inputs.",
+            0.15
+        ],
+        [
+            " identify the category of the items listed.",
+            0.15,
+            " categorize the inputs into different groups based on a common theme.",
+            0.1
+        ],
+        [
+            "provide a category for each group of items given as input.",
+            0.1,
+            " classify the given inputs into the appropriate category.",
+            0.2
+        ],
+        [
+            " categorize the given words or phrases into a specific group or category based on their similarities.",
+            0.25,
+            " categorize the input terms into their respective categories.",
+            1e-06
+        ],
+        [
+            "provide a category or group that the given inputs belong to.",
+            0.2,
+            " provide computer file format extensions, religions, periods of Japanese history, and programming languages for the given inputs.",
+            1e-06
+        ],
+        [
+            " identify certain categories based on the given inputs.",
+            0.2,
+            " categorize the given inputs into different groups based on a specific criteria.",
+            0.05
+        ],
+        [
+            "identify a common category or characteristic among the items listed.",
+            0.05,
+            " identify the category or group that the items belong to based on the given input.",
+            0.25
+        ],
+        [
+            "\"Provide a category for the following groups of items/people.\"",
+            0.15,
+            " identify the category to which the given inputs belong.",
+            0.15
+        ],
+        [
+            " provide a category for each group of input items.",
+            0.2,
+            " identify the category or type of the given items.",
+            0.1
+        ],
+        [
+            " provide an output category for each input phrase.",
+            0.1,
+            "provide computer file format extensions, programming languages, Nobel Prize winners, artists, and long rivers based on the given inputs.",
+            1e-06
+        ],
+        [
+            " identify the category or group to which the given items belong.",
+            0.25,
+            " identify the category or group to which the given inputs belong.",
+            0.05
+        ],
+        [
+            " provide a list of items that fall into the specified category.",
+            0.1,
+            " categorize the following items into appropriate groups.",
+            0.05
+        ],
+        [
+            " provide a category or group that all the items in the input list belong to.",
+            0.15,
+            " categorize the given items into appropriate groups or categories.",
+            0.1
+        ],
+        [
+            " identify the category or group that the items or names belong to.",
+            0.35,
+            " identify the category or group that each set of inputs belongs to.",
+            0.15
+        ],
+        [
+            "identify a common category or classification for the given items.",
+            0.25,
+            " provide an output category for each input group.",
+            0.15
+        ],
+        [
+            " categorize the given inputs into appropriate categories based on their common characteristics.",
+            0.2,
+            "provide examples of specific categories based on the given inputs.",
+            1e-06
+        ],
+        [
+            " identify a common theme or category for the given items or entities.",
+            0.15,
+            "identify the category of the given items.",
+            0.35
+        ],
+        [
+            " determine the category or group that the given items belong to.",
+            0.1,
+            " categorize the given items into appropriate groups or categories.",
+            0.1
+        ],
+        [
+            " identify the category or group that each input belongs to.",
+            0.1,
+            " categorize the given inputs into different groups based on a specific criteria.",
+            0.05
+        ],
+        [
+            " provide the category or classification of the given items.",
+            0.2,
+            "classify the given items into categories.",
+            1e-06
+        ],
+        [
+            "provide the category or classification for each input.",
+            0.05,
+            " \"Provide a category for the following sets of items\"",
+            0.3
+        ],
+        [
+            " provide a categorization or description of the items listed.",
+            0.1,
+            " \"Identify the category or common thread among the following items.\"",
+            0.1
+        ],
+        [
+            "identify the category of items based on the given inputs.",
+            0.2,
+            "provide categories or groups that the given inputs belong to.",
+            0.1
+        ],
+        [
+            " \"Identify the category or group that each set of items belongs to.\"",
+            0.2,
+            " provide a category for the given list of items or names.",
+            0.35
+        ],
+        [
+            "\"Provide a category for the following items.\"",
+            0.25,
+            " identify the common theme or category of the given items.",
+            0.35
+        ],
+        [
+            "\"Provide a category for the following inputs\"",
+            0.25,
+            "identify a common theme or category that the inputs belong to.",
+            0.25
+        ],
+        [
+            " identify a common theme or category among the given items.",
+            0.1,
+            " identify the common theme or category of the given items.",
+            0.35
+        ],
+        [
+            " provide examples of different categories based on the given inputs.",
+            1e-06,
+            " provide a specific output based on the input given.",
+            0.05
+        ],
+        [
+            "identify the category or group that the inputs belong to.",
+            0.05,
+            "\"Provide a category for the given list of items.\"",
+            0.25
+        ],
+        [
+            " provide a category or common factor for the given inputs.",
+            0.3,
+            " categorize the given terms into their respective categories.",
+            0.1
+        ],
+        [
+            " identify a common theme or category for the given inputs.",
+            0.05,
+            " provide a category or group that the listed items belong to.",
+            0.05
+        ],
+        [
+            "identify a common theme or category for the given inputs.",
+            0.3,
+            "identify the category or type of the given items.",
+            0.3
+        ],
+        [
+            " categorize the input into specific groups or categories.",
+            0.1,
+            " provide categories for the given inputs.",
+            0.1
+        ],
+        [
+            " provide a category for each group of items given.",
+            0.25,
+            " categorize the given inputs into a single category or theme.",
+            0.25
+        ],
+        [
+            " categorize the given inputs into specific groups based on common characteristics.",
+            0.15,
+            "provide an output category based on the given inputs.",
+            0.15
+        ],
+        [
+            "classify the given terms into categories.",
+            0.05,
+            " categorize the items into different groups or categories.",
+            0.05
+        ],
+        [
+            " provide examples of the given category based on the input.",
+            1e-06,
+            " provide categories or groupings for the given inputs.",
+            1e-06
+        ],
+        [
+            "\"Provide examples of each category.\"",
+            1e-06,
+            " identify the category that the input items belong to.",
+            1e-06
+        ],
+        [
+            " provide a category or common theme for the given inputs.",
+            0.15,
+            " provide computer file format extensions, religions, periods of Japanese history, and programming languages for the given inputs.",
+            0.15
+        ],
+        [
+            " identify the category or group to which each set of items belongs.",
+            0.15,
+            " provide a category for the given input words or phrases.",
+            0.15
+        ],
+        [
+            " categorize the given items into broader categories.",
+            0.1,
+            " provide a category or group that the listed items belong to.",
+            0.1
+        ],
+        [
+            " provide an appropriate category for the given inputs.",
+            0.15,
+            "identify the category or type of the given items.",
+            0.15
+        ],
+        [
+            " provide the category or type of the given items.",
+            0.3,
+            " provide a category for each group of terms.",
+            0.3
+        ],
+        [
+            " provide a category for each group of items given.",
+            0.25,
+            " provide a category or group that these items belong to.",
+            0.25
+        ],
+        [
+            "provide an output category based on the given inputs.",
+            0.15,
+            " identify the category or group to which the items belong.",
+            0.15
+        ],
+        [
+            " categorize the given items into broader categories or groups.",
+            0.05,
+            "classify the given terms into categories.",
+            0.05
+        ],
+        [
+            " provide examples of the given category based on the input.",
+            1e-06,
+            " provide categories or groupings for the given inputs.",
+            1e-06
+        ],
+        [
+            " categorize the given items into appropriate groups based on their characteristics.",
+            1e-06,
+            " identify the category or connection between the given inputs.",
+            1e-06
+        ],
+        [
+            " identify a common theme or category among the given items.",
+            0.1,
+            " provide a category or common theme for the given inputs.",
+            0.1
+        ],
+        [
+            "identify a common category or characteristic among the items listed.",
+            0.05,
+            " provide a category or type for each group of items.",
+            0.05
+        ],
+        [
+            " provide a category or group that the listed items belong to.",
+            0.1,
+            " categorize the given items into broader categories.",
+            0.1
+        ],
+        [
+            " provide an appropriate category for the given inputs.",
+            0.15,
+            " identify a common category or group that the items belong to.",
+            0.15
+        ],
+        [
+            " provide a category for each group of terms.",
+            0.1,
+            " provide the category or type of the given items.",
+            0.1
+        ],
+        [
+            " provide a category for each group of items given.",
+            0.25,
+            " provide an appropriate category for each set of items given.",
+            0.25
+        ],
+        [
+            " identify the category or group to which the items belong.",
+            0.25,
+            "provide an output category based on the given inputs.",
+            0.25
+        ],
+        [
+            " categorize the following items into the specified categories.",
+            1e-06,
+            " provide a term that encompasses the given items.",
+            1e-06
+        ],
+        [
+            " identify the category of items based on the given input.",
+            0.2,
+            " provide a categorization or description of the items listed.",
+            0.2
+        ],
+        [
+            "identify the category or group to which the items belong.",
+            0.05,
+            " categorize the given items into appropriate groups based on their characteristics.",
+            0.05
+        ],
+        [
+            " identify a category or group that these items belong to.",
+            0.1,
+            " categorize the following items into a common group or category.",
+            0.1
+        ],
+        [
+            " categorize the given items into appropriate groups based on their common characteristics.",
+            0.05,
+            "identify a common category or characteristic among the items listed.",
+            0.05
+        ],
+        [
+            " provide a category or group that the listed items belong to.",
+            0.1,
+            " categorize the given items into broader categories.",
+            0.1
+        ],
+        [
+            " provide an appropriate category for the given inputs.",
+            0.15,
+            " identify a common category or group that the items belong to.",
+            0.15
+        ],
+        [
+            " provide a category for each group of terms.",
+            0.1,
+            " provide the category or type of the given items.",
+            0.1
+        ],
+        [
+            " provide a category for each group of items given.",
+            0.25,
+            " provide an appropriate category for each set of items given.",
+            0.25
+        ],
+        [
+            " identify the category or group to which the items belong.",
+            0.25,
+            " categorize the given items based on their common characteristics.",
+            0.25
+        ],
+        [
+            " categorize the following items into the specified categories.",
+            1e-06,
+            " provide an input and the output category or group that the items belong to.",
+            1e-06
+        ],
+        [
+            " identify the category of items based on the given input.",
+            0.2,
+            " provide a categorization or description of the items listed.",
+            0.2
+        ],
+        [
+            "identify the category or group to which the items belong.",
+            0.05,
+            " categorize the given items into appropriate groups based on their characteristics.",
+            0.05
+        ],
+        [
+            "classify the given items into different categories.",
+            1e-06,
+            " identify a category or group that these items belong to.",
+            1e-06
+        ],
+        [
+            " identify the category to which the items belong.",
+            0.2,
+            "provide an output that categorizes the given inputs.",
+            0.2
+        ],
+        [
+            " provide a category or group that the listed items belong to.",
+            0.1,
+            " provide a category or group that the given inputs belong to.",
+            0.1
+        ],
+        [
+            " provide an appropriate category for the given inputs.",
+            0.15,
+            " identify a common category or group that the items belong to.",
+            0.15
+        ],
+        [
+            " provide the category or type of the given items.",
+            0.3,
+            " provide a category for each group of terms.",
+            0.3
+        ],
+        [
+            " provide a category for each group of items given.",
+            0.25,
+            " provide an appropriate category for each set of items given.",
+            0.25
+        ],
+        [
+            " identify the category or group to which the items belong.",
+            0.25,
+            " categorize the given items based on their common characteristics.",
+            0.25
+        ],
+        [
+            " categorize the following items into the specified categories.",
+            1e-06,
+            "\"Provide a category for the following groups of items/people.\"",
+            1e-06
+        ],
+        [
+            " identify the category of items based on the given input.",
+            0.2,
+            " provide a categorization or description of the items listed.",
+            0.2
+        ],
+        [
+            "identify the category or group to which the items belong.",
+            0.05,
+            " categorize the given items into appropriate groups based on their characteristics.",
+            0.05
+        ],
+        [
+            "classify the given items into different categories.",
+            1e-06,
+            " categorize the following items into a common group or category.",
+            1e-06
+        ],
+        [
+            " identify the category to which the items belong.",
+            0.2,
+            " provide the category or group that the items belong to.",
+            0.2
+        ],
+        [
+            " provide a category or group that the listed items belong to.",
+            0.1,
+            " provide a category or group that the given inputs belong to.",
+            0.1
+        ],
+        [
+            " provide an appropriate category for the given inputs.",
+            0.15,
+            " provide a category for the given list of items.",
+            0.15
+        ],
+        [
+            " provide a category for each group of terms.",
+            0.1,
+            " provide the category or type of the given items.",
+            0.1
+        ],
+        [
+            " provide a category for each group of items given.",
+            0.25,
+            " provide an appropriate category for each set of items given.",
+            0.25
+        ],
+        [
+            " provide a category or group that the items belong to.",
+            0.25,
+            " classify the given items into appropriate categories.",
+            0.25
+        ],
+        [
+            " provide an appropriate category for each group of items given.",
+            0.2,
+            " categorize the following items into the specified categories.",
+            0.2
+        ],
+        [
+            " provide a category for each set of items or individuals.",
+            0.2,
+            " identify the category of items based on the given input.",
+            0.2
+        ],
+        [
+            "identify the category or group to which the items belong.",
+            0.05,
+            " categorize the given items into appropriate groups based on their characteristics.",
+            0.05
+        ],
+        [
+            " determine the category or classification of the given items.",
+            0.15,
+            "classify the given items into different categories.",
+            0.15
+        ],
+        [
+            " identify the category to which the items belong.",
+            0.2,
+            " provide the category or group that the items belong to.",
+            0.2
+        ],
+        [
+            " provide a category or group that the listed items belong to.",
+            0.1,
+            " provide a category or group that the given inputs belong to.",
+            0.1
+        ],
+        [
+            " provide an appropriate category for the given inputs.",
+            0.15,
+            " provide a category for each set of items given.",
+            0.15
+        ],
+        [
+            " provide the category or type of the given items.",
+            0.3,
+            " provide a category for each group of terms.",
+            0.3
+        ],
+        [
+            " provide a category for each group of items given.",
+            0.25,
+            " provide an appropriate category for each set of items given.",
+            0.25
+        ],
+        [
+            " provide a category or group that the items belong to.",
+            0.25,
+            " provide a category or group that the given items belong to.",
+            0.25
+        ],
+        [
+            " provide an appropriate category for each group of items given.",
+            0.2,
+            " categorize the following items into the specified categories.",
+            0.2
+        ],
+        [
+            " provide a category for each set of items or individuals.",
+            0.2,
+            " identify the category of items based on the given input.",
+            0.2
+        ],
+        [
+            " categorize the given items into appropriate groups based on their characteristics.",
+            1e-06,
+            "identify the category or group to which the items belong.",
+            1e-06
+        ],
+        [
+            " provide a category or group that the items listed belong to.",
+            0.15,
+            " determine the category or classification of the given items.",
+            0.15
+        ],
+        [
+            " provide the category or group that the items belong to.",
+            0.1,
+            " identify the category to which the items belong.",
+            0.1
+        ],
+        [
+            " provide a category or group that the listed items belong to.",
+            0.1,
+            " provide a category or group that the given inputs belong to.",
+            0.1
+        ],
+        [
+            " provide an appropriate category for the given inputs.",
+            0.15,
+            " provide a category for each set of items given.",
+            0.15
+        ],
+        [
+            " provide a category for each group of terms.",
+            0.1,
+            " provide the category or type of the given items.",
+            0.1
+        ],
+        [
+            " provide a category for each group of items given.",
+            0.25,
+            " provide an appropriate category for each set of items given.",
+            0.25
+        ],
+        [
+            " provide a category or group that the items belong to.",
+            0.25,
+            " provide a category or group that the given items belong to.",
+            0.25
+        ],
+        [
+            " provide an appropriate category for each group of items given.",
+            0.2,
+            " categorize the following items into the specified categories.",
+            0.2
+        ],
+        [
+            " provide a category for each set of items or individuals.",
+            0.2,
+            " provide the category or classification of the given items.",
+            0.2
+        ],
+        [
+            " categorize the given items into appropriate groups based on their characteristics.",
+            1e-06,
+            "identify the category or group to which the items belong.",
+            1e-06
+        ],
+        [
+            " provide a category or group that the items listed belong to.",
+            0.15,
+            " provide a category or classification for the given list of items.",
+            0.15
+        ],
+        [
+            " provide a category that the given items belong to.",
+            0.2,
+            " provide the category or group that the items belong to.",
+            0.2
+        ],
+        [
+            " provide the category or group that the given items belong to.",
+            0.05,
+            " provide a category or group that the listed items belong to.",
+            0.05
+        ],
+        [
+            " provide an appropriate category for the given inputs.",
+            0.15,
+            " provide a category for each set of items given.",
+            0.15
+        ],
+        [
+            " provide the category or type of the given items.",
+            0.3,
+            " provide a category for each group of terms.",
+            0.3
+        ],
+        [
+            " provide a category for each group of items given.",
+            0.25,
+            " provide an appropriate category for each set of items given.",
+            0.25
+        ],
+        [
+            " provide a category or group that the items belong to.",
+            0.25,
+            " provide a category or group that the given items belong to.",
+            0.25
+        ],
+        [
+            " provide an appropriate category for each group of items given.",
+            0.2,
+            " categorize the following items into the specified categories.",
+            0.2
+        ],
+        [
+            " provide a category for each set of items or individuals.",
+            0.2,
+            " provide the category or classification of the given items.",
+            0.2
+        ],
+        [
+            " provide a category for each set of items.",
+            0.25,
+            "provide categories or groups that the given inputs belong to.",
+            0.25
+        ],
+        [
+            " provide a category or classification for the given list of items.",
+            0.1,
+            " provide a category or group that the items listed belong to.",
+            0.1
+        ],
+        [
+            " provide a category that the given items belong to.",
+            0.2,
+            " provide the category or group that the items belong to.",
+            0.2
+        ],
+        [
+            " provide the category or group that the given items belong to.",
+            0.05,
+            " provide a category or group that the given inputs belong to.",
+            0.05
+        ],
+        [
+            " provide an appropriate category for the given inputs.",
+            0.15,
+            " provide a category for each set of items given.",
+            0.15
+        ],
+        [
+            " provide a category for each group of terms.",
+            0.1,
+            " provide the category or type of the given items.",
+            0.1
+        ],
+        [
+            " provide a category for each group of items given.",
+            0.25,
+            " provide an appropriate category for each set of items given.",
+            0.25
+        ],
+        [
+            " provide a list of items that fall into the specified category.",
+            0.1,
+            " provide a category or group that the items belong to.",
+            0.1
+        ],
+        [
+            " provide an appropriate category for each group of items given.",
+            0.2,
+            " categorize the following items into the specified categories.",
+            0.2
+        ],
+        [
+            " provide a category for each set of items or individuals.",
+            0.2,
+            " provide the category or classification of the given items.",
+            0.2
+        ],
+        [
+            " provide a category for each set of items.",
+            0.25,
+            "provide categories or groups that the given inputs belong to.",
+            0.25
+        ],
+        [
+            " provide a category or classification for the given list of items.",
+            0.1,
+            " provide a category or group that the items listed belong to.",
+            0.1
+        ],
+        [
+            " provide a category that the given items belong to.",
+            0.2,
+            "provide a category or group that the given inputs belong to.",
+            0.2
+        ]
+    ],
+    "now_values": [
+        0.05,
+        0.05,
+        0.1,
+        0.1,
+        0.1,
+        0.05,
+        0.05,
+        0.05,
+        0.15,
+        0.15,
+        0.1,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1
+    ]
+}
